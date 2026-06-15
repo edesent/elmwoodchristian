@@ -19,7 +19,7 @@ const quickActions = [
 const stats = [
   { value: "50+", label: "Years of Excellence" },
   { value: "PreK–12", label: "One Campus" },
-  { value: "1:12", label: "Teacher Ratio" },
+  { value: "1:15", label: "Teacher Ratio" },
   { value: "Accredited", label: "& Accountable" },
 ];
 

@@ -35,7 +35,7 @@ const levels = [
 const stats = [
   { value: "50+", label: "Years of Excellence" },
   { value: "PreK–12", label: "A Complete Education" },
-  { value: "1:12", label: "Personalized Attention" },
+  { value: "1:15", label: "Personalized Attention" },
   { value: "100%", label: "Christ-Centered" },
 ];
 

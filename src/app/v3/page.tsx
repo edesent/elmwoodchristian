@@ -37,7 +37,7 @@ const stories = [
 const glance = [
   { value: "1973", label: "Founded" },
   { value: "PreK–12", label: "One campus, every stage" },
-  { value: "1:12", label: "Teacher-to-student" },
+  { value: "1:15", label: "Teacher-to-student" },
   { value: "100%", label: "Christ-centered" },
 ];
 
