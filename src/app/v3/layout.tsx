@@ -9,7 +9,7 @@ export default function V3Layout({
     <div className="min-h-screen flex flex-col bg-cream-warm">
       <NavbarV3 />
       <main className="flex-1">{children}</main>
-      <Footer />
+      <Footer variant="brown" />
       <VersionSwitch current="v3" />
     </div>
   );

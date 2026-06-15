@@ -7,9 +7,14 @@ const navLinks = [
   { href: "/admissions", label: "Admissions" },
 ];
 
-export default function Footer() {
+export default function Footer({
+  variant = "crimson",
+}: {
+  variant?: "crimson" | "brown";
+}) {
+  const bg = variant === "brown" ? "bg-brown-seal-dark" : "bg-crimson-deep";
   return (
-    <footer className="bg-crimson-deep text-white/75">
+    <footer className={`${bg} text-white/75`}>
       {/* Verse band */}
       <div className="border-b border-white/10">
         <div className="max-w-4xl mx-auto px-6 py-12 text-center">
