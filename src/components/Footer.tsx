@@ -7,6 +7,37 @@ const navLinks = [
   { href: "/admissions", label: "Admissions" },
 ];
 
+// TODO: replace "#" with Elmwood's real social profile URLs
+const socials = [
+  {
+    label: "Facebook",
+    href: "#",
+    icon: (
+      <svg viewBox="0 0 24 24" className="h-[18px] w-[18px] fill-current" aria-hidden>
+        <path d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14C17.17 2.1 15.9 2 14.56 2 11.76 2 10 3.66 10 6.7v2.8H7v4h3V22h4v-8.5z" />
+      </svg>
+    ),
+  },
+  {
+    label: "Instagram",
+    href: "#",
+    icon: (
+      <svg
+        viewBox="0 0 24 24"
+        className="h-[18px] w-[18px]"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth={2}
+        aria-hidden
+      >
+        <rect x="3" y="3" width="18" height="18" rx="5" />
+        <circle cx="12" cy="12" r="4" />
+        <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
+      </svg>
+    ),
+  },
+];
+
 export default function Footer({
   variant = "crimson",
   showVerse = true,
@@ -50,14 +81,24 @@ export default function Footer({
               </span>
             </span>
           </div>
+          {/* Socials */}
+          <div className="mt-6 flex items-center gap-3">
+            {socials.map((s) => (
+              <a
+                key={s.label}
+                href={s.href}
+                aria-label={s.label}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="grid place-items-center h-10 w-10 rounded-full border border-white/25 text-white/85 hover:bg-white hover:text-ink transition-colors"
+              >
+                {s.icon}
+              </a>
+            ))}
+          </div>
           <p className="mt-6 text-base leading-relaxed max-w-sm text-white/65">
             A Christ-centered, college-preparatory school serving preschool
             through 12th grade in Brighton, Colorado.
-          </p>
-          <p className="mt-5 text-base leading-relaxed">
-            13100 E 144th Ave
-            <br />
-            Brighton, CO 80601
           </p>
         </div>
 
@@ -84,6 +125,11 @@ export default function Footer({
         <div>
           <h3 className="text-[0.8rem] font-semibold uppercase tracking-[0.2em] text-white/45 mb-5">Contact</h3>
           <ul className="space-y-3 text-base">
+            <li className="leading-relaxed">
+              13100 E 144th Ave
+              <br />
+              Brighton, CO 80601
+            </li>
             <li>
               <a href="tel:+13036593818" className="hover:text-white transition-colors">
                 303.659.3818
