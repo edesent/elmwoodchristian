@@ -95,6 +95,41 @@ export default function V3Home() {
         </div>
       </section>
 
+      {/* ─────────────────── Quick actions ─────────────────── */}
+      <section className="bg-cream-warm border-b border-brown-seal/12">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="grid md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-brown-seal/12">
+            {[
+              { title: "Schedule a Tour", note: "Come see our campus in person", href: "/admissions" },
+              { title: "Apply", note: "Begin your child's enrollment", href: "/admissions" },
+              // TODO: point School Calendar at the real calendar page / Google Calendar when available
+              { title: "School Calendar", note: "Key dates & upcoming events", href: "/admissions" },
+            ].map((a) => (
+              <Link
+                key={a.title}
+                href={a.href}
+                className="group flex items-center justify-between gap-4 py-9 md:px-9 hover:bg-cream-warm-2 transition-colors"
+              >
+                <span>
+                  <span className="block font-editorial text-[1.65rem] leading-tight text-brown-seal group-hover:text-red-spark transition-colors">
+                    {a.title}
+                  </span>
+                  <span
+                    className="mt-1 block text-sm text-brown-seal/60"
+                    style={{ fontFamily: "var(--font-geo)" }}
+                  >
+                    {a.note}
+                  </span>
+                </span>
+                <span className="text-red-spark text-2xl transition-transform group-hover:translate-x-1">
+                  →
+                </span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* ─────────────────── Lead statement ─────────────────── */}
       <section className="bg-cream-warm py-24 md:py-32">
         <div className="max-w-5xl mx-auto px-6">
