@@ -50,11 +50,11 @@ export default function Footer({
               </span>
             </span>
           </div>
-          <p className="mt-6 text-sm leading-relaxed max-w-sm text-white/65">
+          <p className="mt-6 text-base leading-relaxed max-w-sm text-white/65">
             A Christ-centered, college-preparatory school serving preschool
             through 12th grade in Brighton, Colorado.
           </p>
-          <p className="mt-5 text-sm leading-relaxed">
+          <p className="mt-5 text-base leading-relaxed">
             13100 E 144th Ave
             <br />
             Brighton, CO 80601
@@ -63,8 +63,8 @@ export default function Footer({
 
         {/* Explore */}
         <div>
-          <h3 className="eyebrow text-white/45 mb-5">Explore</h3>
-          <ul className="space-y-3 text-sm">
+          <h3 className="text-[0.8rem] font-semibold uppercase tracking-[0.2em] text-white/45 mb-5">Explore</h3>
+          <ul className="space-y-3 text-base">
             {navLinks.map((l) => (
               <li key={l.href}>
                 <Link href={l.href} className="hover:text-white transition-colors">
@@ -82,8 +82,8 @@ export default function Footer({
 
         {/* Contact */}
         <div>
-          <h3 className="eyebrow text-white/45 mb-5">Contact</h3>
-          <ul className="space-y-3 text-sm">
+          <h3 className="text-[0.8rem] font-semibold uppercase tracking-[0.2em] text-white/45 mb-5">Contact</h3>
+          <ul className="space-y-3 text-base">
             <li>
               <a href="tel:+13036593818" className="hover:text-white transition-colors">
                 303.659.3818
@@ -103,9 +103,15 @@ export default function Footer({
       </div>
 
       <div className="border-t border-white/10">
-        <div className="max-w-7xl mx-auto px-6 py-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-white/45">
-          <p>© {new Date().getFullYear()} Elmwood Christian Academy. All rights reserved.</p>
-          <p className="tracking-wide">Accredited · Excellence in Education Since 1973</p>
+        <div className="max-w-7xl mx-auto px-6 py-7 text-center text-sm">
+          <p className="text-white/60 tracking-wide">
+            Elmwood Christian Academy is fully accredited through the National
+            Association of Private Schools.
+          </p>
+          <p className="mt-2 text-xs text-white/40">
+            © {new Date().getFullYear()} Elmwood Christian Academy · Excellence in
+            Education Since 1973
+          </p>
         </div>
       </div>
     </footer>
