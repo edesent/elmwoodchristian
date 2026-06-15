@@ -2,6 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import AnimateOnScroll from "@/components/AnimateOnScroll";
+import ReviewsCarousel from "@/components/ReviewsCarousel";
+import FaqAccordion from "@/components/FaqAccordion";
+import { FAQS } from "@/components/faqData";
 
 export const metadata: Metadata = {
   title: "Elmwood Christian Academy",
@@ -51,8 +54,8 @@ export default function V3Home() {
       {/* ─────────────────── Spotlight hero (magazine cover) ─────────────────── */}
       <section className="relative min-h-[88vh] flex items-end pt-[76px]">
         <Image
-          src="/img/hero.jpg"
-          alt="A teacher reading with students at Elmwood Christian Academy"
+          src="/img/hero-v3.jpg"
+          alt="Students raising their hands in an Elmwood Christian Academy classroom"
           fill
           priority
           sizes="100vw"
@@ -276,20 +279,37 @@ export default function V3Home() {
         </div>
       </section>
 
-      {/* ─────────────────── Pull quote ─────────────────── */}
-      <section className="bg-cream-warm-2 py-24 md:py-28">
-        <div className="max-w-4xl mx-auto px-6 text-center">
-          <span className="font-editorial text-7xl md:text-8xl text-red-spark leading-none">“</span>
-          <p className="font-editorial text-3xl md:text-[2.75rem] leading-[1.2] text-brown-seal -mt-4">
-            The teachers truly know our children. Elmwood gave them a strong
-            foundation in their faith and their studies.
-          </p>
-          <p
-            className="mt-8 text-[0.72rem] font-semibold uppercase tracking-[0.22em] text-brown-seal/55"
-            style={{ fontFamily: "var(--font-geo)" }}
-          >
-            — An Elmwood Family
-          </p>
+      {/* ─────────────────── Reviews carousel ─────────────────── */}
+      <ReviewsCarousel />
+
+      {/* ─────────────────── FAQ (short) ─────────────────── */}
+      <section className="bg-cream-warm py-24 md:py-28">
+        <div className="max-w-4xl mx-auto px-6">
+          <AnimateOnScroll className="text-center">
+            <p
+              className="text-[0.72rem] font-semibold uppercase tracking-[0.24em] text-red-spark"
+              style={{ fontFamily: "var(--font-geo)" }}
+            >
+              Questions?
+            </p>
+            <h2 className="mt-4 font-editorial text-4xl md:text-5xl text-brown-seal leading-tight">
+              Frequently asked questions
+            </h2>
+          </AnimateOnScroll>
+
+          <div className="mt-12">
+            <FaqAccordion items={FAQS.slice(0, 4)} accent="brown" />
+          </div>
+
+          <div className="mt-10 text-center">
+            <Link
+              href="/faq"
+              className="inline-flex items-center gap-2 font-semibold text-red-spark hover:text-brown-seal transition-colors"
+              style={{ fontFamily: "var(--font-geo)" }}
+            >
+              See all questions &amp; answers →
+            </Link>
+          </div>
         </div>
       </section>
 
