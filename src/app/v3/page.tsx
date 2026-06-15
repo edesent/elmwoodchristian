@@ -135,7 +135,7 @@ export default function V3Home() {
 
       {/* ─────────────────── Lead statement ─────────────────── */}
       <section className="bg-cream-warm py-24 md:py-32">
-        <div className="max-w-5xl mx-auto px-6">
+        <div className="max-w-7xl mx-auto px-6">
           <AnimateOnScroll>
             <span className="block w-16 h-1 bg-red-spark" />
             <p className="mt-8 font-editorial text-[2rem] md:text-[3.25rem] leading-[1.15] text-brown-seal">
