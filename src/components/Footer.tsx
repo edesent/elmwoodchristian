@@ -9,22 +9,26 @@ const navLinks = [
 
 export default function Footer({
   variant = "crimson",
+  showVerse = true,
 }: {
   variant?: "crimson" | "brown";
+  showVerse?: boolean;
 }) {
   const bg = variant === "brown" ? "bg-brown-seal-dark" : "bg-crimson-deep";
   return (
     <footer className={`${bg} text-white/75`}>
       {/* Verse band */}
-      <div className="border-b border-white/10">
-        <div className="max-w-4xl mx-auto px-6 py-12 text-center">
-          <p className="font-serif italic text-2xl md:text-3xl text-white/90 leading-snug">
-            “Train up a child in the way he should go: and when he is old,
-            he will not depart from it.”
-          </p>
-          <p className="mt-4 eyebrow text-white/45">Proverbs 22:6</p>
+      {showVerse && (
+        <div className="border-b border-white/10">
+          <div className="max-w-4xl mx-auto px-6 py-12 text-center">
+            <p className="font-serif italic text-2xl md:text-3xl text-white/90 leading-snug">
+              “Train up a child in the way he should go: and when he is old,
+              he will not depart from it.”
+            </p>
+            <p className="mt-4 eyebrow text-white/45">Proverbs 22:6</p>
+          </div>
         </div>
-      </div>
+      )}
 
       <div className="max-w-7xl mx-auto px-6 py-14 grid gap-12 md:grid-cols-[1.4fr_1fr_1fr]">
         {/* Brand + address */}
