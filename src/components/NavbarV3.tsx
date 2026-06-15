@@ -62,7 +62,7 @@ export default function NavbarV3() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-[0.9rem] font-medium text-brown-seal hover:text-red-spark transition-colors"
+                    className="text-[1.05rem] font-medium text-brown-seal hover:text-red-spark transition-colors"
                   >
                     {link.label}
                   </Link>
