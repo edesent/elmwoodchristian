@@ -25,6 +25,15 @@
   --color-line: #e3ddd1;
 
   --color-brass: #a98b5b;
+
+  /* v3 — Brown-style editorial (seal brown + red + warm cream) */
+  --font-editorial: var(--font-source-serif);
+  --font-geo: var(--font-outfit);
+  --color-brown-seal: #4e3629;
+  --color-brown-seal-dark: #38271c;
+  --color-red-spark: #c5283d;
+  --color-cream-warm: #f7f2e9;
+  --color-cream-warm-2: #efe6d6;
 }
 
 html {

@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Cormorant_Garamond, Source_Sans_3 } from "next/font/google";
+import { Cormorant_Garamond, Source_Sans_3, Source_Serif_4, Outfit } from "next/font/google";
 import "./globals.css";
 
 const cormorant = Cormorant_Garamond({
@@ -13,6 +13,21 @@ const source = Source_Sans_3({
   variable: "--font-source",
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
+  display: "swap",
+});
+
+// v3 (Brown-style editorial): Minion-like serif + Circular-like geometric sans
+const sourceSerif = Source_Serif_4({
+  variable: "--font-source-serif",
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  display: "swap",
+});
+
+const outfit = Outfit({
+  variable: "--font-outfit",
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
   display: "swap",
 });
 
@@ -115,7 +130,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${cormorant.variable} ${source.variable} antialiased`}
+      className={`${cormorant.variable} ${source.variable} ${sourceSerif.variable} ${outfit.variable} antialiased`}
     >
       <body className="bg-paper">{children}</body>
     </html>
