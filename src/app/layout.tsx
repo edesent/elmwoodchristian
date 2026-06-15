@@ -1,8 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Cormorant_Garamond, Source_Sans_3 } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 
 const cormorant = Cormorant_Garamond({
   variable: "--font-cormorant",
@@ -119,11 +117,7 @@ export default function RootLayout({
       lang="en"
       className={`${cormorant.variable} ${source.variable} antialiased`}
     >
-      <body className="min-h-screen flex flex-col bg-paper">
-        <Navbar />
-        <main className="flex-1">{children}</main>
-        <Footer />
-      </body>
+      <body className="bg-paper">{children}</body>
     </html>
   );
 }
