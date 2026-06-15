@@ -97,8 +97,8 @@ export default function Footer({
             ))}
           </div>
           <p className="mt-6 text-base leading-relaxed max-w-sm text-white/65">
-            A Christ-centered, college-preparatory school serving preschool
-            through 12th grade in Brighton, Colorado.
+            Elmwood Baptist Academy is fully accredited through the National
+            Association of Private Schools.
           </p>
         </div>
 
@@ -150,11 +150,7 @@ export default function Footer({
 
       <div className="border-t border-white/10">
         <div className="max-w-7xl mx-auto px-6 py-7 text-center text-sm">
-          <p className="text-white/60 tracking-wide">
-            Elmwood Christian Academy is fully accredited through the National
-            Association of Private Schools.
-          </p>
-          <p className="mt-2 text-xs text-white/40">
+          <p className="text-white/45 text-xs">
             © {new Date().getFullYear()} Elmwood Christian Academy · Excellence in
             Education Since 1973
           </p>
