@@ -97,7 +97,7 @@ export default function Footer({
             ))}
           </div>
           <p className="mt-6 text-base leading-relaxed max-w-sm text-white/65">
-            Elmwood Baptist Academy is fully accredited through the National
+            Elmwood Christian Academy is fully accredited through the National
             Association of Private Schools.
           </p>
         </div>
