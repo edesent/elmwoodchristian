@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: var(--font-source);
+  --font-serif: var(--font-cormorant);
+
+  /* Elmwood Christian Academy — Collegiate Crimson / Charcoal / Stone */
+  --color-crimson: #8b2233;
+  --color-crimson-dark: #6e1a28;
+  --color-crimson-light: #a23344;
+  --color-crimson-deep: #4f121d;
+
+  --color-ink: #201d1b;
+  --color-charcoal: #2b2826;
+  --color-charcoal-soft: #3d3a37;
+
+  --color-stone: #f4f1ea;
+  --color-stone-2: #ece7dd;
+  --color-stone-3: #ded7c9;
+  --color-paper: #fcfbf8;
+
+  --color-text-ink: #211e1b;
+  --color-text-body: #4b463f;
+  --color-text-muted: #8a8278;
+  --color-line: #e3ddd1;
+
+  --color-brass: #a98b5b;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 96px;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--color-text-body);
+  background-color: var(--color-paper);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Display serif treatment */
+.font-serif {
+  font-family: var(--font-serif);
+}
+
+/* Eyebrow / kicker labels */
+.eyebrow {
+  font-family: var(--font-sans);
+  font-weight: 600;
+  letter-spacing: 0.26em;
+  text-transform: uppercase;
+  font-size: 0.72rem;
+}
+
+/* Thin crimson rule used as a section accent */
+.rule {
+  display: inline-block;
+  width: 56px;
+  height: 2px;
+  background: var(--color-crimson);
+}
+
+/* Scroll-in animation */
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.85s ease, transform 0.85s ease;
+}
+.fade-in-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Hero entrance */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-up {
+  opacity: 0;
+  animation: fadeUp 1s ease forwards;
+}
+.animation-delay-200 { animation-delay: 0.2s; }
+.animation-delay-400 { animation-delay: 0.4s; }
+.animation-delay-600 { animation-delay: 0.6s; }
+.animation-delay-800 { animation-delay: 0.8s; }
+.animation-delay-1000 { animation-delay: 1s; }
