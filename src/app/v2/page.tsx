@@ -71,7 +71,7 @@ export default function V2Home() {
                 Apply Now
               </Link>
               <Link
-                href="/admissions"
+                href="/schedule-a-tour"
                 className="inline-flex items-center justify-center border border-white/50 text-white font-semibold px-8 py-4 rounded-sm uppercase tracking-[0.1em] text-sm hover:bg-white/10 transition-colors"
               >
                 Schedule a Visit
@@ -290,7 +290,7 @@ export default function V2Home() {
           </p>
           <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
             <Link
-              href="/admissions"
+              href="/schedule-a-tour"
               className="inline-flex items-center justify-center bg-white text-crimson font-semibold px-8 py-4 rounded-sm uppercase tracking-[0.1em] text-sm hover:bg-stone transition-colors"
             >
               Schedule a Tour

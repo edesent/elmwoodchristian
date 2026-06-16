@@ -88,7 +88,7 @@ export default function V3Home() {
                 Apply to Elmwood
               </Link>
               <Link
-                href="/admissions"
+                href="/schedule-a-tour"
                 className="inline-flex items-center justify-center border border-white/50 text-white font-semibold px-8 py-4 rounded-full text-sm hover:bg-white/10 transition-colors"
               >
                 Schedule a Visit
@@ -103,8 +103,8 @@ export default function V3Home() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-brown-seal/12">
             {[
-              { title: "Schedule a Tour", note: "Come see our campus in person", href: "/admissions" },
-              { title: "Apply", note: "Begin your child's enrollment", href: "/admissions" },
+              { title: "Schedule a Tour", note: "Come see our campus in person", href: "/schedule-a-tour" },
+              { title: "Apply", note: "Begin your child's enrollment", href: "/admissions/apply" },
               // TODO: point School Calendar at the real calendar page / Google Calendar when available
               { title: "School Calendar", note: "Key dates & upcoming events", href: "/admissions" },
             ].map((a) => (

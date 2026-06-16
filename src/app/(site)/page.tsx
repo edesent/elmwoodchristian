@@ -69,7 +69,7 @@ export default function Home() {
             </p>
             <div className="mt-10 flex flex-col sm:flex-row gap-4 animate-fade-up animation-delay-600">
               <Link
-                href="/admissions"
+                href="/schedule-a-tour"
                 className="inline-flex items-center justify-center bg-white text-crimson font-semibold px-8 py-4 rounded-sm uppercase tracking-[0.1em] text-sm hover:bg-stone transition-colors"
               >
                 Schedule a Tour
@@ -231,7 +231,7 @@ export default function Home() {
             </p>
             <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                href="/admissions"
+                href="/schedule-a-tour"
                 className="inline-flex items-center justify-center bg-crimson text-white font-semibold px-8 py-4 rounded-sm uppercase tracking-[0.1em] text-sm hover:bg-crimson-dark transition-colors"
               >
                 Schedule a Tour

@@ -114,7 +114,7 @@ export default function Footer({
               </li>
             ))}
             <li>
-              <Link href="/admissions" className="hover:text-white transition-colors">
+              <Link href="/schedule-a-tour" className="hover:text-white transition-colors">
                 Schedule a Tour
               </Link>
             </li>

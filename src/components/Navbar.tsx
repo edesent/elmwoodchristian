@@ -77,7 +77,7 @@ export default function Navbar() {
             })}
             <li className="ml-4">
               <Link
-                href="/admissions"
+                href="/schedule-a-tour"
                 className="inline-flex items-center gap-2 bg-crimson text-white text-sm font-semibold px-6 py-2.5 rounded-sm tracking-[0.08em] uppercase hover:bg-crimson-dark transition-colors"
               >
                 Schedule a Tour
@@ -117,7 +117,7 @@ export default function Navbar() {
           ))}
           <li className="mt-3">
             <Link
-              href="/admissions"
+              href="/schedule-a-tour"
               className="block text-center bg-crimson text-white font-semibold px-6 py-3 rounded-sm uppercase tracking-[0.08em] hover:bg-crimson-dark transition-colors"
             >
               Schedule a Tour

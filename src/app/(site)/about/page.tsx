@@ -134,7 +134,7 @@ export default function AboutPage() {
           </h2>
           <div className="mt-9 flex flex-col sm:flex-row gap-4 justify-center">
             <Link
-              href="/admissions"
+              href="/schedule-a-tour"
               className="inline-flex items-center justify-center bg-crimson text-white font-semibold px-8 py-4 rounded-sm uppercase tracking-[0.1em] text-sm hover:bg-crimson-dark transition-colors"
             >
               Schedule a Tour
