@@ -16,7 +16,7 @@ const versions: { id: Props["current"]; href: string; label: string }[] = [
  */
 export default function VersionSwitch({ current }: Props) {
   return (
-    <div className="fixed bottom-5 right-5 z-[60]">
+    <div className="fixed bottom-5 left-5 z-[60]">
       <div className="flex items-center gap-1 rounded-full bg-ink/90 p-1.5 shadow-lg backdrop-blur">
         <span className="pl-2 pr-1 text-[0.65rem] uppercase tracking-[0.18em] text-white/50">
           Design

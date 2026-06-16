@@ -96,3 +96,8 @@ body {
 .animation-delay-600 { animation-delay: 0.6s; }
 .animation-delay-800 { animation-delay: 0.8s; }
 .animation-delay-1000 { animation-delay: 1s; }
+
+/* Raise the WBC Chat widget off the bottom corner (clears the version switcher) */
+#wbc-chat-bubble { bottom: 90px !important; }
+#wbc-greeting-popup { bottom: 162px !important; }
+#wbc-chat-window { bottom: 162px !important; }
