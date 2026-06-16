@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Cormorant_Garamond, Source_Sans_3, Source_Serif_4, Outfit } from "next/font/google";
 import "./globals.css";
+import ChatWidget from "@/components/ChatWidget";
 
 const cormorant = Cormorant_Garamond({
   variable: "--font-cormorant",
@@ -132,7 +133,10 @@ export default function RootLayout({
       lang="en"
       className={`${cormorant.variable} ${source.variable} ${sourceSerif.variable} ${outfit.variable} antialiased`}
     >
-      <body className="bg-paper">{children}</body>
+      <body className="bg-paper">
+        {children}
+        <ChatWidget />
+      </body>
     </html>
   );
 }
