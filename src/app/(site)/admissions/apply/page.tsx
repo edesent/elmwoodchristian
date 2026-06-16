@@ -17,9 +17,9 @@ export default function ApplyPage() {
         subtitle="A few short steps — your application goes straight to our office."
       />
       <section className="bg-paper py-16 md:py-20">
-        <div className="max-w-3xl mx-auto px-6">
+        <div className="max-w-7xl mx-auto px-6">
           {/* Old-fashioned / printable option */}
-          <div className="mb-12 rounded-sm border border-line bg-stone p-6 sm:flex sm:items-center sm:justify-between gap-6">
+          <div className="mb-12 max-w-3xl rounded-sm border border-line bg-stone p-6 sm:flex sm:items-center sm:justify-between gap-6">
             <div>
               <p className="font-serif text-xl text-ink">Prefer to fill it out by hand?</p>
               <p className="mt-1 text-sm leading-relaxed text-text-body">
@@ -37,8 +37,6 @@ export default function ApplyPage() {
               Download PDF Form
             </a>
           </div>
-        </div>
-        <div className="max-w-5xl mx-auto px-6">
           <EnrollmentForm />
         </div>
       </section>

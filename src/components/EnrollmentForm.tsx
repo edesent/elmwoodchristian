@@ -99,7 +99,7 @@ export default function EnrollmentForm() {
   }
 
   return (
-    <div className="max-w-3xl mx-auto">
+    <div className="max-w-3xl">
       {/* Progress */}
       <div className="mb-10">
         <div className="flex items-center justify-between text-sm">
