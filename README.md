@@ -45,6 +45,26 @@ Common changes and where they live:
 
 ---
 
+## Online enrollment application
+
+`/admissions/apply` is a multi-step application that mirrors Elmwood's paper
+enrollment packet. On submit it builds a PDF (server-side, `pdf-lib`) and:
+
+- always returns the PDF for the family to download, and
+- emails it to the office **if** email is configured (via [Resend](https://resend.com)).
+
+Form/PDF fields live in one place: `src/lib/enrollment.ts`. The API route is
+`src/app/api/enroll/route.ts`.
+
+**To turn on automatic emailing**, set these env vars in Vercel (Project →
+Settings → Environment Variables), then redeploy:
+
+| Variable | Required | Default | Notes |
+|----------|----------|---------|-------|
+| `RESEND_API_KEY` | yes (for email) | — | From resend.com. Until set, the form still works and the parent downloads the PDF. |
+| `ENROLL_TO` | no | `office@elmwoodchristianacademy.org` | Where applications are sent. |
+| `ENROLL_FROM` | no | `Elmwood Admissions <onboarding@resend.dev>` | Use a verified-domain sender once the domain is set up in Resend (the `onboarding@resend.dev` test sender only delivers to your own Resend account email). |
+
 ## Run it locally
 
 ```bash
