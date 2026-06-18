@@ -45,6 +45,18 @@ const sports = [
     img: null,
     alt: "",
   },
+  {
+    name: "Cross Country",
+    detail: "Boys & Girls · Fall",
+    img: "/img/cross-country.jpg",
+    alt: "Elmwood Eagles cross country runners at a meet",
+  },
+  {
+    name: "Track & Field",
+    detail: "Boys & Girls · Spring",
+    img: null,
+    alt: "",
+  },
 ];
 
 const life = [
