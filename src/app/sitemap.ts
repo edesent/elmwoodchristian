@@ -11,5 +11,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${SITE_URL}/academics`, lastModified, changeFrequency: "monthly", priority: 0.9 },
     { url: `${SITE_URL}/admissions`, lastModified, changeFrequency: "monthly", priority: 0.9 },
     { url: `${SITE_URL}/faq`, lastModified, changeFrequency: "monthly", priority: 0.7 },
+    { url: `${SITE_URL}/schedule-a-tour`, lastModified, changeFrequency: "monthly", priority: 0.8 },
   ];
 }

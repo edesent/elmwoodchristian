@@ -52,7 +52,7 @@ export default function NavbarV2() {
         }`}
       >
         <div className="max-w-7xl mx-auto px-6 flex items-center justify-between h-[78px]">
-          <Link href="/v2" aria-label="Elmwood Christian Academy — home" className="flex items-center gap-3">
+          <Link href="/" aria-label="Elmwood Christian Academy — home" className="flex items-center gap-3">
             <Image
               src="/brand/crest.png"
               alt=""
@@ -96,7 +96,7 @@ export default function NavbarV2() {
             </ul>
             <div className="flex items-center gap-3">
               <Link
-                href="/admissions"
+                href="/schedule-a-tour"
                 className={`text-sm font-semibold px-5 py-2.5 rounded-sm uppercase tracking-[0.08em] border transition-colors ${
                   solid
                     ? "border-crimson/40 text-crimson hover:bg-crimson/5"
@@ -106,7 +106,7 @@ export default function NavbarV2() {
                 Visit
               </Link>
               <Link
-                href="/admissions"
+                href="/admissions/apply"
                 className="text-sm font-semibold px-6 py-2.5 rounded-sm uppercase tracking-[0.08em] bg-crimson text-white hover:bg-crimson-dark transition-colors"
               >
                 Apply
@@ -153,14 +153,14 @@ export default function NavbarV2() {
           ))}
           <li className="mt-3 grid grid-cols-2 gap-3">
             <Link
-              href="/admissions"
+              href="/schedule-a-tour"
               onClick={() => setMenuOpen(false)}
               className="text-center border border-crimson/40 text-crimson font-semibold px-4 py-3 rounded-sm uppercase tracking-[0.08em] text-sm"
             >
               Visit
             </Link>
             <Link
-              href="/admissions"
+              href="/admissions/apply"
               onClick={() => setMenuOpen(false)}
               className="text-center bg-crimson text-white font-semibold px-4 py-3 rounded-sm uppercase tracking-[0.08em] text-sm"
             >

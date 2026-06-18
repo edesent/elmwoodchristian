@@ -1,6 +1,5 @@
 import NavbarV3 from "@/components/NavbarV3";
 import Footer from "@/components/Footer";
-import VersionSwitch from "@/components/VersionSwitch";
 
 export default function V3Layout({
   children,
@@ -10,7 +9,6 @@ export default function V3Layout({
       <NavbarV3 />
       <main className="flex-1">{children}</main>
       <Footer variant="brown" showVerse={false} />
-      <VersionSwitch current="v3" />
     </div>
   );
 }
