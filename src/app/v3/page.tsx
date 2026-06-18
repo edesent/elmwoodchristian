@@ -280,7 +280,7 @@ export default function V3Home() {
       </section>
 
       {/* ─────────────────── Reviews carousel ─────────────────── */}
-      <ReviewsCarousel />
+      <ReviewsCarousel accent="brown" />
 
       {/* ─────────────────── FAQ (short) ─────────────────── */}
       <section className="bg-cream-warm py-24 md:py-28">

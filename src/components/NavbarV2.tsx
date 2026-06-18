@@ -8,6 +8,9 @@ const navLinks = [
   { href: "/about", label: "About" },
   { href: "/academics", label: "Academics" },
   { href: "/admissions", label: "Admissions" },
+  { href: "/athletics", label: "Athletics" },
+  { href: "/parents", label: "Parents" },
+  { href: "/news", label: "News" },
 ];
 
 export default function NavbarV2() {
@@ -79,8 +82,8 @@ export default function NavbarV2() {
             </span>
           </Link>
 
-          <div className="hidden lg:flex items-center gap-8">
-            <ul className="flex items-center gap-7">
+          <div className="hidden lg:flex items-center gap-5">
+            <ul className="flex items-center gap-5">
               {navLinks.map((link) => (
                 <li key={link.href}>
                   <Link

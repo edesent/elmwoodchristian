@@ -3,8 +3,13 @@ import Image from "next/image";
 
 const navLinks = [
   { href: "/about", label: "About" },
+  { href: "/about/beliefs", label: "What We Believe" },
   { href: "/academics", label: "Academics" },
   { href: "/admissions", label: "Admissions" },
+  { href: "/athletics", label: "Athletics" },
+  { href: "/parents", label: "Parents" },
+  { href: "/news", label: "News & Articles" },
+  { href: "/support", label: "Support Elmwood" },
 ];
 
 // TODO: replace "#" with Elmwood's real social profile URLs

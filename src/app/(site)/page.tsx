@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import AnimateOnScroll from "@/components/AnimateOnScroll";
 import HeroSlider from "@/components/HeroSlider";
+import ReviewsCarousel from "@/components/ReviewsCarousel";
 
 const quickActions = [
   { label: "Apply", note: "Begin enrollment", href: "/admissions/apply" },
@@ -205,24 +206,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ─────────────────────── Quote ─────────────────────── */}
-      <section className="bg-crimson text-white py-24 md:py-28 relative overflow-hidden">
-        <Image
-          src="/brand/crest.png"
-          alt=""
-          width={71}
-          height={90}
-          aria-hidden
-          className="pointer-events-none absolute left-1/2 -translate-x-1/2 top-8 h-14 w-auto opacity-20 brightness-0 invert"
-        />
-        <div className="relative max-w-3xl mx-auto px-6 text-center">
-          <p className="font-serif text-3xl md:text-4xl leading-[1.3] mt-10">
-            “The teachers truly know our children. Elmwood gave them a strong
-            foundation in their faith and their studies.”
-          </p>
-          <p className="mt-8 eyebrow text-white/60">An Elmwood Family</p>
-        </div>
-      </section>
+      {/* ─────────────────────── Testimonials ─────────────────────── */}
+      <ReviewsCarousel />
 
       {/* ─────────────────────── Visit band ─────────────────────── */}
       <section className="relative py-28 md:py-36">
