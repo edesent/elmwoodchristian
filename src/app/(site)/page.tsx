@@ -211,7 +211,7 @@ export default function Home() {
       <section className="bg-stone py-24 md:py-28 border-y border-line">
         <div className="max-w-7xl mx-auto px-6">
           <AnimateOnScroll className="text-center max-w-2xl mx-auto">
-            <p className="eyebrow text-crimson">Life at Elmwood</p>
+            <p className="eyebrow text-crimson">Life at Elmwood Christian</p>
             <h2 className="mt-5 font-serif text-4xl md:text-5xl text-ink leading-tight">
               A community where children thrive
             </h2>
