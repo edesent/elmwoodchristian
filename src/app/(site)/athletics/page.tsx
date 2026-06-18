@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
-import SubpageHero from "@/components/SubpageHero";
 import AnimateOnScroll from "@/components/AnimateOnScroll";
 
 export const metadata: Metadata = {
@@ -34,11 +33,21 @@ const sports = [
 export default function AthleticsPage() {
   return (
     <>
-      <SubpageHero
-        eyebrow="Athletics"
-        title="Competing for Christ"
-        subtitle="Building bodies, character, and teamwork."
-      />
+      {/* Athletics banner hero */}
+      <header className="bg-cream-warm pt-[80px] md:pt-[84px] pb-8 md:pb-10">
+        <div className="mx-auto max-w-5xl px-4">
+          <div className="relative w-full aspect-[1983/793]">
+            <Image
+              src="/brand/athletics-header.jpg"
+              alt="Elmwood Eagles — Elmwood Christian School Athletics"
+              fill
+              priority
+              sizes="(max-width: 1024px) 100vw, 1024px"
+              className="object-contain"
+            />
+          </div>
+        </div>
+      </header>
 
       {/* Intro */}
       <section className="bg-paper py-24 md:py-28">
