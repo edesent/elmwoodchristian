@@ -3,6 +3,7 @@ import Image from "next/image";
 import AnimateOnScroll from "@/components/AnimateOnScroll";
 import HeroSlider from "@/components/HeroSlider";
 import ReviewsCarousel from "@/components/ReviewsCarousel";
+import StaffPreview from "@/components/StaffPreview";
 
 const quickActions = [
   { label: "Apply", note: "Begin enrollment", href: "/admissions/apply" },
@@ -205,6 +206,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* ─────────────────────── Faculty ─────────────────────── */}
+      <StaffPreview />
 
       {/* ─────────────────────── Testimonials ─────────────────────── */}
       <ReviewsCarousel />

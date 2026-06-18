@@ -4,6 +4,7 @@ import Image from "next/image";
 const navLinks = [
   { href: "/about", label: "About" },
   { href: "/about/beliefs", label: "What We Believe" },
+  { href: "/staff", label: "Faculty & Staff" },
   { href: "/academics", label: "Academics" },
   { href: "/admissions", label: "Admissions" },
   { href: "/athletics", label: "Athletics" },

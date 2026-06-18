@@ -11,6 +11,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ["/about", 0.9],
     ["/about/beliefs", 0.6],
     ["/about/why-christian-education", 0.7],
+    ["/staff", 0.7],
     ["/academics", 0.9],
     ["/academics/student-conventions", 0.6],
     ["/admissions", 0.9],
