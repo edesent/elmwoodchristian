@@ -1,13 +1,20 @@
 import Link from "next/link";
 import Image from "next/image";
 
-const navLinks = [
-  { href: "/about", label: "About" },
-  { href: "/about/beliefs", label: "What We Believe" },
-  { href: "/staff", label: "Faculty & Staff" },
+type FooterLink = { href: string; label: string; children?: { href: string; label: string }[] };
+
+const footerLinks: FooterLink[] = [
+  {
+    href: "/about",
+    label: "About",
+    children: [
+      { href: "/about/beliefs", label: "What We Believe" },
+      { href: "/staff", label: "Staff" },
+      { href: "/athletics", label: "Athletics" },
+      { href: "/admissions", label: "Admissions" },
+    ],
+  },
   { href: "/academics", label: "Academics" },
-  { href: "/admissions", label: "Admissions" },
-  { href: "/athletics", label: "Athletics" },
   { href: "/parents", label: "Parents" },
   { href: "/news", label: "News & Articles" },
   { href: "/support", label: "Support Elmwood" },
@@ -112,18 +119,24 @@ export default function Footer({
         <div>
           <h3 className="text-[0.8rem] font-semibold uppercase tracking-[0.2em] text-white/45 mb-5">Explore</h3>
           <ul className="space-y-3 text-base">
-            {navLinks.map((l) => (
+            {footerLinks.map((l) => (
               <li key={l.href}>
                 <Link href={l.href} className="hover:text-white transition-colors">
                   {l.label}
                 </Link>
+                {l.children && (
+                  <ul className="mt-3 ml-1 space-y-2.5 border-l border-white/15 pl-4 text-[0.95rem] text-white/60">
+                    {l.children.map((c) => (
+                      <li key={c.href}>
+                        <Link href={c.href} className="hover:text-white transition-colors">
+                          {c.label}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                )}
               </li>
             ))}
-            <li>
-              <Link href="/schedule-a-tour" className="hover:text-white transition-colors">
-                Schedule a Tour
-              </Link>
-            </li>
           </ul>
         </div>
 
