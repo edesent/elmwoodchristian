@@ -2,27 +2,50 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { useRef } from "react";
+import { useRef, useState, useEffect, useCallback } from "react";
 import { STAFF } from "@/lib/staff";
 
 export default function StaffPreview() {
   const featured = STAFF;
   const scroller = useRef<HTMLDivElement>(null);
-  const drag = useRef({ down: false, startX: 0, left: 0 });
+  const drag = useRef({ down: false, startX: 0, left: 0, moved: false });
+  const [pages, setPages] = useState(1);
+  const [active, setActive] = useState(0);
+
+  const update = useCallback(() => {
+    const el = scroller.current;
+    if (!el) return;
+    const per = el.clientWidth;
+    setPages(Math.max(1, Math.ceil(el.scrollWidth / per)));
+    setActive(Math.round(el.scrollLeft / per));
+  }, []);
+
+  useEffect(() => {
+    update();
+    window.addEventListener("resize", update);
+    return () => window.removeEventListener("resize", update);
+  }, [update]);
+
+  const goToPage = (idx: number) => {
+    const el = scroller.current;
+    if (!el) return;
+    const clamped = Math.max(0, Math.min(pages - 1, idx));
+    el.scrollTo({ left: clamped * el.clientWidth, behavior: "smooth" });
+  };
 
   // Drag-to-scroll for mouse users (touch uses native scrolling).
   const onPointerDown = (e: React.PointerEvent) => {
     if (e.pointerType !== "mouse") return;
     const el = scroller.current;
     if (!el) return;
-    drag.current = { down: true, startX: e.pageX, left: el.scrollLeft };
+    drag.current = { down: true, startX: e.pageX, left: el.scrollLeft, moved: false };
     el.setPointerCapture?.(e.pointerId);
   };
   const onPointerMove = (e: React.PointerEvent) => {
-    if (!drag.current.down) return;
-    const el = scroller.current;
-    if (!el) return;
-    el.scrollLeft = drag.current.left - (e.pageX - drag.current.startX);
+    if (!drag.current.down || !scroller.current) return;
+    const dx = e.pageX - drag.current.startX;
+    if (Math.abs(dx) > 5) drag.current.moved = true;
+    scroller.current.scrollLeft = drag.current.left - dx;
   };
   const endDrag = () => {
     drag.current.down = false;
@@ -48,10 +71,11 @@ export default function StaffPreview() {
         </div>
       </div>
 
-      {/* Faculty strip — drag or scroll left/right */}
+      {/* Faculty strip — drag, scroll, or use the controls */}
       <div className="max-w-7xl mx-auto px-6">
         <div
           ref={scroller}
+          onScroll={update}
           onPointerDown={onPointerDown}
           onPointerMove={onPointerMove}
           onPointerUp={endDrag}
@@ -77,6 +101,39 @@ export default function StaffPreview() {
             </div>
           ))}
         </div>
+
+        {/* Slider controls — same style as the reviews carousel */}
+        {pages > 1 && (
+          <div className="mt-10 flex items-center justify-center gap-6">
+            <button
+              onClick={() => goToPage(active - 1)}
+              aria-label="Previous"
+              className="grid place-items-center h-11 w-11 rounded-full border border-crimson/25 text-crimson hover:bg-crimson hover:text-white transition-colors"
+            >
+              ←
+            </button>
+            <div className="flex items-center gap-2">
+              {Array.from({ length: pages }).map((_, idx) => (
+                <button
+                  key={idx}
+                  onClick={() => goToPage(idx)}
+                  aria-label={`Go to page ${idx + 1}`}
+                  aria-current={idx === active}
+                  className={`h-2.5 rounded-full transition-all ${
+                    idx === active ? "w-7 bg-crimson" : "w-2.5 bg-crimson/25 hover:bg-crimson/45"
+                  }`}
+                />
+              ))}
+            </div>
+            <button
+              onClick={() => goToPage(active + 1)}
+              aria-label="Next"
+              className="grid place-items-center h-11 w-11 rounded-full border border-crimson/25 text-crimson hover:bg-crimson hover:text-white transition-colors"
+            >
+              →
+            </button>
+          </div>
+        )}
       </div>
     </section>
   );
