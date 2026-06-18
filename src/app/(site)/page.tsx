@@ -4,6 +4,7 @@ import AnimateOnScroll from "@/components/AnimateOnScroll";
 import HeroSlider from "@/components/HeroSlider";
 import ReviewsCarousel from "@/components/ReviewsCarousel";
 import StaffPreview from "@/components/StaffPreview";
+import DragScroll from "@/components/DragScroll";
 
 const quickActions = [
   { label: "Visit", note: "Schedule a tour", href: "/schedule-a-tour" },
@@ -258,35 +259,37 @@ export default function Home() {
             </p>
           </AnimateOnScroll>
 
-          <div className="mt-16 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {sports.map((s, i) => (
-              <AnimateOnScroll key={s.name} delay={i * 90}>
-                <Link
-                  href="/athletics"
-                  className="group block relative aspect-[4/5] w-full overflow-hidden rounded-sm border border-white/10"
-                >
-                  {s.img ? (
-                    <Image
-                      src={s.img}
-                      alt={s.alt}
-                      fill
-                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                      className="object-cover transition-transform duration-700 group-hover:scale-105"
-                    />
-                  ) : (
-                    <div className="absolute inset-0 bg-gradient-to-br from-charcoal-soft to-charcoal" />
-                  )}
-                  <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/20 to-transparent" />
-                  <div className="absolute inset-x-0 bottom-0 p-6">
-                    <p className="text-[0.7rem] uppercase tracking-[0.2em] text-brass">
-                      {s.detail}
-                    </p>
-                    <h3 className="mt-1 font-serif text-2xl">{s.name}</h3>
-                  </div>
-                </Link>
-              </AnimateOnScroll>
+          <DragScroll className="mt-16 flex gap-6 pb-4">
+            {sports.map((s) => (
+              <Link
+                key={s.name}
+                href="/athletics"
+                className="group block relative shrink-0 w-[260px] sm:w-[300px] aspect-[4/5] overflow-hidden rounded-sm border border-white/10"
+              >
+                {s.img ? (
+                  <Image
+                    src={s.img}
+                    alt={s.alt}
+                    fill
+                    draggable={false}
+                    sizes="300px"
+                    className="object-cover transition-transform duration-700 group-hover:scale-105 pointer-events-none"
+                  />
+                ) : (
+                  <div className="absolute inset-0 bg-gradient-to-br from-charcoal-soft to-charcoal" />
+                )}
+                {/* dark-gray overlay to match the section; lifts on hover */}
+                <div className="absolute inset-0 bg-charcoal/55 group-hover:bg-charcoal/25 transition-colors duration-500" />
+                <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/35 to-transparent" />
+                <div className="absolute inset-x-0 bottom-0 p-6">
+                  <p className="text-[0.7rem] uppercase tracking-[0.2em] text-brass">
+                    {s.detail}
+                  </p>
+                  <h3 className="mt-1 font-serif text-2xl">{s.name}</h3>
+                </div>
+              </Link>
             ))}
-          </div>
+          </DragScroll>
 
           <div className="mt-14 text-center">
             <Link
