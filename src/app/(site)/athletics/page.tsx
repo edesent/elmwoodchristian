@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import SubpageHero from "@/components/SubpageHero";
 import AnimateOnScroll from "@/components/AnimateOnScroll";
 
@@ -13,14 +14,20 @@ const sports = [
   {
     title: "Volleyball — Girls",
     body: "Season begins August 1 and runs through mid-October, culminating with the A.C.E. Regional tournament in March.",
+    img: "/img/volleyball-team.jpg",
+    alt: "The Elmwood Eagles girls volleyball team with their coach",
   },
   {
     title: "Basketball — Boys & Girls",
     body: "Season begins November 1 and runs through mid-February, culminating with the A.C.E. Regional tournament in March.",
+    img: "/img/basketball-team.jpg",
+    alt: "The Elmwood Eagles boys basketball team with their coach",
   },
   {
     title: "Soccer — Boys",
     body: "Season begins August 1 and runs through mid-October.",
+    img: null,
+    alt: "",
   },
 ];
 
@@ -75,12 +82,31 @@ export default function AthleticsPage() {
           <div className="mt-16 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {sports.map((s, i) => (
               <AnimateOnScroll key={s.title} delay={i * 90}>
-                <div className="h-full border border-line rounded-sm p-7 bg-paper">
-                  <h3 className="font-serif text-2xl text-ink">{s.title}</h3>
-                  <div className="mt-3 h-px w-10 bg-crimson/40" />
-                  <p className="mt-4 text-[0.95rem] leading-relaxed text-text-body">
-                    {s.body}
-                  </p>
+                <div className="h-full overflow-hidden border border-line rounded-sm bg-paper">
+                  <div className="relative aspect-[4/3] w-full overflow-hidden bg-stone-3">
+                    {s.img ? (
+                      <Image
+                        src={s.img}
+                        alt={s.alt}
+                        fill
+                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                        className="object-cover"
+                      />
+                    ) : (
+                      <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-stone-2 to-stone-3">
+                        <span className="font-serif text-lg text-text-muted">
+                          Photos coming soon
+                        </span>
+                      </div>
+                    )}
+                  </div>
+                  <div className="p-7">
+                    <h3 className="font-serif text-2xl text-ink">{s.title}</h3>
+                    <div className="mt-3 h-px w-10 bg-crimson/40" />
+                    <p className="mt-4 text-[0.95rem] leading-relaxed text-text-body">
+                      {s.body}
+                    </p>
+                  </div>
                 </div>
               </AnimateOnScroll>
             ))}

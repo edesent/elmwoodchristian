@@ -27,9 +27,24 @@ const programs = [
 ];
 
 const sports = [
-  { name: "Volleyball", detail: "Girls · Aug–Oct" },
-  { name: "Basketball", detail: "Boys & Girls · Nov–Feb" },
-  { name: "Soccer", detail: "Boys · Aug–Oct" },
+  {
+    name: "Volleyball",
+    detail: "Girls · Aug–Oct",
+    img: "/img/athletics-volleyball.jpg",
+    alt: "An Elmwood Eagles player rising for a set at the net",
+  },
+  {
+    name: "Basketball",
+    detail: "Boys & Girls · Nov–Feb",
+    img: "/img/basketball-team.jpg",
+    alt: "The Elmwood Eagles boys basketball team with their coach",
+  },
+  {
+    name: "Soccer",
+    detail: "Boys · Aug–Oct",
+    img: null,
+    alt: "",
+  },
 ];
 
 const life = [
@@ -216,48 +231,59 @@ export default function Home() {
 
       {/* ─────────────────────── Athletics ─────────────────────── */}
       <section className="bg-charcoal text-white">
-        <div className="max-w-7xl mx-auto px-6 py-24 md:py-28 grid md:grid-cols-2 gap-14 md:gap-20 items-center">
-          <AnimateOnScroll>
+        <div className="max-w-7xl mx-auto px-6 py-24 md:py-28">
+          <AnimateOnScroll className="text-center max-w-2xl mx-auto">
             <p className="eyebrow text-brass">Athletics</p>
-            <span className="rule mt-4 block w-14" />
-            <h2 className="mt-6 font-serif text-4xl md:text-5xl leading-tight">
+            <h2 className="mt-5 font-serif text-4xl md:text-5xl leading-tight">
               Competing for Christ
             </h2>
-            <p className="mt-6 text-lg leading-relaxed text-white/75">
+            <span className="rule mt-7 mx-auto block w-14" />
+            <p className="mt-7 text-lg leading-relaxed text-white/75">
               Middle school, junior-varsity, and varsity teams give every
-              eligible student a place to compete. Our athletes build bodies,
-              character, and teamwork—striving in every season to be conformed
-              to the image of Jesus Christ.
+              eligible student a place to compete—building bodies, character,
+              and teamwork, and striving in every season to be conformed to the
+              image of Jesus Christ.
             </p>
-            <p className="mt-5 text-xs uppercase tracking-[0.2em] text-white/40">
-              Romans 8:29
-            </p>
-            <Link
-              href="/athletics"
-              className="group inline-flex items-center gap-2 mt-9 text-brass font-semibold uppercase tracking-[0.12em] text-sm"
-            >
-              Explore Athletics
-              <span className="transition-transform group-hover:translate-x-1">→</span>
-            </Link>
           </AnimateOnScroll>
 
-          <div className="grid gap-4">
+          <div className="mt-16 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {sports.map((s, i) => (
               <AnimateOnScroll key={s.name} delay={i * 90}>
                 <Link
                   href="/athletics"
-                  className="group flex items-center justify-between border border-white/15 bg-white/[0.04] rounded-sm px-7 py-6 hover:bg-white/[0.07] hover:border-brass/40 transition-colors"
+                  className="group block relative aspect-[4/5] w-full overflow-hidden rounded-sm border border-white/10"
                 >
-                  <span>
-                    <span className="block font-serif text-2xl">{s.name}</span>
-                    <span className="mt-1 block text-sm text-white/55">{s.detail}</span>
-                  </span>
-                  <span className="text-brass text-xl transition-transform group-hover:translate-x-1">
-                    →
-                  </span>
+                  {s.img ? (
+                    <Image
+                      src={s.img}
+                      alt={s.alt}
+                      fill
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                      className="object-cover transition-transform duration-700 group-hover:scale-105"
+                    />
+                  ) : (
+                    <div className="absolute inset-0 bg-gradient-to-br from-charcoal-soft to-charcoal" />
+                  )}
+                  <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/20 to-transparent" />
+                  <div className="absolute inset-x-0 bottom-0 p-6">
+                    <p className="text-[0.7rem] uppercase tracking-[0.2em] text-brass">
+                      {s.detail}
+                    </p>
+                    <h3 className="mt-1 font-serif text-2xl">{s.name}</h3>
+                  </div>
                 </Link>
               </AnimateOnScroll>
             ))}
+          </div>
+
+          <div className="mt-14 text-center">
+            <Link
+              href="/athletics"
+              className="group inline-flex items-center gap-2 text-brass font-semibold uppercase tracking-[0.12em] text-sm"
+            >
+              Explore Athletics
+              <span className="transition-transform group-hover:translate-x-1">→</span>
+            </Link>
           </div>
         </div>
       </section>
