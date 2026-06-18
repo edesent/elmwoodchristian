@@ -86,7 +86,7 @@ export default function HeroSlider() {
               key={s.src}
               aria-hidden={idx !== i}
               className={`transition-opacity duration-700 ${
-                idx === i ? "opacity-100" : "opacity-0 absolute inset-x-6 top-0 pointer-events-none"
+                idx === i ? "opacity-100" : "opacity-0 absolute inset-x-0 top-0 pointer-events-none"
               }`}
             >
               <div
