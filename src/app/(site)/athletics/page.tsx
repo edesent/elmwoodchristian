@@ -24,16 +24,16 @@ const sports = [
     alt: "The Elmwood Eagles boys basketball team with their coach",
   },
   {
-    title: "Soccer — Boys",
-    body: "Season begins August 1 and runs through mid-October.",
-    img: null,
-    alt: "",
-  },
-  {
     title: "Cross Country — Boys & Girls",
     body: "Our runners train and race together through the cross-country season, encouraging one another toward their personal best.",
     img: "/img/cross-country.jpg",
     alt: "Elmwood Eagles cross country runners at a meet",
+  },
+  {
+    title: "Soccer — Boys",
+    body: "Season begins August 1 and runs through mid-October.",
+    img: null,
+    alt: "",
   },
   {
     title: "Track & Field — Boys & Girls",

@@ -41,16 +41,16 @@ const sports = [
     alt: "The Elmwood Eagles boys basketball team with their coach",
   },
   {
-    name: "Soccer",
-    detail: "Boys · Aug–Oct",
-    img: null,
-    alt: "",
-  },
-  {
     name: "Cross Country",
     detail: "Boys & Girls · Fall",
     img: "/img/cross-country.jpg",
     alt: "Elmwood Eagles cross country runners at a meet",
+  },
+  {
+    name: "Soccer",
+    detail: "Boys · Aug–Oct",
+    img: null,
+    alt: "",
   },
   {
     name: "Track & Field",
