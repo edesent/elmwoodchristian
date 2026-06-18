@@ -16,6 +16,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ["/academics/student-conventions", 0.6],
     ["/admissions", 0.9],
     ["/admissions/apply", 0.8],
+    ["/admissions/policy", 0.4],
     ["/schedule-a-tour", 0.8],
     ["/athletics", 0.7],
     ["/parents", 0.6],
