@@ -12,6 +12,7 @@ const slides = [
     title: "Where faith and learning grow together.",
     copy: "A college-preparatory education rooted in Scripture and shaped by teachers who know your child by name—preschool through twelfth grade.",
     pos: "object-center",
+    overlay: "bg-gradient-to-t from-crimson-deep/95 via-crimson-deep/55 to-ink/40",
     ctas: [
       { label: "Apply Now", href: "/admissions/apply", primary: true },
       { label: "Schedule a Visit", href: "/schedule-a-tour", primary: false },
@@ -24,18 +25,20 @@ const slides = [
     title: "Faith and learning, inseparable.",
     copy: "Christ-centered, mastery-based education that forms both mind and character—every student known, challenged, and loved.",
     pos: "object-center",
+    overlay: "bg-gradient-to-t from-crimson-deep/95 via-crimson-deep/55 to-ink/40",
     ctas: [
       { label: "Apply Now", href: "/admissions/apply", primary: true },
       { label: "Schedule a Visit", href: "/schedule-a-tour", primary: false },
     ],
   },
   {
-    src: "/img/athletics-volleyball.jpg",
-    alt: "An Elmwood Eagles volleyball player rising for a set at the net",
+    src: "/img/eagles-hero.jpg",
+    alt: "Elmwood Eagles — Elmwood Christian School Athletics",
     eyebrow: "Elmwood Eagles Athletics",
     title: "Building character on and off the field.",
     copy: "Through Christ-centered athletics, we compete with honor and purpose—and work to lift up our teammates.",
-    pos: "object-top",
+    pos: "object-center",
+    overlay: "bg-gradient-to-b from-black/70 via-black/25 to-transparent",
     ctas: [
       { label: "Explore Athletics", href: "/athletics", primary: true },
       { label: "School Calendar", href: "/parents", primary: false },
@@ -71,7 +74,7 @@ export default function HeroSlider() {
             sizes="100vw"
             className={`object-cover ${s.pos}`}
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-crimson-deep/95 via-crimson-deep/55 to-ink/40" />
+          <div className={`absolute inset-0 ${s.overlay}`} />
         </div>
       ))}
 
