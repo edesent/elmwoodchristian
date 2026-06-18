@@ -100,7 +100,7 @@ export default function Home() {
       <section className="bg-paper py-24 md:py-28">
         <div className="max-w-7xl mx-auto px-6 text-center">
           <AnimateOnScroll>
-            <p className="eyebrow text-crimson">Welcome to Elmwood</p>
+            <p className="eyebrow text-crimson">Welcome to Elmwood Christian</p>
             <span className="rule mt-4 mx-auto block w-14" />
             <h2 className="mt-6 font-serif text-4xl md:text-5xl text-ink leading-tight">
               A school built on faith, family, and a love of learning
