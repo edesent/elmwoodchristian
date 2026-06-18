@@ -69,7 +69,7 @@ export default function AdmissionsPage() {
           </AnimateOnScroll>
           <div className="mt-10 grid md:grid-cols-[0.85fr_1.15fr] gap-10 md:gap-14 items-center">
             <AnimateOnScroll>
-              <div className="relative mx-auto max-w-sm overflow-hidden rounded-sm border border-line shadow-[0_18px_50px_rgba(32,29,27,0.12)]">
+              <div className="relative max-w-sm overflow-hidden rounded-sm border border-line shadow-[0_18px_50px_rgba(32,29,27,0.12)]">
                 <Image
                   src="/staff/principal-lopez.jpg"
                   alt="Rick Lopez, Principal and Administrator of Elmwood Christian Academy"
