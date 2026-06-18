@@ -89,8 +89,9 @@ export default function HeroSlider() {
         </div>
       </div>
 
-      {/* Slide controls */}
-      <div className="absolute bottom-28 md:bottom-36 right-6 z-10 flex items-center gap-3">
+      {/* Slide controls — aligned to the header width */}
+      <div className="absolute bottom-28 md:bottom-36 left-0 right-0 z-10">
+        <div className="max-w-7xl mx-auto px-6 flex items-center justify-end gap-3">
         <button
           onClick={() => go(-1)}
           aria-label="Previous slide"
@@ -118,6 +119,7 @@ export default function HeroSlider() {
         >
           →
         </button>
+        </div>
       </div>
     </section>
   );

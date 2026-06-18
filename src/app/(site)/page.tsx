@@ -62,7 +62,7 @@ export default function Home() {
 
       {/* ─────────────────── Quick actions (overlap) ─────────────────── */}
       <section className="relative z-10 -mt-16 md:-mt-20">
-        <div className="max-w-6xl mx-auto px-6">
+        <div className="max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-px bg-line shadow-[0_24px_60px_rgba(32,29,27,0.18)]">
             {quickActions.map((a) => (
               <Link
@@ -297,13 +297,13 @@ export default function Home() {
       {/* ─────────────────────── Visit band ─────────────────────── */}
       <section className="relative py-28 md:py-36">
         <Image
-          src="/img/campus.jpg"
-          alt="Elmwood campus"
+          src="/img/graduation.jpg"
+          alt="Elmwood kindergarten graduates in crimson caps and gowns"
           fill
           sizes="100vw"
           className="object-cover"
         />
-        <div className="absolute inset-0 bg-ink/70" />
+        <div className="absolute inset-0 bg-crimson-deep/80" />
         <div className="relative max-w-3xl mx-auto px-6 text-center text-white">
           <p className="eyebrow text-white/70">Visit Us</p>
           <h2 className="mt-5 font-serif text-4xl md:text-5xl leading-tight">
