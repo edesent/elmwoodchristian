@@ -97,7 +97,7 @@ body {
 .animation-delay-800 { animation-delay: 0.8s; }
 .animation-delay-1000 { animation-delay: 1s; }
 
-/* Raise the WBC Chat widget off the bottom corner (clears the version switcher) */
-#wbc-chat-bubble { bottom: 90px !important; }
-#wbc-greeting-popup { bottom: 162px !important; }
-#wbc-chat-window { bottom: 162px !important; }
+/* Nudge the WBC Chat widget up slightly off the very corner */
+#wbc-chat-bubble { bottom: 40px !important; }
+#wbc-greeting-popup { bottom: 112px !important; }
+#wbc-chat-window { bottom: 112px !important; }
