@@ -33,19 +33,17 @@ const sports = [
 export default function AthleticsPage() {
   return (
     <>
-      {/* Athletics banner hero */}
-      <header className="bg-cream-warm pt-[80px] md:pt-[84px] pb-8 md:pb-10">
-        <div className="mx-auto max-w-5xl px-4">
-          <div className="relative w-full aspect-[1983/793]">
-            <Image
-              src="/brand/athletics-header.jpg"
-              alt="Elmwood Eagles — Elmwood Christian School Athletics"
-              fill
-              priority
-              sizes="(max-width: 1024px) 100vw, 1024px"
-              className="object-contain"
-            />
-          </div>
+      {/* Athletics banner hero — full width */}
+      <header className="bg-cream-warm pt-[76px]">
+        <div className="relative w-full aspect-[1983/793]">
+          <Image
+            src="/brand/athletics-header.jpg"
+            alt="Elmwood Eagles — Elmwood Christian School Athletics"
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover"
+          />
         </div>
       </header>
 
