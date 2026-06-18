@@ -6,7 +6,7 @@ import AnimateOnScroll from "@/components/AnimateOnScroll";
 export const metadata: Metadata = {
   title: "Athletics",
   description:
-    "Elmwood Christian Academy offers middle school, junior-varsity, and varsity sports—volleyball, basketball, and soccer—so boys and girls can develop Christ-like character through athletics.",
+    "Elmwood Christian Academy offers middle school, junior-varsity, and varsity sports—volleyball, basketball, soccer, and cross country—so boys and girls can develop Christ-like character through athletics.",
 };
 
 const sports = [
@@ -27,6 +27,12 @@ const sports = [
     body: "Season begins August 1 and runs through mid-October.",
     img: null,
     alt: "",
+  },
+  {
+    title: "Cross Country — Boys & Girls",
+    body: "Our runners train and race together through the cross-country season, encouraging one another toward their personal best.",
+    img: "/img/cross-country.jpg",
+    alt: "Elmwood Eagles cross country runners at a meet",
   },
 ];
 
