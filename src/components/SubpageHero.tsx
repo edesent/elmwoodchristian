@@ -9,16 +9,17 @@ interface Props {
 export default function SubpageHero({ eyebrow, title, subtitle }: Props) {
   return (
     <header className="relative bg-crimson-deep overflow-hidden pt-[150px] md:pt-[170px] pb-20">
-      {/* crest watermark */}
+      {/* crest header background */}
       <Image
-        src="/brand/crest.png"
+        src="/brand/crest-header.jpg"
         alt=""
-        width={71}
-        height={90}
+        fill
+        priority
+        sizes="100vw"
         aria-hidden
-        className="pointer-events-none select-none absolute -right-10 top-1/2 -translate-y-1/2 h-[150%] w-auto opacity-[0.06] brightness-0 invert"
+        className="object-cover object-right pointer-events-none select-none"
       />
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_left,rgba(162,51,68,0.35),transparent_60%)]" />
+      <div className="absolute inset-0 bg-crimson-deep/25" />
       <div className="relative max-w-4xl mx-auto px-6 text-center">
         {eyebrow && <p className="eyebrow text-white/55 mb-4">{eyebrow}</p>}
         <h1 className="font-serif text-4xl md:text-6xl font-semibold text-white leading-[1.05]">
