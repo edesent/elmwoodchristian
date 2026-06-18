@@ -49,6 +49,8 @@ export default function AthleticsPage() {
           sizes="100vw"
           className="object-cover"
         />
+        {/* darker at top (for nav legibility), lighter toward the bottom */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/55 via-black/15 to-transparent" />
       </header>
 
       {/* Intro */}
