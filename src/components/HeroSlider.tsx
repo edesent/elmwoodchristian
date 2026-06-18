@@ -11,6 +11,11 @@ const slides = [
     eyebrow: "Brighton, Colorado · Christ-Centered Since 1973",
     title: "Where faith and learning grow together.",
     copy: "A college-preparatory education rooted in Scripture and shaped by teachers who know your child by name—preschool through twelfth grade.",
+    pos: "object-center",
+    ctas: [
+      { label: "Apply Now", href: "/admissions/apply", primary: true },
+      { label: "Schedule a Visit", href: "/schedule-a-tour", primary: false },
+    ],
   },
   {
     src: "/img/hero-v3.jpg",
@@ -18,6 +23,23 @@ const slides = [
     eyebrow: "Established 1973 · Brighton, Colorado",
     title: "Faith and learning, inseparable.",
     copy: "Christ-centered, mastery-based education that forms both mind and character—every student known, challenged, and loved.",
+    pos: "object-center",
+    ctas: [
+      { label: "Apply Now", href: "/admissions/apply", primary: true },
+      { label: "Schedule a Visit", href: "/schedule-a-tour", primary: false },
+    ],
+  },
+  {
+    src: "/img/athletics-volleyball.jpg",
+    alt: "An Elmwood Eagles volleyball player rising for a set at the net",
+    eyebrow: "Elmwood Eagles Athletics",
+    title: "Building character on and off the field.",
+    copy: "Through Christ-centered athletics, we compete with honor and purpose—and work to lift up our teammates.",
+    pos: "object-top",
+    ctas: [
+      { label: "Explore Athletics", href: "/athletics", primary: true },
+      { label: "School Calendar", href: "/parents", primary: false },
+    ],
   },
 ];
 
@@ -47,7 +69,7 @@ export default function HeroSlider() {
             fill
             priority={idx === 0}
             sizes="100vw"
-            className="object-cover"
+            className={`object-cover ${s.pos}`}
           />
           <div className="absolute inset-0 bg-gradient-to-t from-crimson-deep/95 via-crimson-deep/55 to-ink/40" />
         </div>
@@ -71,18 +93,19 @@ export default function HeroSlider() {
                 {s.copy}
               </p>
               <div className="mt-9 flex flex-col sm:flex-row gap-4">
-                <Link
-                  href="/admissions/apply"
-                  className="inline-flex items-center justify-center bg-white text-crimson font-semibold px-8 py-4 rounded-sm uppercase tracking-[0.1em] text-sm hover:bg-stone transition-colors"
-                >
-                  Apply Now
-                </Link>
-                <Link
-                  href="/schedule-a-tour"
-                  className="inline-flex items-center justify-center border border-white/50 text-white font-semibold px-8 py-4 rounded-sm uppercase tracking-[0.1em] text-sm hover:bg-white/10 transition-colors"
-                >
-                  Schedule a Visit
-                </Link>
+                {s.ctas.map((c) => (
+                  <Link
+                    key={c.label}
+                    href={c.href}
+                    className={`inline-flex items-center justify-center font-semibold px-8 py-4 rounded-sm uppercase tracking-[0.1em] text-sm transition-colors ${
+                      c.primary
+                        ? "bg-white text-crimson hover:bg-stone"
+                        : "border border-white/50 text-white hover:bg-white/10"
+                    }`}
+                  >
+                    {c.label}
+                  </Link>
+                ))}
               </div>
             </div>
           ))}
