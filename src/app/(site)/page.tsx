@@ -6,9 +6,10 @@ import ReviewsCarousel from "@/components/ReviewsCarousel";
 import StaffPreview from "@/components/StaffPreview";
 
 const quickActions = [
-  { label: "Apply", note: "Begin enrollment", href: "/admissions/apply" },
   { label: "Visit", note: "Schedule a tour", href: "/schedule-a-tour" },
-  { label: "Request Info", note: "Learn about Elmwood", href: "/admissions" },
+  { label: "Apply", note: "Begin enrollment", href: "/admissions/apply" },
+  { label: "Information", note: "Explore Elmwood", href: "/admissions" },
+  { label: "Parents Portal", note: "Forms & resources", href: "/parents" },
 ];
 
 const stats = [
@@ -23,6 +24,12 @@ const programs = [
   { grades: "PreK–K", name: "Preschool & Kindergarten", body: "Phonics, numbers, and the joy of discovery." },
   { grades: "Grades 1–6", name: "Elementary", body: "A mastery foundation built to last." },
   { grades: "Grades 7–12", name: "Junior & Senior High", body: "College-prepared, character-formed." },
+];
+
+const sports = [
+  { name: "Volleyball", detail: "Girls · Aug–Oct" },
+  { name: "Basketball", detail: "Boys & Girls · Nov–Feb" },
+  { name: "Soccer", detail: "Boys · Aug–Oct" },
 ];
 
 const life = [
@@ -41,7 +48,7 @@ export default function Home() {
       {/* ─────────────────── Quick actions (overlap) ─────────────────── */}
       <section className="relative z-10 -mt-16 md:-mt-20">
         <div className="max-w-6xl mx-auto px-6">
-          <div className="grid sm:grid-cols-3 gap-px bg-line shadow-[0_24px_60px_rgba(32,29,27,0.18)]">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-px bg-line shadow-[0_24px_60px_rgba(32,29,27,0.18)]">
             {quickActions.map((a) => (
               <Link
                 key={a.label}
@@ -203,6 +210,54 @@ export default function Home() {
                 </AnimateOnScroll>
               );
             })}
+          </div>
+        </div>
+      </section>
+
+      {/* ─────────────────────── Athletics ─────────────────────── */}
+      <section className="bg-charcoal text-white">
+        <div className="max-w-7xl mx-auto px-6 py-24 md:py-28 grid md:grid-cols-2 gap-14 md:gap-20 items-center">
+          <AnimateOnScroll>
+            <p className="eyebrow text-brass">Athletics</p>
+            <span className="rule mt-4 block w-14" />
+            <h2 className="mt-6 font-serif text-4xl md:text-5xl leading-tight">
+              Competing for Christ
+            </h2>
+            <p className="mt-6 text-lg leading-relaxed text-white/75">
+              Middle school, junior-varsity, and varsity teams give every
+              eligible student a place to compete. Our athletes build bodies,
+              character, and teamwork—striving in every season to be conformed
+              to the image of Jesus Christ.
+            </p>
+            <p className="mt-5 text-xs uppercase tracking-[0.2em] text-white/40">
+              Romans 8:29
+            </p>
+            <Link
+              href="/athletics"
+              className="group inline-flex items-center gap-2 mt-9 text-brass font-semibold uppercase tracking-[0.12em] text-sm"
+            >
+              Explore Athletics
+              <span className="transition-transform group-hover:translate-x-1">→</span>
+            </Link>
+          </AnimateOnScroll>
+
+          <div className="grid gap-4">
+            {sports.map((s, i) => (
+              <AnimateOnScroll key={s.name} delay={i * 90}>
+                <Link
+                  href="/athletics"
+                  className="group flex items-center justify-between border border-white/15 bg-white/[0.04] rounded-sm px-7 py-6 hover:bg-white/[0.07] hover:border-brass/40 transition-colors"
+                >
+                  <span>
+                    <span className="block font-serif text-2xl">{s.name}</span>
+                    <span className="mt-1 block text-sm text-white/55">{s.detail}</span>
+                  </span>
+                  <span className="text-brass text-xl transition-transform group-hover:translate-x-1">
+                    →
+                  </span>
+                </Link>
+              </AnimateOnScroll>
+            ))}
           </div>
         </div>
       </section>
