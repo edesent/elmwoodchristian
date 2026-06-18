@@ -20,7 +20,7 @@ export default function NewsPage() {
         subtitle="Encouragement and perspective on Christ-centered education."
       />
       <section className="bg-paper py-20 md:py-24">
-        <div className="max-w-5xl mx-auto px-6 grid gap-px bg-line border border-line">
+        <div className="max-w-7xl mx-auto px-6 grid gap-px bg-line border border-line">
           {articles.map((a, i) => (
             <AnimateOnScroll key={a.slug} delay={i * 60}>
               <Link
