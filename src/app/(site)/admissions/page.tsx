@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import SubpageHero from "@/components/SubpageHero";
 import AnimateOnScroll from "@/components/AnimateOnScroll";
 
@@ -61,8 +62,19 @@ export default function AdmissionsPage() {
 
       {/* Principal's welcome */}
       <section className="bg-paper py-20 md:py-24">
-        <div className="max-w-3xl mx-auto px-6">
+        <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-[0.85fr_1.15fr] gap-10 md:gap-14 items-center">
           <AnimateOnScroll>
+            <div className="relative mx-auto max-w-sm overflow-hidden rounded-sm border border-line shadow-[0_18px_50px_rgba(32,29,27,0.12)]">
+              <Image
+                src="/staff/principal-lopez.jpg"
+                alt="Rick Lopez, Principal and Administrator of Elmwood Christian Academy"
+                width={900}
+                height={1124}
+                className="w-full h-auto"
+              />
+            </div>
+          </AnimateOnScroll>
+          <AnimateOnScroll delay={120}>
             <p className="eyebrow text-crimson">A Word of Welcome</p>
             <span className="rule mt-4" />
             <blockquote className="mt-8 font-serif text-2xl md:text-3xl text-ink leading-relaxed italic">

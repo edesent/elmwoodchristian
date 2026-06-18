@@ -3,10 +3,10 @@ import Image from "next/image";
 import { STAFF } from "@/lib/staff";
 
 export default function StaffPreview() {
-  const featured = STAFF.slice(0, 8);
+  const featured = STAFF;
   return (
     <section className="bg-paper py-24 md:py-28">
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="px-6 md:px-12 lg:px-16">
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
           <div className="max-w-xl">
             <p className="eyebrow text-crimson">Our People</p>
@@ -22,15 +22,15 @@ export default function StaffPreview() {
           </Link>
         </div>
 
-        <div className="mt-14 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8">
+        <div className="mt-14 flex gap-6 md:gap-8 overflow-x-auto snap-x snap-mandatory pb-4 -mx-6 px-6 md:-mx-12 md:px-12 lg:-mx-16 lg:px-16 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
           {featured.map((m) => (
-            <div key={m.slug} className="group">
+            <div key={m.slug} className="group snap-start shrink-0 w-52 sm:w-60">
               <div className="relative aspect-square overflow-hidden rounded-sm border border-line">
                 <Image
                   src={m.photo}
                   alt={m.name}
                   fill
-                  sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
+                  sizes="240px"
                   className="object-cover grayscale-[0.15] group-hover:grayscale-0 group-hover:scale-105 transition-all duration-500"
                 />
               </div>
