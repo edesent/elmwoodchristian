@@ -52,11 +52,11 @@ export default function AcademicsPage() {
         <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-[0.8fr_1.2fr] gap-10 md:gap-16 items-center">
           <AnimateOnScroll>
             <Image
-              src="/brand/crest-seal.jpg"
+              src="/brand/newer-crest.png"
               alt="Elmwood Christian Academy crest"
-              width={1254}
-              height={1254}
-              className="w-full max-w-xs mx-auto h-auto mix-blend-multiply"
+              width={154}
+              height={189}
+              className="w-full max-w-[16rem] mx-auto h-auto"
             />
           </AnimateOnScroll>
 
