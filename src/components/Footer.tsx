@@ -119,24 +119,35 @@ export default function Footer({
         <div>
           <h3 className="text-[0.8rem] font-semibold uppercase tracking-[0.2em] text-white/45 mb-5">Explore</h3>
           <ul className="space-y-3 text-base">
-            {footerLinks.map((l) => (
-              <li key={l.href}>
-                <Link href={l.href} className="hover:text-white transition-colors">
-                  {l.label}
-                </Link>
-                {l.children && (
-                  <ul className="mt-3 ml-1 space-y-2.5 border-l border-white/15 pl-4 text-[0.95rem] text-white/60">
-                    {l.children.map((c) => (
-                      <li key={c.href}>
-                        <Link href={c.href} className="hover:text-white transition-colors">
-                          {c.label}
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-                )}
-              </li>
-            ))}
+            {footerLinks.map((l) =>
+              l.children ? (
+                <li key={l.href}>
+                  <details className="group">
+                    <summary className="flex items-center justify-between cursor-pointer list-none hover:text-white transition-colors [&::-webkit-details-marker]:hidden">
+                      <span>{l.label}</span>
+                      <span className="text-white/40 text-xs transition-transform duration-200 group-open:rotate-180">
+                        ▾
+                      </span>
+                    </summary>
+                    <ul className="mt-3 ml-1 space-y-2.5 border-l border-white/15 pl-4 text-[0.95rem] text-white/60">
+                      {l.children.map((c) => (
+                        <li key={c.href}>
+                          <Link href={c.href} className="hover:text-white transition-colors">
+                            {c.label}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </details>
+                </li>
+              ) : (
+                <li key={l.href}>
+                  <Link href={l.href} className="hover:text-white transition-colors">
+                    {l.label}
+                  </Link>
+                </li>
+              )
+            )}
           </ul>
         </div>
 
