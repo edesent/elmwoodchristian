@@ -11,7 +11,7 @@ export default function SubpageHero({ eyebrow, title, subtitle }: Props) {
     <header className="relative bg-crimson-deep overflow-hidden pt-[150px] md:pt-[170px] pb-20">
       {/* crest header background */}
       <Image
-        src="/brand/crest-header.jpg"
+        src="/brand/header-crest.jpg"
         alt=""
         fill
         priority
