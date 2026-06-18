@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import SubpageHero from "@/components/SubpageHero";
 import AnimateOnScroll from "@/components/AnimateOnScroll";
 
@@ -48,8 +49,18 @@ export default function AcademicsPage() {
 
       {/* Overview */}
       <section className="bg-paper py-24 md:py-28">
-        <div className="max-w-7xl mx-auto px-6">
-          <AnimateOnScroll className="max-w-3xl">
+        <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-[0.8fr_1.2fr] gap-10 md:gap-16 items-center">
+          <AnimateOnScroll>
+            <Image
+              src="/brand/crest-seal.jpg"
+              alt="Elmwood Christian Academy crest"
+              width={1254}
+              height={1254}
+              className="w-full max-w-xs mx-auto h-auto mix-blend-multiply"
+            />
+          </AnimateOnScroll>
+
+          <AnimateOnScroll delay={120}>
             <p className="eyebrow text-crimson">Overview</p>
             <span className="rule mt-4" />
             <h2 className="mt-6 font-serif text-4xl md:text-5xl text-ink leading-tight">
@@ -71,10 +82,7 @@ export default function AcademicsPage() {
               Whether preparing students for a career or for higher education,
               Elmwood is committed to quality preparation for the future.
             </p>
-          </AnimateOnScroll>
-
-          <AnimateOnScroll delay={120}>
-            <div className="mt-10 max-w-3xl border-l-2 border-crimson/70 pl-6 py-1">
+            <div className="mt-8 border-l-2 border-crimson/70 pl-6 py-1">
               <p className="font-serif italic text-xl md:text-2xl text-ink leading-relaxed">
                 Elmwood students have consistently scored well above the national
                 norms on the Stanford Achievement Testing program.
