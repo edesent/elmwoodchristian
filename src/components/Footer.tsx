@@ -108,6 +108,16 @@ export default function Footer({
                 {s.icon}
               </a>
             ))}
+            <a
+              href="mailto:office@elmwoodchristianacademy.org"
+              aria-label="Email Elmwood Christian Academy"
+              className="grid place-items-center h-10 w-10 rounded-full border border-white/25 text-white/85 hover:bg-white hover:text-ink transition-colors"
+            >
+              <svg viewBox="0 0 24 24" className="h-[18px] w-[18px]" fill="none" stroke="currentColor" strokeWidth={1.8} aria-hidden>
+                <rect x="3" y="5" width="18" height="14" rx="2" />
+                <path d="m3 7 9 6 9-6" />
+              </svg>
+            </a>
           </div>
           <p className="mt-6 text-base leading-relaxed max-w-sm text-white/65">
             Elmwood Christian Academy is fully accredited through the National
