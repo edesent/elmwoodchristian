@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import AnimateOnScroll from "@/components/AnimateOnScroll";
+import DragScroll from "@/components/DragScroll";
 
 export const metadata: Metadata = {
   title: "Athletics",
@@ -92,9 +93,9 @@ export default function AthleticsPage() {
             </h2>
           </AnimateOnScroll>
 
-          <div className="mt-16 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {sports.map((s, i) => (
-              <AnimateOnScroll key={s.title} delay={i * 90}>
+          <DragScroll className="mt-16 flex gap-6 pb-4">
+            {sports.map((s) => (
+              <div key={s.title} className="shrink-0 w-[280px] sm:w-[330px]">
                 <div className="h-full overflow-hidden border border-line rounded-sm bg-paper">
                   <div className="relative aspect-[4/3] w-full overflow-hidden bg-stone-3">
                     {s.img ? (
@@ -121,9 +122,9 @@ export default function AthleticsPage() {
                     </p>
                   </div>
                 </div>
-              </AnimateOnScroll>
+              </div>
             ))}
-          </div>
+          </DragScroll>
         </div>
       </section>
 
