@@ -20,13 +20,13 @@ export default function FaqPage() {
       />
 
       <section className="bg-paper py-20 md:py-24">
-        <div className="max-w-3xl mx-auto px-6">
+        <div className="max-w-7xl mx-auto px-6">
           <FaqAccordion items={FAQS} accent="crimson" />
         </div>
       </section>
 
       <section className="bg-stone py-20 md:py-24 border-t border-line">
-        <div className="max-w-3xl mx-auto px-6 text-center">
+        <div className="max-w-7xl mx-auto px-6 text-center">
           <h2 className="font-serif text-4xl md:text-5xl text-ink leading-tight">
             Still have questions?
           </h2>

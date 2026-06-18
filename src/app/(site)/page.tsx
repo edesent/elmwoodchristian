@@ -98,7 +98,7 @@ export default function Home() {
 
       {/* ─────────────────────── Welcome ─────────────────────── */}
       <section className="bg-paper py-24 md:py-28">
-        <div className="max-w-3xl mx-auto px-6 text-center">
+        <div className="max-w-7xl mx-auto px-6 text-center">
           <AnimateOnScroll>
             <p className="eyebrow text-crimson">Welcome to Elmwood</p>
             <span className="rule mt-4 mx-auto block w-14" />
@@ -177,7 +177,7 @@ export default function Home() {
 
       {/* ─────────────────────── Programs ─────────────────────── */}
       <section className="bg-paper py-24 md:py-28">
-        <div className="max-w-6xl mx-auto px-6">
+        <div className="max-w-7xl mx-auto px-6">
           <AnimateOnScroll className="text-center max-w-2xl mx-auto">
             <p className="eyebrow text-crimson">Academics</p>
             <h2 className="mt-5 font-serif text-4xl md:text-5xl text-ink leading-tight">
@@ -319,7 +319,7 @@ export default function Home() {
           className="object-cover"
         />
         <div className="absolute inset-0 bg-crimson-deep/80" />
-        <div className="relative max-w-3xl mx-auto px-6 text-center text-white">
+        <div className="relative max-w-7xl mx-auto px-6 text-center text-white">
           <p className="eyebrow text-white/70">Visit Us</p>
           <h2 className="mt-5 font-serif text-4xl md:text-5xl leading-tight">
             Come see Elmwood for yourself

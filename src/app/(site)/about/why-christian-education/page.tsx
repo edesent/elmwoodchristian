@@ -53,7 +53,7 @@ export default function WhyChristianEducationPage() {
       />
 
       <section className="bg-paper py-24 md:py-28">
-        <div className="max-w-3xl mx-auto px-6">
+        <div className="max-w-7xl mx-auto px-6">
           <AnimateOnScroll>
             <p className="eyebrow text-crimson">Why It Matters</p>
             <span className="rule mt-4" />
@@ -78,7 +78,7 @@ export default function WhyChristianEducationPage() {
 
       {/* CTA */}
       <section className="bg-stone py-20 md:py-24 border-t border-line">
-        <div className="max-w-3xl mx-auto px-6 text-center">
+        <div className="max-w-7xl mx-auto px-6 text-center">
           <h2 className="font-serif text-4xl md:text-5xl text-ink leading-tight">
             See where your child belongs
           </h2>

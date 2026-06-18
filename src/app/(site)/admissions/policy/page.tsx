@@ -20,7 +20,7 @@ export default function AdmissionsPolicyPage() {
 
       {/* Policy statement */}
       <section className="bg-paper py-24 md:py-28">
-        <div className="max-w-3xl mx-auto px-6">
+        <div className="max-w-7xl mx-auto px-6">
           <AnimateOnScroll>
             <p className="eyebrow text-crimson">Non-Discrimination &amp; Admissions</p>
             <span className="rule mt-4" />
@@ -45,7 +45,7 @@ export default function AdmissionsPolicyPage() {
 
       {/* CTA */}
       <section className="bg-stone py-20 md:py-24 border-y border-line">
-        <div className="max-w-3xl mx-auto px-6 text-center">
+        <div className="max-w-7xl mx-auto px-6 text-center">
           <AnimateOnScroll>
             <h2 className="font-serif text-4xl md:text-5xl text-ink leading-tight">
               Ready to take the next step?

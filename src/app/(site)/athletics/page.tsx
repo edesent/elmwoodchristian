@@ -62,7 +62,7 @@ export default function AthleticsPage() {
 
       {/* Intro */}
       <section className="bg-paper py-24 md:py-28">
-        <div className="max-w-5xl mx-auto px-6">
+        <div className="max-w-7xl mx-auto px-6">
           <AnimateOnScroll className="max-w-3xl">
             <p className="eyebrow text-crimson">Athletics</p>
             <span className="rule mt-4" />
@@ -90,7 +90,7 @@ export default function AthleticsPage() {
 
       {/* Sports & seasons */}
       <section className="bg-stone py-24 md:py-28 border-y border-line">
-        <div className="max-w-5xl mx-auto px-6">
+        <div className="max-w-7xl mx-auto px-6">
           <AnimateOnScroll className="max-w-3xl">
             <p className="eyebrow text-crimson">Programs</p>
             <span className="rule mt-4" />
@@ -136,7 +136,7 @@ export default function AthleticsPage() {
 
       {/* Our athletic vision */}
       <section className="bg-paper py-24 md:py-28">
-        <div className="max-w-5xl mx-auto px-6">
+        <div className="max-w-7xl mx-auto px-6">
           <AnimateOnScroll className="max-w-3xl">
             <p className="eyebrow text-crimson">Our Philosophy</p>
             <span className="rule mt-4" />
@@ -159,7 +159,7 @@ export default function AthleticsPage() {
 
       {/* CTA */}
       <section className="bg-stone py-24 md:py-28 border-y border-line">
-        <div className="max-w-5xl mx-auto px-6 text-center">
+        <div className="max-w-7xl mx-auto px-6 text-center">
           <AnimateOnScroll>
             <p className="eyebrow text-crimson">Visit Us</p>
             <span className="rule mt-4 mx-auto" />

@@ -17,7 +17,7 @@ export default function ScheduleTourPage() {
         subtitle="The best way to know Elmwood is to walk our halls and meet our teachers."
       />
       <section className="bg-paper py-16 md:py-20">
-        <div className="max-w-3xl mx-auto px-6">
+        <div className="max-w-7xl mx-auto px-6">
           <p className="text-lg leading-relaxed text-text-body">
             Tell us a little about your family and when you&rsquo;d like to visit.
             We&rsquo;ll follow up to confirm a time and answer any questions—there&rsquo;s

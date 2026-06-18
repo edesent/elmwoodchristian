@@ -45,7 +45,7 @@ export default function ParentsPage() {
 
       {/* Welcome */}
       <section className="bg-paper py-24 md:py-28">
-        <div className="max-w-5xl mx-auto px-6">
+        <div className="max-w-7xl mx-auto px-6">
           <AnimateOnScroll className="max-w-3xl">
             <p className="eyebrow text-crimson">Welcome</p>
             <span className="rule mt-4" />
@@ -64,7 +64,7 @@ export default function ParentsPage() {
 
       {/* Daily procedures */}
       <section className="bg-stone py-24 md:py-28 border-y border-line">
-        <div className="max-w-5xl mx-auto px-6">
+        <div className="max-w-7xl mx-auto px-6">
           <AnimateOnScroll className="max-w-3xl">
             <p className="eyebrow text-crimson">Daily Procedures</p>
             <span className="rule mt-4" />
@@ -91,7 +91,7 @@ export default function ParentsPage() {
 
       {/* School forms */}
       <section className="bg-paper py-24 md:py-28">
-        <div className="max-w-5xl mx-auto px-6">
+        <div className="max-w-7xl mx-auto px-6">
           <AnimateOnScroll className="max-w-3xl">
             <p className="eyebrow text-crimson">School Forms</p>
             <span className="rule mt-4" />
@@ -115,7 +115,7 @@ export default function ParentsPage() {
 
       {/* Dress code teaser */}
       <section className="bg-stone py-24 md:py-28 border-y border-line">
-        <div className="max-w-5xl mx-auto px-6">
+        <div className="max-w-7xl mx-auto px-6">
           <AnimateOnScroll className="max-w-3xl">
             <p className="eyebrow text-crimson">Dress Code</p>
             <span className="rule mt-4" />
@@ -140,7 +140,7 @@ export default function ParentsPage() {
 
       {/* CTA */}
       <section className="bg-paper py-24 md:py-28">
-        <div className="max-w-5xl mx-auto px-6 text-center">
+        <div className="max-w-7xl mx-auto px-6 text-center">
           <AnimateOnScroll>
             <p className="eyebrow text-crimson">Questions?</p>
             <span className="rule mt-4 mx-auto" />

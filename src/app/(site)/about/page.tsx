@@ -48,7 +48,7 @@ export default function AboutPage() {
 
       {/* Story */}
       <section className="bg-paper py-24 md:py-28">
-        <div className="max-w-5xl mx-auto px-6 grid md:grid-cols-[0.8fr_1.2fr] gap-14 items-start">
+        <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-[0.8fr_1.2fr] gap-14 items-start">
           <AnimateOnScroll>
             <p className="eyebrow text-crimson">Established 1973</p>
             <span className="rule mt-4" />
@@ -72,7 +72,7 @@ export default function AboutPage() {
 
       {/* Mission band */}
       <section className="bg-crimson text-white py-20 md:py-24">
-        <div className="max-w-3xl mx-auto px-6 text-center">
+        <div className="max-w-7xl mx-auto px-6 text-center">
           <p className="eyebrow text-white/55">Our Mission</p>
           <p className="mt-6 font-serif text-3xl md:text-4xl leading-[1.35]">
             The mission of Elmwood Christian Academy is to lead students to a
@@ -87,7 +87,7 @@ export default function AboutPage() {
 
       {/* The Elmwood Distinctive — Three Levels of Learning */}
       <section className="bg-stone py-24 md:py-28 border-y border-line">
-        <div className="max-w-5xl mx-auto px-6">
+        <div className="max-w-7xl mx-auto px-6">
           <AnimateOnScroll className="text-center max-w-2xl mx-auto">
             <p className="eyebrow text-crimson">The Elmwood Distinctive</p>
             <h2 className="mt-5 font-serif text-4xl md:text-5xl text-ink leading-tight">
@@ -116,7 +116,7 @@ export default function AboutPage() {
           </div>
 
           <AnimateOnScroll>
-            <p className="mt-12 text-lg leading-relaxed text-text-body text-center max-w-3xl mx-auto">
+            <p className="mt-12 text-lg leading-relaxed text-text-body text-center max-w-7xl mx-auto">
               Throughout the curriculum, 60 character traits&mdash;including
               kindness, loyalty, and honesty&mdash;are woven into daily lessons,
               so students don&rsquo;t just get by; they get ahead.
@@ -127,7 +127,7 @@ export default function AboutPage() {
 
       {/* Accreditation / Leadership */}
       <section className="bg-paper py-24 md:py-28">
-        <div className="max-w-5xl mx-auto px-6 grid md:grid-cols-2 gap-14 items-start">
+        <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-14 items-start">
           <AnimateOnScroll>
             <p className="eyebrow text-crimson">Accreditation</p>
             <h3 className="mt-4 font-serif text-3xl text-ink">
@@ -162,7 +162,7 @@ export default function AboutPage() {
 
       {/* Explore further */}
       <section className="bg-stone py-24 md:py-28 border-y border-line">
-        <div className="max-w-5xl mx-auto px-6">
+        <div className="max-w-7xl mx-auto px-6">
           <AnimateOnScroll className="max-w-2xl">
             <p className="eyebrow text-crimson">Explore Further</p>
             <span className="rule mt-4" />
@@ -191,7 +191,7 @@ export default function AboutPage() {
 
       {/* CTA */}
       <section className="bg-paper py-20 md:py-24">
-        <div className="max-w-3xl mx-auto px-6 text-center">
+        <div className="max-w-7xl mx-auto px-6 text-center">
           <h2 className="font-serif text-4xl md:text-5xl text-ink leading-tight">
             See where your child belongs
           </h2>

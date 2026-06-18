@@ -73,7 +73,7 @@ export default async function ArticlePage({
       </article>
 
       <section className="bg-stone py-16 md:py-20 border-t border-line">
-        <div className="max-w-3xl mx-auto px-6 text-center">
+        <div className="max-w-7xl mx-auto px-6 text-center">
           <h2 className="font-serif text-3xl md:text-4xl text-ink leading-tight">
             See Elmwood for yourself
           </h2>

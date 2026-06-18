@@ -58,7 +58,7 @@ export default function StudentConventionsPage() {
 
       {/* Intro */}
       <section className="bg-paper py-24 md:py-28">
-        <div className="max-w-5xl mx-auto px-6">
+        <div className="max-w-7xl mx-auto px-6">
           <AnimateOnScroll className="max-w-3xl">
             <p className="eyebrow text-crimson">Student Conventions</p>
             <span className="rule mt-4" />
@@ -96,7 +96,7 @@ export default function StudentConventionsPage() {
 
       {/* Seven suggestions */}
       <section className="bg-stone py-24 md:py-28 border-y border-line">
-        <div className="max-w-6xl mx-auto px-6">
+        <div className="max-w-7xl mx-auto px-6">
           <AnimateOnScroll className="max-w-2xl">
             <p className="eyebrow text-crimson">Getting Started</p>
             <span className="rule mt-4" />
@@ -128,7 +128,7 @@ export default function StudentConventionsPage() {
 
       {/* CTA */}
       <section className="bg-paper py-24 md:py-28">
-        <div className="max-w-3xl mx-auto px-6 text-center">
+        <div className="max-w-7xl mx-auto px-6 text-center">
           <AnimateOnScroll>
             <p className="eyebrow text-crimson">Ready to Learn More?</p>
             <h2 className="mt-5 font-serif text-4xl md:text-5xl text-ink leading-tight">

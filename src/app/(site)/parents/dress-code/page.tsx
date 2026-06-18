@@ -56,7 +56,7 @@ export default function DressCodePage() {
 
       {/* Philosophy */}
       <section className="bg-paper py-24 md:py-28">
-        <div className="max-w-5xl mx-auto px-6">
+        <div className="max-w-7xl mx-auto px-6">
           <AnimateOnScroll className="max-w-3xl">
             <p className="eyebrow text-crimson">Our Standard</p>
             <span className="rule mt-4" />
@@ -76,7 +76,7 @@ export default function DressCodePage() {
 
       {/* Boys */}
       <section className="bg-stone py-24 md:py-28 border-y border-line">
-        <div className="max-w-5xl mx-auto px-6">
+        <div className="max-w-7xl mx-auto px-6">
           <AnimateOnScroll className="max-w-3xl">
             <p className="eyebrow text-crimson">K-4 through 12th Grade</p>
             <span className="rule mt-4" />
@@ -97,7 +97,7 @@ export default function DressCodePage() {
 
       {/* Girls */}
       <section className="bg-paper py-24 md:py-28">
-        <div className="max-w-5xl mx-auto px-6">
+        <div className="max-w-7xl mx-auto px-6">
           <AnimateOnScroll className="max-w-3xl">
             <p className="eyebrow text-crimson">K-4 through 12th Grade</p>
             <span className="rule mt-4" />
@@ -118,7 +118,7 @@ export default function DressCodePage() {
 
       {/* Preschool */}
       <section className="bg-stone py-24 md:py-28 border-y border-line">
-        <div className="max-w-5xl mx-auto px-6">
+        <div className="max-w-7xl mx-auto px-6">
           <AnimateOnScroll className="max-w-3xl">
             <p className="eyebrow text-crimson">Ages 2&ndash;3 Years</p>
             <span className="rule mt-4" />
@@ -159,7 +159,7 @@ export default function DressCodePage() {
 
       {/* CTA */}
       <section className="bg-paper py-24 md:py-28">
-        <div className="max-w-5xl mx-auto px-6 text-center">
+        <div className="max-w-7xl mx-auto px-6 text-center">
           <AnimateOnScroll>
             <p className="eyebrow text-crimson">Parent&rsquo;s Corner</p>
             <span className="rule mt-4 mx-auto" />

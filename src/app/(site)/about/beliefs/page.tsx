@@ -59,7 +59,7 @@ export default function BeliefsPage() {
 
       {/* Statement of faith */}
       <section className="bg-paper py-24 md:py-28">
-        <div className="max-w-3xl mx-auto px-6">
+        <div className="max-w-7xl mx-auto px-6">
           <AnimateOnScroll>
             <p className="eyebrow text-crimson">Our Convictions</p>
             <span className="rule mt-4" />
@@ -90,7 +90,7 @@ export default function BeliefsPage() {
 
       {/* Closing note */}
       <section className="bg-stone py-24 md:py-28 border-y border-line">
-        <div className="max-w-3xl mx-auto px-6 text-center">
+        <div className="max-w-7xl mx-auto px-6 text-center">
           <AnimateOnScroll>
             <p className="text-lg leading-relaxed text-text-body">
               As a ministry of Elmwood Baptist Church, the Academy comes
@@ -103,7 +103,7 @@ export default function BeliefsPage() {
 
       {/* CTA */}
       <section className="bg-paper py-20 md:py-24">
-        <div className="max-w-3xl mx-auto px-6 text-center">
+        <div className="max-w-7xl mx-auto px-6 text-center">
           <h2 className="font-serif text-4xl md:text-5xl text-ink leading-tight">
             See where your child belongs
           </h2>

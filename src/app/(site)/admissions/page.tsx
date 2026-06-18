@@ -62,22 +62,25 @@ export default function AdmissionsPage() {
 
       {/* Principal's welcome */}
       <section className="bg-paper py-20 md:py-24">
-        <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-[0.85fr_1.15fr] gap-10 md:gap-14 items-center">
+        <div className="max-w-7xl mx-auto px-6">
           <AnimateOnScroll>
-            <div className="relative mx-auto max-w-sm overflow-hidden rounded-sm border border-line shadow-[0_18px_50px_rgba(32,29,27,0.12)]">
-              <Image
-                src="/staff/principal-lopez.jpg"
-                alt="Rick Lopez, Principal and Administrator of Elmwood Christian Academy"
-                width={900}
-                height={1124}
-                className="w-full h-auto"
-              />
-            </div>
-          </AnimateOnScroll>
-          <AnimateOnScroll delay={120}>
             <p className="eyebrow text-crimson">A Word of Welcome</p>
             <span className="rule mt-4" />
-            <blockquote className="mt-8 font-serif text-2xl md:text-3xl text-ink leading-relaxed italic">
+          </AnimateOnScroll>
+          <div className="mt-10 grid md:grid-cols-[0.85fr_1.15fr] gap-10 md:gap-14 items-center">
+            <AnimateOnScroll>
+              <div className="relative mx-auto max-w-sm overflow-hidden rounded-sm border border-line shadow-[0_18px_50px_rgba(32,29,27,0.12)]">
+                <Image
+                  src="/staff/principal-lopez.jpg"
+                  alt="Rick Lopez, Principal and Administrator of Elmwood Christian Academy"
+                  width={900}
+                  height={1124}
+                  className="w-full h-auto"
+                />
+              </div>
+            </AnimateOnScroll>
+            <AnimateOnScroll delay={120}>
+              <blockquote className="font-serif text-2xl md:text-3xl text-ink leading-relaxed italic">
               &ldquo;I am delighted that you are considering Elmwood Christian
               Academy for the education of your child. Deciding where your
               children will spend their formative years is an incredibly
@@ -91,12 +94,13 @@ export default function AdmissionsPage() {
               Rick Lopez · Principal / Administrator
             </p>
           </AnimateOnScroll>
+          </div>
         </div>
       </section>
 
       {/* Apply CTA */}
       <section className="bg-stone py-20 md:py-24 border-y border-line">
-        <div className="max-w-4xl mx-auto px-6 text-center">
+        <div className="max-w-7xl mx-auto px-6 text-center">
           <AnimateOnScroll>
             <p className="eyebrow text-crimson">Start Here</p>
             <h2 className="mt-5 font-serif text-4xl md:text-5xl text-ink leading-tight">
@@ -127,7 +131,7 @@ export default function AdmissionsPage() {
 
       {/* Steps */}
       <section className="bg-paper py-24 md:py-28">
-        <div className="max-w-6xl mx-auto px-6">
+        <div className="max-w-7xl mx-auto px-6">
           <AnimateOnScroll className="max-w-2xl">
             <p className="eyebrow text-crimson">How to Enroll</p>
             <span className="rule mt-4" />
@@ -153,7 +157,7 @@ export default function AdmissionsPage() {
 
       {/* The enrollment process (detailed) */}
       <section className="bg-stone py-24 md:py-28 border-y border-line">
-        <div className="max-w-5xl mx-auto px-6">
+        <div className="max-w-7xl mx-auto px-6">
           <AnimateOnScroll className="max-w-2xl">
             <p className="eyebrow text-crimson">In Detail</p>
             <span className="rule mt-4" />
@@ -231,7 +235,7 @@ export default function AdmissionsPage() {
 
       {/* Forms & downloads */}
       <section className="bg-paper py-24 md:py-28">
-        <div className="max-w-6xl mx-auto px-6">
+        <div className="max-w-7xl mx-auto px-6">
           <AnimateOnScroll className="max-w-2xl">
             <p className="eyebrow text-crimson">Paper Forms</p>
             <span className="rule mt-4" />
@@ -265,7 +269,7 @@ export default function AdmissionsPage() {
 
       {/* Affordability / tuition band */}
       <section className="bg-crimson py-24 md:py-28">
-        <div className="max-w-4xl mx-auto px-6 text-center">
+        <div className="max-w-7xl mx-auto px-6 text-center">
           <AnimateOnScroll>
             <p className="eyebrow text-white/55">Financial Information</p>
             <h2 className="mt-5 font-serif text-4xl md:text-5xl text-white leading-tight">
@@ -302,7 +306,7 @@ export default function AdmissionsPage() {
 
       {/* Contact + Map */}
       <section className="bg-paper py-24 md:py-28 border-t border-line">
-        <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-14 items-center">
+        <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-14 items-center">
           <AnimateOnScroll>
             <p className="eyebrow text-crimson">Visit &amp; Contact</p>
             <h2 className="mt-5 font-serif text-4xl md:text-5xl text-ink leading-tight">

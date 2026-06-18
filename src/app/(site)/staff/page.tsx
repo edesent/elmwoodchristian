@@ -21,7 +21,7 @@ export default function StaffPage() {
       />
 
       <section className="bg-paper py-20 md:py-24">
-        <div className="max-w-6xl mx-auto px-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12">
+        <div className="max-w-7xl mx-auto px-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12">
           {STAFF.map((m, i) => (
             <AnimateOnScroll key={m.slug} delay={(i % 3) * 90}>
               <div>
@@ -48,7 +48,7 @@ export default function StaffPage() {
       </section>
 
       <section className="bg-stone py-20 md:py-24 border-t border-line">
-        <div className="max-w-3xl mx-auto px-6 text-center">
+        <div className="max-w-7xl mx-auto px-6 text-center">
           <h2 className="font-serif text-4xl md:text-5xl text-ink leading-tight">
             Come meet our team in person
           </h2>
