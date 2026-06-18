@@ -39,6 +39,7 @@ const slides = [
     copy: "Through Christ-centered athletics, we compete with honor and purpose—and work to lift up our teammates.",
     pos: "object-center",
     overlay: "bg-gradient-to-b from-black/70 via-black/25 to-transparent",
+    scrim: true,
     ctas: [
       { label: "Explore Athletics", href: "/athletics", primary: true },
       { label: "School Calendar", href: "/parents", primary: false },
@@ -52,7 +53,7 @@ export default function HeroSlider() {
   const go = useCallback((d: number) => setI((p) => (p + d + n) % n), [n]);
 
   useEffect(() => {
-    const t = setInterval(() => setI((p) => (p + 1) % n), 6500);
+    const t = setInterval(() => setI((p) => (p + 1) % n), 9500);
     return () => clearInterval(t);
   }, [n]);
 
@@ -88,27 +89,35 @@ export default function HeroSlider() {
                 idx === i ? "opacity-100" : "opacity-0 absolute inset-x-6 top-0 pointer-events-none"
               }`}
             >
-              <p className="eyebrow text-white/70">{s.eyebrow}</p>
-              <h1 className="mt-5 font-serif text-[3rem] leading-[1.02] md:text-7xl font-semibold text-white">
-                {s.title}
-              </h1>
-              <p className="mt-6 text-lg md:text-xl text-white/85 leading-relaxed max-w-2xl">
-                {s.copy}
-              </p>
-              <div className="mt-9 flex flex-col sm:flex-row gap-4">
-                {s.ctas.map((c) => (
-                  <Link
-                    key={c.label}
-                    href={c.href}
-                    className={`inline-flex items-center justify-center font-semibold px-8 py-4 rounded-sm uppercase tracking-[0.1em] text-sm transition-colors ${
-                      c.primary
-                        ? "bg-white text-crimson hover:bg-stone"
-                        : "border border-white/50 text-white hover:bg-white/10"
-                    }`}
-                  >
-                    {c.label}
-                  </Link>
-                ))}
+              <div
+                className={
+                  s.scrim
+                    ? "inline-block rounded-2xl bg-charcoal/80 px-7 py-7 md:px-9 md:py-9"
+                    : ""
+                }
+              >
+                <p className="eyebrow text-white/70">{s.eyebrow}</p>
+                <h1 className="mt-5 font-serif text-[3rem] leading-[1.02] md:text-7xl font-semibold text-white">
+                  {s.title}
+                </h1>
+                <p className="mt-6 text-lg md:text-xl text-white/85 leading-relaxed max-w-2xl">
+                  {s.copy}
+                </p>
+                <div className="mt-9 flex flex-col sm:flex-row gap-4">
+                  {s.ctas.map((c) => (
+                    <Link
+                      key={c.label}
+                      href={c.href}
+                      className={`inline-flex items-center justify-center font-semibold px-8 py-4 rounded-sm uppercase tracking-[0.1em] text-sm transition-colors ${
+                        c.primary
+                          ? "bg-white text-crimson hover:bg-stone"
+                          : "border border-white/50 text-white hover:bg-white/10"
+                      }`}
+                    >
+                      {c.label}
+                    </Link>
+                  ))}
+                </div>
               </div>
             </div>
           ))}
