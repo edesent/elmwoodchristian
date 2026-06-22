@@ -7,7 +7,7 @@ import DragScroll from "@/components/DragScroll";
 export const metadata: Metadata = {
   title: "Athletics",
   description:
-    "Elmwood Christian Academy offers middle school, junior-varsity, and varsity sports—volleyball, basketball, soccer, cross country, and track & field—so boys and girls can develop Christ-like character through athletics.",
+    "Elmwood Christian Academy offers middle school, junior-varsity, and varsity sports—volleyball, basketball, soccer, and cross country—so boys and girls can develop Christ-like character through athletics.",
 };
 
 const sports = [
