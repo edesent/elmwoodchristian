@@ -52,12 +52,6 @@ const sports = [
     img: null,
     alt: "",
   },
-  {
-    name: "Track & Field",
-    detail: "Boys & Girls · Spring",
-    img: null,
-    alt: "",
-  },
 ];
 
 const life = [
