@@ -35,12 +35,6 @@ const sports = [
     img: null,
     alt: "",
   },
-  {
-    title: "Track & Field — Boys & Girls",
-    body: "In the spring, athletes compete across running, jumping, and throwing events, striving for excellence and personal growth.",
-    img: null,
-    alt: "",
-  },
 ];
 
 export default function AthleticsPage() {
