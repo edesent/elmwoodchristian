@@ -7,12 +7,15 @@ import Image from "next/image";
 const slides = [
   {
     src: "/img/hero.jpg",
+    video: "/img/hero.mp4",
+    poster: "/img/hero-poster.jpg",
     alt: "A teacher reading with young students at Elmwood Christian Academy",
     eyebrow: "Brighton, Colorado · Christ-Centered Since 1973",
     title: "Where faith and learning grow together.",
     copy: "A college-preparatory education rooted in Scripture and shaped by teachers who know your child by name—preschool through twelfth grade.",
     pos: "object-center",
     overlay: "bg-gradient-to-t from-crimson-deep/95 via-crimson-deep/55 to-ink/40",
+    duration: 19015,
     ctas: [
       { label: "Apply Now", href: "/admissions/apply", primary: true },
       { label: "Schedule a Visit", href: "/schedule-a-tour", primary: false },
@@ -53,9 +56,9 @@ export default function HeroSlider() {
   const go = useCallback((d: number) => setI((p) => (p + d + n) % n), [n]);
 
   useEffect(() => {
-    const t = setInterval(() => setI((p) => (p + 1) % n), 9500);
-    return () => clearInterval(t);
-  }, [n]);
+    const t = setTimeout(() => setI((p) => (p + 1) % n), slides[i].duration ?? 9500);
+    return () => clearTimeout(t);
+  }, [i, n]);
 
   return (
     <section className="relative min-h-screen flex items-end overflow-hidden">
@@ -67,14 +70,28 @@ export default function HeroSlider() {
             idx === i ? "opacity-100" : "opacity-0"
           }`}
         >
-          <Image
-            src={s.src}
-            alt={idx === i ? s.alt : ""}
-            fill
-            priority={idx === 0}
-            sizes="100vw"
-            className={`object-cover ${s.pos}`}
-          />
+          {s.video ? (
+            <video
+              src={s.video}
+              poster={s.poster}
+              autoPlay
+              muted
+              loop
+              playsInline
+              preload="auto"
+              aria-label={s.alt}
+              className={`absolute inset-0 h-full w-full object-cover ${s.pos}`}
+            />
+          ) : (
+            <Image
+              src={s.src}
+              alt={idx === i ? s.alt : ""}
+              fill
+              priority={idx === 0}
+              sizes="100vw"
+              className={`object-cover ${s.pos}`}
+            />
+          )}
           <div className={`absolute inset-0 ${s.overlay}`} />
         </div>
       ))}

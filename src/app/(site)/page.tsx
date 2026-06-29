@@ -109,6 +109,35 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ─────────────────────── Intro video ─────────────────────── */}
+      <section className="bg-charcoal text-white py-24 md:py-28">
+        <div className="max-w-5xl mx-auto px-6">
+          <AnimateOnScroll className="text-center max-w-2xl mx-auto">
+            <p className="eyebrow text-brass">Watch</p>
+            <h2 className="mt-5 font-serif text-4xl md:text-5xl leading-tight">
+              Meet Elmwood Christian Academy
+            </h2>
+            <span className="rule mt-7 mx-auto block w-14" />
+            <p className="mt-7 text-lg leading-relaxed text-white/75">
+              Take a few minutes to see who we are—our faith, our families, and
+              the everyday life of learning on our campus.
+            </p>
+          </AnimateOnScroll>
+          <AnimateOnScroll delay={120} className="mt-14">
+            <div className="relative aspect-video w-full overflow-hidden rounded-sm border border-white/10 shadow-[0_30px_80px_rgba(0,0,0,0.45)]">
+              <video
+                src="/img/intro.mp4"
+                poster="/img/intro-poster.jpg"
+                controls
+                playsInline
+                preload="metadata"
+                className="absolute inset-0 h-full w-full object-cover"
+              />
+            </div>
+          </AnimateOnScroll>
+        </div>
+      </section>
+
       {/* ─────────────────────── Feature split ─────────────────────── */}
       <section className="bg-stone border-y border-line">
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 items-stretch">

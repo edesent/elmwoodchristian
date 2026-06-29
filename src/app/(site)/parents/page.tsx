@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import SubpageHero from "@/components/SubpageHero";
 import AnimateOnScroll from "@/components/AnimateOnScroll";
 
@@ -46,19 +47,32 @@ export default function ParentsPage() {
       {/* Welcome */}
       <section className="bg-paper py-24 md:py-28">
         <div className="max-w-7xl mx-auto px-6">
-          <AnimateOnScroll className="max-w-3xl">
-            <p className="eyebrow text-crimson">Welcome</p>
-            <span className="rule mt-4" />
-            <h2 className="mt-6 font-serif text-4xl md:text-5xl text-ink leading-tight">
-              In good hands each day
-            </h2>
-            <p className="mt-6 text-lg leading-relaxed text-text-body">
-              Dear Elmwood families&mdash;know that your children are in good
-              hands each day, under the caring and watchful eye of teachers who
-              love God and want to see your kids grow in the nurture and
-              admonition of the Lord.
-            </p>
-          </AnimateOnScroll>
+          <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
+            <AnimateOnScroll>
+              <p className="eyebrow text-crimson">Welcome</p>
+              <span className="rule mt-4" />
+              <h2 className="mt-6 font-serif text-4xl md:text-5xl text-ink leading-tight">
+                In good hands each day
+              </h2>
+              <p className="mt-6 text-lg leading-relaxed text-text-body">
+                Dear Elmwood families&mdash;know that your children are in good
+                hands each day, under the caring and watchful eye of teachers who
+                love God and want to see your kids grow in the nurture and
+                admonition of the Lord.
+              </p>
+            </AnimateOnScroll>
+            <AnimateOnScroll delay={120}>
+              <div className="relative aspect-square w-full overflow-hidden rounded-sm border border-line shadow-sm">
+                <Image
+                  src="/img/in-good-hands.jpg"
+                  alt="An Elmwood Christian Academy teacher caring for a student during the school day"
+                  fill
+                  sizes="(min-width: 768px) 50vw, 100vw"
+                  className="object-cover"
+                />
+              </div>
+            </AnimateOnScroll>
+          </div>
         </div>
       </section>
 
