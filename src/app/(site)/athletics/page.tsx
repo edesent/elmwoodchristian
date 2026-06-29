@@ -54,6 +54,26 @@ export default function AthleticsPage() {
         <div className="absolute inset-0 bg-gradient-to-b from-black/55 via-black/15 to-transparent" />
       </header>
 
+      {/* Featured athletics video */}
+      <section className="bg-paper pt-16 md:pt-20">
+        <div className="max-w-5xl mx-auto px-6">
+          <AnimateOnScroll>
+            <div className="overflow-hidden border border-line rounded-sm bg-ink shadow-lg">
+              <video
+                className="block h-auto w-full"
+                controls
+                playsInline
+                preload="metadata"
+                poster="/video/athletics-poster.jpg"
+              >
+                <source src="/video/athletics.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </AnimateOnScroll>
+        </div>
+      </section>
+
       {/* Intro */}
       <section className="bg-paper py-24 md:py-28">
         <div className="max-w-7xl mx-auto px-6">
