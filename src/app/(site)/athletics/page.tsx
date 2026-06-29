@@ -54,51 +54,50 @@ export default function AthleticsPage() {
         <div className="absolute inset-0 bg-gradient-to-b from-black/55 via-black/15 to-transparent" />
       </header>
 
-      {/* Featured athletics video */}
-      <section className="bg-paper pt-16 md:pt-20">
-        <div className="max-w-5xl mx-auto px-6">
-          <AnimateOnScroll>
-            <div className="overflow-hidden border border-line rounded-sm bg-ink shadow-lg">
-              <video
-                className="block h-auto w-full"
-                controls
-                playsInline
-                preload="metadata"
-                poster="/video/athletics-poster.jpg"
-              >
-                <source src="/video/athletics.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-            </div>
-          </AnimateOnScroll>
-        </div>
-      </section>
-
-      {/* Intro */}
+      {/* Intro — video left, content right */}
       <section className="bg-paper py-24 md:py-28">
         <div className="max-w-7xl mx-auto px-6">
-          <AnimateOnScroll className="max-w-3xl">
-            <p className="eyebrow text-crimson">Athletics</p>
-            <span className="rule mt-4" />
-            <h2 className="mt-6 font-serif text-4xl md:text-5xl text-ink leading-tight">
-              Athletics throughout the year
-            </h2>
-            <p className="mt-6 text-lg leading-relaxed text-text-body">
-              Elmwood Christian Academy offers middle school, junior-varsity, and
-              varsity sports so boys and girls can take part in athletics
-              throughout the school year. All eligible students are encouraged to
-              participate. Active sports build bodies, character, and teamwork
-              while providing a healthy outlet. Our philosophy of athletics flows
-              directly from our Christian philosophy of education: the ultimate
-              goal is to be conformed to the image of Jesus Christ (Romans 8:29),
-              so athletes develop Christ-like character and express it through the
-              medium of athletics. As an independent school, we compete against a
-              variety of schools at different levels.
-            </p>
-            <p className="mt-6 text-lg leading-relaxed text-text-body">
-              Athletic Director: Pastor Joshua Lehman.
-            </p>
-          </AnimateOnScroll>
+          <div className="grid items-start gap-12 lg:grid-cols-2 lg:gap-16">
+            {/* Featured athletics video */}
+            <AnimateOnScroll className="lg:sticky lg:top-28">
+              <div className="overflow-hidden border border-line rounded-sm bg-ink shadow-lg">
+                <video
+                  className="block h-auto w-full"
+                  controls
+                  playsInline
+                  preload="metadata"
+                  poster="/video/athletics-poster.jpg"
+                >
+                  <source src="/video/athletics.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </AnimateOnScroll>
+
+            {/* Content */}
+            <AnimateOnScroll>
+              <p className="eyebrow text-crimson">Athletics</p>
+              <span className="rule mt-4" />
+              <h2 className="mt-6 font-serif text-4xl md:text-5xl text-ink leading-tight">
+                Athletics throughout the year
+              </h2>
+              <p className="mt-6 text-lg leading-relaxed text-text-body">
+                Elmwood Christian Academy offers middle school, junior-varsity, and
+                varsity sports so boys and girls can take part in athletics
+                throughout the school year. All eligible students are encouraged to
+                participate. Active sports build bodies, character, and teamwork
+                while providing a healthy outlet. Our philosophy of athletics flows
+                directly from our Christian philosophy of education: the ultimate
+                goal is to be conformed to the image of Jesus Christ (Romans 8:29),
+                so athletes develop Christ-like character and express it through the
+                medium of athletics. As an independent school, we compete against a
+                variety of schools at different levels.
+              </p>
+              <p className="mt-6 text-lg leading-relaxed text-text-body">
+                Athletic Director: Pastor Joshua Lehman.
+              </p>
+            </AnimateOnScroll>
+          </div>
         </div>
       </section>
 
