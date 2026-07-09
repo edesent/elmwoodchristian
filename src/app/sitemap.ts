@@ -1,5 +1,4 @@
 import type { MetadataRoute } from "next";
-import { ARTICLES } from "@/lib/articles";
 
 const SITE_URL = "https://www.elmwoodchristianacademy.org";
 
