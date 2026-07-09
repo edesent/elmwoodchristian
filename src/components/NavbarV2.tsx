@@ -40,7 +40,7 @@ export default function NavbarV2() {
             303.659.3818
           </a>
           <a
-            href="mailto:office@elmwoodchristianacademy.org"
+            href="mailto:office@elmwoodchristian.org"
             className="hover:text-white transition-colors"
           >
             Contact
