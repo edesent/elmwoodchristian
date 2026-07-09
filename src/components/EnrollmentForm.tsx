@@ -120,7 +120,7 @@ export default function EnrollmentForm() {
 
       {status === "error" && (
         <p className="mt-6 rounded-sm bg-crimson/8 border border-crimson/25 text-crimson px-4 py-3 text-sm">
-          {errorMsg} Please try again, or email office@elmwoodchristianacademy.org.
+          {errorMsg} Please try again, or email office@elmwoodchristian.org.
         </p>
       )}
 
