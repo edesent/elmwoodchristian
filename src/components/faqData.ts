@@ -13,7 +13,7 @@ export const FAQS: Faq[] = [
   },
   {
     q: "What curriculum does Elmwood use?",
-    a: "We use the time-tested A Beka curriculum in our youngest grades (K4–3rd) and the individualized, mastery-based A.C.E. (Accelerated Christian Education) curriculum from 4th through 12th grade, so each student progresses through every subject at their own academic ability. Scripture and biblical character are woven throughout.",
+    a: "We use the time-tested A Beka curriculum in our youngest grades (Kindergarten–3rd) and the individualized, mastery-based A.C.E. (Accelerated Christian Education) curriculum from 4th through 12th grade, so each student progresses through every subject at their own academic ability. Scripture and biblical character are woven throughout.",
   },
   {
     q: "Is Elmwood accredited, and can my child go to college with an Elmwood diploma?",
