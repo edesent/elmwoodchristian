@@ -62,7 +62,7 @@ export default function NavbarV2() {
               width={71}
               height={90}
               priority
-              className={`h-11 w-auto ${solid ? "" : "brightness-0 invert"}`}
+              className={`h-11 w-auto`}
             />
             <span className="flex flex-col leading-none">
               <span
