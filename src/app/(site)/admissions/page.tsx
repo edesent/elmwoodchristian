@@ -341,8 +341,8 @@ export default function AdmissionsPage() {
               <div>
                 <dt className="text-[0.72rem] uppercase tracking-[0.2em] text-crimson font-semibold">Email</dt>
                 <dd className="mt-1 text-lg">
-                  <a href="mailto:office@elmwoodchristianacademy.org" className="hover:text-crimson transition-colors break-words">
-                    office@elmwoodchristianacademy.org
+                  <a href="mailto:office@elmwoodchristian.org" className="hover:text-crimson transition-colors break-words">
+                    office@elmwoodchristian.org
                   </a>
                 </dd>
               </div>
