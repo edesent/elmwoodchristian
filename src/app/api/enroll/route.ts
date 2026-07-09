@@ -150,7 +150,7 @@ export async function POST(req: Request) {
     try {
       const { Resend } = await import("resend");
       const resend = new Resend(apiKey);
-      const to = process.env.ENROLL_TO || "office@elmwoodchristianacademy.org";
+      const to = process.env.ENROLL_TO || "office@elmwoodchristian.org";
       const from = process.env.ENROLL_FROM || "Elmwood Admissions <onboarding@resend.dev>";
       const { error } = await resend.emails.send({
         from,
