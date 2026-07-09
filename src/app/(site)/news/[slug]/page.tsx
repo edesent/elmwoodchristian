@@ -19,14 +19,24 @@ export async function generateMetadata({
   return { title: a.title, description: a.excerpt };
 }
 
-// NOTE: News section is temporarily hidden site-wide. Remove the notFound()
-// call below to bring individual articles back.
+// NOTE: News section is temporarily hidden site-wide. This page just 404s.
+// To restore, delete this default export and rename _ArticlePage below back
+// to `ArticlePage` (and re-export it as default).
 export default async function ArticlePage({
   params,
 }: {
   params: Promise<{ slug: string }>;
 }) {
   notFound();
+}
+
+// Original page logic, preserved as-is (unused while hidden) so restoring
+// later is a one-line change instead of retyping this whole component.
+async function _ArticlePage({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
   const { slug } = await params;
   const article = getArticle(slug);
   if (!article) notFound();
