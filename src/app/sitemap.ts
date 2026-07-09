@@ -23,21 +23,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ["/parents/dress-code", 0.5],
     ["/support", 0.5],
     ["/faq", 0.7],
-    ["/news", 0.7],
   ];
 
-  return [
-    ...staticPaths.map(([path, priority]) => ({
-      url: `${SITE_URL}${path}`,
-      lastModified,
-      changeFrequency: "monthly" as const,
-      priority,
-    })),
-    ...ARTICLES.map((a) => ({
-      url: `${SITE_URL}/news/${a.slug}`,
-      lastModified,
-      changeFrequency: "yearly" as const,
-      priority: 0.5,
-    })),
-  ];
+  return staticPaths.map(([path, priority]) => ({
+    url: `${SITE_URL}${path}`,
+    lastModified,
+    changeFrequency: "monthly" as const,
+    priority,
+  }));
 }
