@@ -32,7 +32,7 @@ export const STAFF: StaffMember[] = [
     slug: "shannon-lopez",
     name: "Shannon Lopez",
     role: "Staff",
-    photo: "/staff/0098-lopez-shannon-01.jpg",
+    photo: "/staff/0098-lopez-shannon-02.jpg",
     bio: "Shannon and her husband, Rick, have served the Elmwood family for more than a decade.",
   },
   { slug: "janna-green", name: "Janna Green", role: "Faculty", photo: "/staff/0077-green-janna-01.jpg" },
