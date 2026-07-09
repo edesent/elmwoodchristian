@@ -6,15 +6,12 @@ export interface StaffMember {
   bio?: string;
 }
 
-// Photos provided by the school. Roles/bios are verified where noted; the rest are
-// listed as Faculty (the old site listed them as instructors). Bios marked TODO
-// below should be replaced with each teacher's real bio when available.
 export const STAFF: StaffMember[] = [
   {
     slug: "rick-lopez",
     name: "Rick Lopez",
     role: "Principal & Administrator",
-    photo: "/staff/rick-lopez-principal.png",
+    photo: "/staff/rick-lopez.jpg",
     bio: "Rick and his wife, Shannon, have faithfully served the Elmwood family for more than a decade. He administers the Academy and helps lead its ministries with a heart to see every student grow in Christ.",
   },
   {
@@ -35,15 +32,21 @@ export const STAFF: StaffMember[] = [
     slug: "shannon-lopez",
     name: "Shannon Lopez",
     role: "Staff",
-    photo: "/staff/shannon-lopez.jpg",
+    photo: "/staff/0098-lopez-shannon-01.jpg",
     bio: "Shannon and her husband, Rick, have served the Elmwood family for more than a decade.",
   },
+  { slug: "janna-green", name: "Janna Green", role: "Faculty", photo: "/staff/0077-green-janna-01.jpg" },
+  { slug: "pam-hoshiko", name: "Pam Hoshiko", role: "Faculty", photo: "/staff/0061-hoshiko-pam-01.jpg" },
+  { slug: "tory-strohfus", name: "Tory Strohfus", role: "Faculty", photo: "/staff/0021-strohfus-tory-01.jpg" },
+  { slug: "lisa-nevarez", name: "Lisa Nevarez", role: "Faculty", photo: "/staff/0111-nevarez-lisa-01.jpg" },
+  { slug: "debbie-pallaoro", name: "Debbie Pallaoro", role: "Faculty", photo: "/staff/0120-pallaoro-debbie-01.jpg" },
+  { slug: "stephanie-hinricher", name: "Stephanie Hinricher", role: "Faculty", photo: "/staff/0058-hinricher-stephanie-01.jpg" },
+  { slug: "caren-green", name: "Caren Green", role: "Faculty", photo: "/staff/0047-green-caren-01.jpg" },
+  { slug: "sam-nevarez", name: "Sam Nevarez", role: "Faculty", photo: "/staff/0030-nevarez-sam-01.jpg" },
+  { slug: "garrett-glover", name: "Garrett Glover", role: "Faculty", photo: "/staff/0003-glover-garrett-01.jpg" },
   { slug: "sarah-carlson", name: "Sarah Carlson", role: "Faculty", photo: "/staff/sarah-carlson.jpg" },
-  { slug: "janna-green", name: "Janna Green", role: "Faculty", photo: "/staff/janna-green.jpg" },
-  { slug: "pam-hoshiko", name: "Pam Hoshiko", role: "Faculty", photo: "/staff/pam-hoshiko.jpg" },
   { slug: "connie-kish", name: "Connie Kish", role: "Faculty", photo: "/staff/connie-kish.jpg" },
   { slug: "lori-knutsen", name: "Lori Knutsen", role: "Faculty", photo: "/staff/lori-knutsen.jpg" },
   { slug: "brenda-lehman", name: "Brenda Lehman", role: "Faculty", photo: "/staff/brenda-lehman.jpg" },
   { slug: "samantha-parks", name: "Samantha Parks", role: "Faculty", photo: "/staff/samantha-parks.jpg" },
-  { slug: "tory-strohfus", name: "Tory Strohfus", role: "Faculty", photo: "/staff/tory-strohfus.jpg" },
 ];
