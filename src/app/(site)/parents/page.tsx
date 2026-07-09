@@ -64,7 +64,7 @@ export default function ParentsPage() {
             <AnimateOnScroll delay={120}>
               <div className="relative aspect-square w-full overflow-hidden rounded-sm border border-line shadow-sm">
                 <Image
-                  src="/img/in-good-hands.jpg"
+                  src="/img/school-class-k4.png"
                   alt="An Elmwood Christian Academy teacher caring for a student during the school day"
                   fill
                   sizes="(min-width: 768px) 50vw, 100vw"
