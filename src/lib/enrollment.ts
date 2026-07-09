@@ -51,8 +51,8 @@ export interface Step {
 export const GRADES = [
   "Early Enrichment (age 2–3)",
   "Preschool",
-  "Kindergarten (K4)",
-  "Kindergarten (K5)",
+  "Kindergarten",
+  "Advanced Kindergarten",
   "1st Grade",
   "2nd Grade",
   "3rd Grade",
