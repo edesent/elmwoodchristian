@@ -84,7 +84,7 @@ export default function EnrollmentForm() {
         </p>
         {!emailed && (
           <p className="mt-4 text-sm text-text-muted">
-            Please email your downloaded PDF to office@elmwoodchristianacademy.org
+            Please email your downloaded PDF to office@elmwoodchristian.org
             or bring it to the school office to complete your application.
           </p>
         )}
