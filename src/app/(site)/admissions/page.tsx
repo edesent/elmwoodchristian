@@ -23,13 +23,13 @@ const steps = [
   },
   {
     n: "03",
-    title: "Placement Testing",
-    body: "Students entering 5th grade or higher complete a diagnostic test in each subject ($25, due at testing) so we can place them at their exact academic level.",
+    title: "Family Interview",
+    body: "All new students and parents meet with the principal and teacher to get to know one another and answer your questions.",
   },
   {
     n: "04",
-    title: "Family Interview",
-    body: "All new students and parents meet with the principal—often scheduled together with testing—to get to know one another and answer your questions.",
+    title: "Diagnostic Testing",
+    body: "Students entering 4th grade or higher complete a diagnostic test in each subject, so we can place them at their exact academic level.",
   },
 ];
 
