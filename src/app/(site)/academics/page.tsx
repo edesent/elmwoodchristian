@@ -123,12 +123,6 @@ export default function AcademicsPage() {
           <AnimateOnScroll delay={120}>
             <div className="mt-9 flex flex-col sm:flex-row gap-6">
               <Link
-                href="/news/why-christian-education-uses-ace"
-                className="inline-flex items-center gap-2 text-crimson font-semibold uppercase tracking-[0.12em] text-sm"
-              >
-                Read: Why A.C.E.? &rarr;
-              </Link>
-              <Link
                 href="/academics/student-conventions"
                 className="inline-flex items-center gap-2 text-crimson font-semibold uppercase tracking-[0.12em] text-sm"
               >
