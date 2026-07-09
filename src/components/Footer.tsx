@@ -109,7 +109,7 @@ export default function Footer({
               </a>
             ))}
             <a
-              href="mailto:office@elmwoodchristianacademy.org"
+              href="mailto:office@elmwoodchristian.org"
               aria-label="Email Elmwood Christian Academy"
               className="grid place-items-center h-10 w-10 rounded-full border border-white/25 text-white/85 hover:bg-white hover:text-ink transition-colors"
             >
@@ -177,10 +177,10 @@ export default function Footer({
             </li>
             <li>
               <a
-                href="mailto:office@elmwoodchristianacademy.org"
+                href="mailto:office@elmwoodchristian.org"
                 className="hover:text-white transition-colors break-words"
               >
-                office@elmwoodchristianacademy.org
+                office@elmwoodchristian.org
               </a>
             </li>
             <li className="text-white/55">Mon–Fri · 7:30 AM – 3:30 PM</li>
