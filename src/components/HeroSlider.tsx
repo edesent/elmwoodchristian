@@ -60,117 +60,109 @@ export default function HeroSlider() {
     return () => clearTimeout(t);
   }, [i, n]);
 
+  const s = slides[i];
+
   return (
     <section className="relative min-h-screen flex items-end overflow-hidden">
-      {slides.map((s, idx) => (
+      {slides.map((slide, idx) => (
         <div
-          key={s.src}
+          key={slide.src}
           aria-hidden={idx !== i}
           className={`absolute inset-0 transition-opacity duration-[900ms] ease-in-out ${
             idx === i ? "opacity-100" : "opacity-0"
           }`}
         >
-          {s.video ? (
+          {slide.video ? (
             <video
-              src={s.video}
-              poster={s.poster}
+              src={slide.video}
+              poster={slide.poster}
               autoPlay
               muted
               loop
               playsInline
               preload="auto"
-              aria-label={s.alt}
-              className={`absolute inset-0 h-full w-full object-cover ${s.pos}`}
+              aria-label={slide.alt}
+              className={`absolute inset-0 h-full w-full object-cover ${slide.pos}`}
             />
           ) : (
             <Image
-              src={s.src}
-              alt={idx === i ? s.alt : ""}
+              src={slide.src}
+              alt={idx === i ? slide.alt : ""}
               fill
               priority={idx === 0}
               sizes="100vw"
-              className={`object-cover ${s.pos}`}
+              className={`object-cover ${slide.pos}`}
             />
           )}
-          <div className={`absolute inset-0 ${s.overlay}`} />
+          <div className={`absolute inset-0 ${slide.overlay}`} />
         </div>
       ))}
 
       <div className="relative w-full max-w-7xl mx-auto px-6 pb-28 md:pb-36 pt-40">
         <div className="max-w-3xl min-h-[300px] md:min-h-[340px]">
-          {slides.map((s, idx) => (
-            <div
-              key={s.src}
-              aria-hidden={idx !== i}
-              className={`transition-opacity duration-700 ${
-                idx === i ? "opacity-100 pointer-events-auto" : "opacity-0 absolute inset-x-0 top-0 pointer-events-none"
-              }`}
-            >
-              <div
-                className={
-                  s.scrim
-                    ? "inline-block rounded-2xl bg-charcoal/80 px-7 py-7 md:px-9 md:py-9"
-                    : ""
-                }
-              >
-                <p className="eyebrow text-white/70">{s.eyebrow}</p>
-                <h1 className="mt-5 font-serif text-[3rem] leading-[1.02] md:text-7xl font-semibold text-white">
-                  {s.title}
-                </h1>
-                <p className="mt-6 text-lg md:text-xl text-white/85 leading-relaxed max-w-2xl">
-                  {s.copy}
-                </p>
-                <div className="mt-9 flex flex-col sm:flex-row gap-4">
-                  {s.ctas.map((c) => (
-                    <Link
-                      key={c.label}
-                      href={c.href}
-                      className={`inline-flex items-center justify-center font-semibold px-8 py-4 rounded-sm uppercase tracking-[0.1em] text-sm transition-colors ${
-                        c.primary
-                          ? "bg-white text-crimson hover:bg-stone"
-                          : "border border-white/50 text-white hover:bg-white/10"
-                      }`}
-                    >
-                      {c.label}
-                    </Link>
-                  ))}
-                </div>
-              </div>
+          <div
+            className={
+              s.scrim
+                ? "inline-block rounded-2xl bg-charcoal/80 px-7 py-7 md:px-9 md:py-9"
+                : ""
+            }
+          >
+            <p className="eyebrow text-white/70">{s.eyebrow}</p>
+            <h1 className="mt-5 font-serif text-[3rem] leading-[1.02] md:text-7xl font-semibold text-white">
+              {s.title}
+            </h1>
+            <p className="mt-6 text-lg md:text-xl text-white/85 leading-relaxed max-w-2xl">
+              {s.copy}
+            </p>
+            <div className="mt-9 flex flex-col sm:flex-row gap-4">
+              {s.ctas.map((c) => (
+                <Link
+                  key={c.label}
+                  href={c.href}
+                  className={`inline-flex items-center justify-center font-semibold px-8 py-4 rounded-sm uppercase tracking-[0.1em] text-sm transition-colors ${
+                    c.primary
+                      ? "bg-white text-crimson hover:bg-stone"
+                      : "border border-white/50 text-white hover:bg-white/10"
+                  }`}
+                >
+                  {c.label}
+                </Link>
+              ))}
             </div>
-          ))}
+          </div>
         </div>
       </div>
 
-      {/* Slide controls — aligned to the header width */}
+      {/* Slide controls */}
       <div className="absolute bottom-28 md:bottom-36 left-0 right-0 z-10">
         <div className="max-w-7xl mx-auto px-6 flex items-center justify-end gap-3">
-        <button
-          onClick={() => go(-1)}
-          aria-label="Previous slide"
-          className="hidden sm:grid place-items-center h-10 w-10 rounded-full border border-white/40 text-white hover:bg-white/15 transition-colors"
-        >
-          ←
-        </button>
-        <div className="flex items-center gap-2">
-          {slides.map((_, idx) => (
-            <button
-              key={idx}
-              onClick={() => setI(idx)}
-              aria-label={`Go to slide ${idx + 1}`}
-              aria-current={idx === i}
-              className={`h-2.5 rounded-full transition-all ${
-                idx === i ? "w-7 bg-white" : "w-2.5 bg-white/45 hover:bg-white/70"
-              }`}
-            />
-          ))}
-        </div>
-        <button
-          onClick={() => go(1)}
-          aria-label="Next slide"
-          className="hidden sm:grid place-items-center h-10 w-10 rounded-full border border-white/40 text-white hover:bg-white/15 transition-colors"
-        >
-          →
-        </button>
+          <button
+            onClick={() => go(-1)}
+            aria-label="Previous slide"
+            className="hidden sm:grid place-items-center h-10 w-10 rounded-full border border-white/40 text-white hover:bg-white/15 transition-colors"
+          >
+            ←
+          </button>
+          <div className="flex items-center gap-2">
+            {slides.map((_, idx) => (
+              <button
+                key={idx}
+                onClick={() => setI(idx)}
+                aria-label={`Go to slide ${idx + 1}`}
+                aria-current={idx === i}
+                className={`h-2.5 rounded-full transition-all ${
+                  idx === i ? "w-7 bg-white" : "w-2.5 bg-white/45 hover:bg-white/70"
+                }`}
+              />
+            ))}
+          </div>
+          <button
+            onClick={() => go(1)}
+            aria-label="Next slide"
+            className="hidden sm:grid place-items-center h-10 w-10 rounded-full border border-white/40 text-white hover:bg-white/15 transition-colors"
+          >
+            →
+          </button>
         </div>
       </div>
     </section>
