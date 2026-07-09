@@ -47,7 +47,7 @@ export default function TourForm() {
         {!emailed && (
           <p className="mt-4 text-sm text-text-muted">
             If you don&rsquo;t hear from us soon, please call 303.659.3818 or email
-            office@elmwoodchristianacademy.org.
+            office@elmwoodchristian.org.
           </p>
         )}
         <a
