@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { notFound } from "next/navigation";
 import SubpageHero from "@/components/SubpageHero";
 import AnimateOnScroll from "@/components/AnimateOnScroll";
 import { ARTICLES } from "@/lib/articles";
@@ -10,7 +11,10 @@ export const metadata: Metadata = {
     "Articles on Christian education, mastery learning, and raising children in faith—from the Elmwood Christian Academy community in Brighton, Colorado.",
 };
 
+// NOTE: News page is temporarily hidden site-wide. Remove the notFound()
+// call below (and re-add the nav/footer/sitemap links) to bring it back.
 export default function NewsPage() {
+  notFound();
   const articles = [...ARTICLES].sort((a, b) => (a.iso < b.iso ? 1 : -1));
   return (
     <>
