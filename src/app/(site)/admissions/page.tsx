@@ -18,8 +18,8 @@ const steps = [
   },
   {
     n: "02",
-    title: "Registration Fee",
-    body: "A non-refundable registration fee per student accompanies the application. See the Tuition Information sheet for current rates and payment plans.",
+    title: "Meeting & Application Fee",
+    body: "A meeting with the Principal is required before your online application and application fee can be processed. Please contact the office to schedule an appointment - 303.659.3818.",
   },
   {
     n: "03",
