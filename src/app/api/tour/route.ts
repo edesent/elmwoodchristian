@@ -36,7 +36,7 @@ export async function POST(req: Request) {
   if (apiKey) {
     try {
       const resend = new Resend(apiKey);
-      const to = process.env.ENROLL_TO || "office@elmwoodchristianacademy.org";
+      const to = process.env.ENROLL_TO || "office@elmwoodbaptist.org";
       const from = process.env.ENROLL_FROM || "Elmwood Admissions <onboarding@resend.dev>";
       const rows = FIELDS.filter((f) => (data[f.name] || "").trim())
         .map((f) => `<li><strong>${f.label}:</strong> ${escapeHtml(data[f.name])}</li>`)
