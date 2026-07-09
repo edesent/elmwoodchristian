@@ -79,7 +79,7 @@ export default function Footer({
         <div>
           <div className="flex items-center gap-3">
             <Image
-              src="/brand/crest.png"
+              src="/brand/newer-crest.png"
               alt=""
               width={71}
               height={90}
