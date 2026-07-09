@@ -11,7 +11,7 @@ export const STAFF: StaffMember[] = [
     slug: "rick-lopez",
     name: "Rick Lopez",
     role: "Principal & Administrator",
-    photo: "/staff/rick-lopez.jpg",
+    photo: "/staff/rick-lopez-principal-3.png",
     bio: "Rick and his wife, Shannon, have faithfully served the Elmwood family for more than a decade. He administers the Academy and helps lead its ministries with a heart to see every student grow in Christ.",
   },
   {
