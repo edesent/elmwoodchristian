@@ -100,13 +100,7 @@ export default function HeroSlider() {
 
       <div className="relative w-full max-w-7xl mx-auto px-6 pb-28 md:pb-36 pt-40">
         <div className="max-w-3xl min-h-[300px] md:min-h-[340px]">
-          <div
-            className={
-              s.scrim
-                ? "inline-block rounded-2xl bg-charcoal/80 px-7 py-7 md:px-9 md:py-9"
-                : ""
-            }
-          >
+          <div className={`inline-block ${s.scrim ? "rounded-2xl bg-charcoal/80 px-7 py-7 md:px-9 md:py-9" : ""}`}>
             <p className="eyebrow text-white/70">{s.eyebrow}</p>
             <h1 className="mt-5 font-serif text-[3rem] leading-[1.02] md:text-7xl font-semibold text-white">
               {s.title}
