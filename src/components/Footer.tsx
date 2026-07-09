@@ -83,7 +83,7 @@ export default function Footer({
               alt=""
               width={71}
               height={90}
-              className="h-12 w-auto brightness-0 invert opacity-90"
+              className="h-12 w-auto opacity-90"
             />
             <span className="flex flex-col leading-none">
               <span className="font-serif font-semibold text-2xl tracking-[0.06em] text-white">
