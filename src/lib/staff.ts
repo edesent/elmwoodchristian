@@ -15,20 +15,6 @@ export const STAFF: StaffMember[] = [
     bio: "Rick and his wife, Shannon, have faithfully served the Elmwood family for more than a decade. He administers the Academy and helps lead its ministries with a heart to see every student grow in Christ.",
   },
   {
-    slug: "brandon-bowser",
-    name: "Brandon Bowser",
-    role: "Junior & Senior High",
-    photo: "/staff/brandon-bowser.jpg",
-    bio: "Pastor Bowser joined Elmwood in December 2019 and teaches grades 7–12. He has served in ministry for more than seventeen years.",
-  },
-  {
-    slug: "meghan-bowser",
-    name: "Meghan Bowser",
-    role: "Junior & Senior High",
-    photo: "/staff/meghan-bowser.jpg",
-    bio: "Mrs. Bowser teaches alongside her husband in the Academy's junior and senior high.",
-  },
-  {
     slug: "shannon-lopez",
     name: "Shannon Lopez",
     role: "Staff",
