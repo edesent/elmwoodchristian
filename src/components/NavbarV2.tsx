@@ -57,7 +57,7 @@ export default function NavbarV2() {
         <div className="max-w-7xl mx-auto px-6 flex items-center justify-between h-[78px]">
           <Link href="/" aria-label="Elmwood Christian Academy — home" className="flex items-center gap-3">
             <Image
-              src="/brand/crest.png"
+              src="/brand/newer-crest.png"
               alt=""
               width={71}
               height={90}
