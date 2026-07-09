@@ -19,11 +19,14 @@ export async function generateMetadata({
   return { title: a.title, description: a.excerpt };
 }
 
+// NOTE: News section is temporarily hidden site-wide. Remove the notFound()
+// call below to bring individual articles back.
 export default async function ArticlePage({
   params,
 }: {
   params: Promise<{ slug: string }>;
 }) {
+  notFound();
   const { slug } = await params;
   const article = getArticle(slug);
   if (!article) notFound();
