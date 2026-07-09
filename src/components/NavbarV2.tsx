@@ -10,7 +10,6 @@ const navLinks = [
   { href: "/admissions", label: "Admissions" },
   { href: "/athletics", label: "Athletics" },
   { href: "/parents", label: "Parents" },
-  { href: "/news", label: "News" },
 ];
 
 export default function NavbarV2() {
