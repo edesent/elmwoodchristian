@@ -30,9 +30,4 @@ export const STAFF: StaffMember[] = [
   { slug: "caren-green", name: "Caren Green", role: "Faculty", photo: "/staff/0047-green-caren-01.jpg" },
   { slug: "sam-nevarez", name: "Sam Nevarez", role: "Faculty", photo: "/staff/0030-nevarez-sam-01.jpg" },
   { slug: "garrett-glover", name: "Garrett Glover", role: "Faculty", photo: "/staff/0003-glover-garrett-01.jpg" },
-  { slug: "sarah-carlson", name: "Sarah Carlson", role: "Faculty", photo: "/staff/sarah-carlson.jpg" },
-  { slug: "connie-kish", name: "Connie Kish", role: "Faculty", photo: "/staff/connie-kish.jpg" },
-  { slug: "lori-knutsen", name: "Lori Knutsen", role: "Faculty", photo: "/staff/lori-knutsen.jpg" },
-  { slug: "brenda-lehman", name: "Brenda Lehman", role: "Faculty", photo: "/staff/brenda-lehman.jpg" },
-  { slug: "samantha-parks", name: "Samantha Parks", role: "Faculty", photo: "/staff/samantha-parks.jpg" },
 ];
