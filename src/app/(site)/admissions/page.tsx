@@ -169,35 +169,50 @@ export default function AdmissionsPage() {
           <div className="mt-14 space-y-12">
             <AnimateOnScroll>
               <h3 className="font-serif text-2xl md:text-3xl text-ink">
-                Complete the application
+                1. Submit your application
               </h3>
               <p className="mt-4 text-lg leading-relaxed text-text-body">
-                You may apply online or download the forms below and mail,
-                deliver, or fax them (fax 720.685.9005) to the school office. The
-                registration fee should accompany the application; current
-                amounts are listed in the Financial Information.
+                Start with our online Application for Enrollment, or print and
+                fill out the form below and mail, deliver, or fax it (fax
+                720.685.9005) to the school office. Please include the
+                registration fee with your application — current amounts are
+                listed under Financial Information.
               </p>
             </AnimateOnScroll>
 
             <AnimateOnScroll>
               <h3 className="font-serif text-2xl md:text-3xl text-ink">
-                Entrance diagnostic test
+                2. Meet with the Principal
               </h3>
               <p className="mt-4 text-lg leading-relaxed text-text-body">
-                An entrance diagnostic test must be taken by all students
-                advancing into 5th grade or higher. A testing fee of $25.00 is
-                due at the time of testing.
+                Before your application and registration fee can be processed,
+                you&rsquo;ll need a short meeting with the Principal. Call the
+                office at 303.659.3818 to set up a time — we&rsquo;re often able
+                to pair this with your family interview or testing so you only
+                need to make one trip.
               </p>
             </AnimateOnScroll>
 
             <AnimateOnScroll>
               <h3 className="font-serif text-2xl md:text-3xl text-ink">
-                Principal interview
+                3. Family interview
               </h3>
               <p className="mt-4 text-lg leading-relaxed text-text-body">
-                An interview with the Principal is required of all new students
-                and their parents. We can often schedule the interview to
-                coincide with testing.
+                Every new student and their parents sit down with the Principal
+                and teacher so we can get acquainted, share more about life at
+                Elmwood, and answer any questions you have before enrolling.
+              </p>
+            </AnimateOnScroll>
+
+            <AnimateOnScroll>
+              <h3 className="font-serif text-2xl md:text-3xl text-ink">
+                4. Diagnostic testing
+              </h3>
+              <p className="mt-4 text-lg leading-relaxed text-text-body">
+                Students entering 4th grade or higher take a diagnostic test in
+                each subject so we can place them at the right academic level.
+                A $25.00 testing fee is due the day of testing, and we&rsquo;ll
+                gladly schedule it alongside your interview.
               </p>
             </AnimateOnScroll>
 
