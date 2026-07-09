@@ -16,7 +16,6 @@ const footerLinks: FooterLink[] = [
   },
   { href: "/academics", label: "Academics" },
   { href: "/parents", label: "Parents" },
-  { href: "/news", label: "News & Articles" },
   { href: "/support", label: "Support Elmwood" },
 ];
 
