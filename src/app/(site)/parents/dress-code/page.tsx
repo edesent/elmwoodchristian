@@ -184,7 +184,7 @@ export default function DressCodePage() {
       </section>
 
       {/* Preschool */}
-      <section className="bg-stone py-24 md:py-28 border-y border-line">
+      <section className="bg-paper py-24 md:py-28">
         <div className="max-w-7xl mx-auto px-6">
           <AnimateOnScroll className="max-w-3xl">
             <p className="eyebrow text-crimson">Ages 2&ndash;3 Years</p>
