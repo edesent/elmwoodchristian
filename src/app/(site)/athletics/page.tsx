@@ -64,20 +64,7 @@ export default function AthleticsPage() {
               Athletics throughout the year
             </h2>
 
-            <div className="mt-10 overflow-hidden border border-line rounded-sm bg-ink shadow-lg">
-              <video
-                className="block h-auto w-full"
-                controls
-                playsInline
-                preload="metadata"
-                poster="/video/athletics-poster.jpg"
-              >
-                <source src="/video/athletics.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-            </div>
-
-            <p className="mt-10 text-lg leading-relaxed text-text-body">
+            <p className="mt-6 text-lg leading-relaxed text-text-body">
               Elmwood Christian Academy offers middle school, junior-varsity, and
               varsity sports so boys and girls can take part in athletics
               throughout the school year. All eligible students are encouraged to
