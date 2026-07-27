@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 const boys = [
   "Pants: navy blue, black, dark grey, or khaki dress pants in good condition, with a solid black or brown belt (Kindergarten and Advanced Kindergarten exempt from the belt). Buckles require office approval.",
   "Shirts: collared, loose-fitting polo shirts in solid colors (2–4 buttons); only Elmwood logos permitted; kept buttoned except the top button; no visible undergarments except turtlenecks or long sleeves.",
-  "Shoes: solid black, brown, or navy dress shoes or boots for the classroom (no athletic or casual shoes); K-4 and K-5 may wear athletic or casual shoes; non-marking athletic shoes for P.E.",
+  "Shoes: solid black, brown, or navy dress shoes or boots for the classroom (no athletic or casual shoes); Kindergarten and Advanced Kindergarten may wear athletic or casual shoes; non-marking athletic shoes for P.E.",
   "Hair: cut and neatly groomed; not touching the ears or collar, not covering the eyebrows; tapered cuts only—no trendy cuts such as bowl cuts or mohawks; no facial hair or sideburns.",
   "General: no jewelry, sunglasses, hats, or hooded jackets indoors; backpacks and lunch boxes may not display movies, music groups, actors, or teen/adult icons.",
 ];
@@ -21,7 +21,7 @@ const boys = [
 const girls = [
   "Skirts: a modest, loose-fitting skirt (no culottes) to mid-calf; no denim or jean skirts; loose-fitting jumpers are an acceptable alternative.",
   "Shirts: collared, loose-fitting polo shirts in solid colors (2–4 buttons; Elmwood logo only); buttoned except the top button; nothing that reveals or shows the outline of an undergarment; no form-fitting or see-through shirts.",
-  "Shoes: solid black, brown, or navy dress shoes or boots for the classroom; no sandals or open-toed shoes; K-4 and K-5 may wear athletic or casual shoes; non-marking athletic shoes for P.E.",
+  "Shoes: solid black, brown, or navy dress shoes or boots for the classroom; no sandals or open-toed shoes; Kindergarten and Advanced Kindergarten may wear athletic or casual shoes; non-marking athletic shoes for P.E.",
   "Makeup: none under age 14; ages 14+ may apply lightly in natural tones—no bright colors.",
   "Hair: natural colors, styled in a way becoming to a Christian young lady; not hanging over the face or eyes; no streaking or unnatural colors.",
   "Jewelry: one earring per ear on the lobe; no dangling earrings or unconventional placements.",
