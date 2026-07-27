@@ -56,27 +56,34 @@ export default function DressCodePage() {
       />
 
       {/* Visual poster */}
-      <section className="bg-paper pt-20 md:pt-24">
+      <section className="bg-stone py-20 md:py-24 border-b border-line">
         <div className="max-w-7xl mx-auto px-6">
           <AnimateOnScroll>
             <a
               href="/forms/eca-dress-code-poster.png"
               target="_blank"
               rel="noopener"
-              className="group flex items-center gap-6 max-w-xl mx-auto bg-stone border border-line rounded-sm p-5 hover:border-crimson/40 transition-colors"
+              className="group flex flex-col sm:flex-row items-center gap-8 max-w-3xl mx-auto bg-paper border border-line rounded-sm p-8 hover:border-crimson/40 hover:shadow-[0_14px_44px_rgba(32,29,27,0.08)] transition-all"
             >
-              <div className="relative shrink-0 w-20 h-20 overflow-hidden rounded-sm border border-line">
+              <div className="relative shrink-0 w-28 h-28 overflow-hidden rounded-sm border border-line">
                 <Image
                   src="/forms/eca-dress-code-poster.png"
                   alt="Elmwood Christian Academy dress code poster thumbnail"
                   fill
-                  sizes="80px"
+                  sizes="112px"
                   className="object-cover"
                 />
               </div>
-              <span className="text-lg font-semibold text-ink group-hover:text-crimson transition-colors">
-                Click here for a visual poster of the dress code &rarr;
-              </span>
+              <div className="text-center sm:text-left">
+                <p className="eyebrow text-crimson">Quick Reference</p>
+                <h3 className="mt-2 font-serif text-2xl text-ink leading-snug">
+                  Dress code at a glance
+                </h3>
+                <span className="mt-3 inline-flex items-center gap-2 text-crimson font-semibold uppercase tracking-[0.12em] text-sm">
+                  Click here for a visual poster of the dress code
+                  <span className="transition-transform group-hover:translate-x-1">→</span>
+                </span>
+              </div>
             </a>
           </AnimateOnScroll>
         </div>
