@@ -66,8 +66,28 @@ export default function DressCodePage() {
         subtitle="Modest, neat, and honoring to Christ."
       />
 
+      {/* Philosophy */}
+      <section className="bg-paper py-24 md:py-28">
+        <div className="max-w-7xl mx-auto px-6">
+          <AnimateOnScroll className="max-w-3xl">
+            <p className="eyebrow text-crimson">Our Standard</p>
+            <span className="rule mt-4" />
+            <h2 className="mt-6 font-serif text-4xl md:text-5xl text-ink leading-tight">
+              Pleasing and honoring to Christ
+            </h2>
+            <p className="mt-6 text-lg leading-relaxed text-text-body">
+              Each student&rsquo;s appearance should be such that Christ would be
+              pleased and honored. No immodest dress is allowed. Our standards
+              rest on three biblical principles: modesty is essential, needlessly
+              offending others is wrong, and our dress should honor God and avoid
+              the appearance of evil.
+            </p>
+          </AnimateOnScroll>
+        </div>
+      </section>
+
       {/* Visual poster */}
-      <section className="bg-stone py-20 md:py-24 border-b border-line">
+      <section className="bg-stone py-20 md:py-24 border-y border-line">
         <div className="max-w-7xl mx-auto px-6">
           <AnimateOnScroll>
             <a
@@ -100,28 +120,8 @@ export default function DressCodePage() {
         </div>
       </section>
 
-      {/* Philosophy */}
-      <section className="bg-paper py-24 md:py-28">
-        <div className="max-w-7xl mx-auto px-6">
-          <AnimateOnScroll className="max-w-3xl">
-            <p className="eyebrow text-crimson">Our Standard</p>
-            <span className="rule mt-4" />
-            <h2 className="mt-6 font-serif text-4xl md:text-5xl text-ink leading-tight">
-              Pleasing and honoring to Christ
-            </h2>
-            <p className="mt-6 text-lg leading-relaxed text-text-body">
-              Each student&rsquo;s appearance should be such that Christ would be
-              pleased and honored. No immodest dress is allowed. Our standards
-              rest on three biblical principles: modesty is essential, needlessly
-              offending others is wrong, and our dress should honor God and avoid
-              the appearance of evil.
-            </p>
-          </AnimateOnScroll>
-        </div>
-      </section>
-
       {/* Boys */}
-      <section className="bg-stone py-24 md:py-28 border-y border-line">
+      <section className="bg-paper py-24 md:py-28">
         <div className="max-w-7xl mx-auto px-6">
           <AnimateOnScroll className="max-w-3xl">
             <p className="eyebrow text-crimson">K-4 through 12th Grade</p>
@@ -142,7 +142,7 @@ export default function DressCodePage() {
       </section>
 
       {/* Girls */}
-      <section className="bg-paper py-24 md:py-28">
+      <section className="bg-stone py-24 md:py-28 border-y border-line">
         <div className="max-w-7xl mx-auto px-6">
           <AnimateOnScroll className="max-w-3xl">
             <p className="eyebrow text-crimson">K-4 through 12th Grade</p>
@@ -163,7 +163,7 @@ export default function DressCodePage() {
       </section>
 
       {/* Not Permitted */}
-      <section className="bg-stone py-24 md:py-28 border-y border-line">
+      <section className="bg-paper py-24 md:py-28">
         <div className="max-w-7xl mx-auto px-6">
           <AnimateOnScroll className="max-w-3xl">
             <p className="eyebrow text-crimson">K-4 through 12th Grade</p>
@@ -184,7 +184,7 @@ export default function DressCodePage() {
       </section>
 
       {/* Preschool */}
-      <section className="bg-paper py-24 md:py-28">
+      <section className="bg-stone py-24 md:py-28 border-y border-line">
         <div className="max-w-7xl mx-auto px-6">
           <AnimateOnScroll className="max-w-3xl">
             <p className="eyebrow text-crimson">Ages 2&ndash;3 Years</p>
