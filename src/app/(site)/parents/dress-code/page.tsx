@@ -7,7 +7,7 @@ import AnimateOnScroll from "@/components/AnimateOnScroll";
 export const metadata: Metadata = {
   title: "Dress Code",
   description:
-    "The dress code for Elmwood Christian Academy in Brighton, Colorado: modest, neat, and honoring to Christ. Standards for boys, girls, and preschool, K-4 through 12th grade.",
+    "The dress code for Elmwood Christian Academy in Brighton, Colorado: modest, neat, and honoring to Christ. Standards for boys, girls, and preschool, Kindergarten through 12th grade.",
 };
 
 const boys = [
