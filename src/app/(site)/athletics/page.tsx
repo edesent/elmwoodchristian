@@ -32,8 +32,8 @@ const sports = [
   {
     title: "Soccer — Boys",
     body: "Season begins August 1 and runs through mid-October.",
-    img: null,
-    alt: "",
+    img: "/img/img-3362.jpg",
+    alt: "Elmwood Eagles boys soccer team",
   },
 ];
 
