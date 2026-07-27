@@ -22,7 +22,7 @@ const levels = [
     body: "A four-year-old classroom built on adventure, friendships, and fun—matching or exceeding traditional full-day kindergarten. Students learn to write numbers and letters, begin phonics-based reading (reading simple words by mid-February), and study the Bible from creation through the resurrection of Jesus Christ.",
   },
   {
-    grades: "Advanced Kindergarten",
+    grades: "Age 5",
     name: "Advanced Kindergarten",
     body: "Designed to challenge five-year-olds and prepare them for elementary school with a strong foundation in reading and writing. The ABeka curriculum covers vowel and consonant sounds, blends, and sentence comprehension; number skills through 100 with simple addition, subtraction, time, and money; and Bible doctrine with historical accounts from Scripture.",
   },
