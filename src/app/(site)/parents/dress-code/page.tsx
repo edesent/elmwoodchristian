@@ -28,6 +28,17 @@ const girls = [
   "General: no hats indoors; same backpack and lunch-box restrictions as above.",
 ];
 
+const notPermitted = [
+  "Jeans or denim of any kind",
+  "Graphic apparel (large logos or words on shirts or sweaters)",
+  "Athletic wear, including sweatpants, athletic shorts, hooded sweatshirts, crew neck sweatshirts, and leggings worn as pants",
+  "Mini-skirts, skirts that are at the knee when sitting, cargo pants, low-rise pants, any tight or form-fitting pants, tops, or skirts, wallet chains, dog collars, or spikes and other such \u201caccessories.\u201d",
+  "Collarless shirts",
+  "Untucked shirts",
+  "Wrinkled clothing",
+  "Attire that is excessively casual, revealing, distressed, or otherwise inconsistent with the spirit of this policy",
+];
+
 const preschoolBoys = [
   "Navy, black, dark grey, or khaki pants in good condition.",
   "Collared, loose-fitting 2–4 button polo of any color or pattern, buttoned except the top button.",
