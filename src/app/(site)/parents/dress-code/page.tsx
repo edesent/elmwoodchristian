@@ -55,6 +55,33 @@ export default function DressCodePage() {
         subtitle="Modest, neat, and honoring to Christ."
       />
 
+      {/* Visual poster */}
+      <section className="bg-paper pt-20 md:pt-24">
+        <div className="max-w-7xl mx-auto px-6">
+          <AnimateOnScroll>
+            <a
+              href="/forms/eca-dress-code-poster.png"
+              target="_blank"
+              rel="noopener"
+              className="group flex items-center gap-6 max-w-xl mx-auto bg-stone border border-line rounded-sm p-5 hover:border-crimson/40 transition-colors"
+            >
+              <div className="relative shrink-0 w-20 h-20 overflow-hidden rounded-sm border border-line">
+                <Image
+                  src="/forms/eca-dress-code-poster.png"
+                  alt="Elmwood Christian Academy dress code poster thumbnail"
+                  fill
+                  sizes="80px"
+                  className="object-cover"
+                />
+              </div>
+              <span className="text-lg font-semibold text-ink group-hover:text-crimson transition-colors">
+                Click here for a visual poster of the dress code &rarr;
+              </span>
+            </a>
+          </AnimateOnScroll>
+        </div>
+      </section>
+
       {/* Philosophy */}
       <section className="bg-paper py-24 md:py-28">
         <div className="max-w-7xl mx-auto px-6">
