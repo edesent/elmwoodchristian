@@ -76,9 +76,6 @@ export default function AthleticsPage() {
               medium of athletics. As an independent school, we compete against a
               variety of schools at different levels.
             </p>
-            <p className="mt-6 text-lg leading-relaxed text-text-body">
-              Athletic Director: Pastor Joshua Lehman.
-            </p>
           </AnimateOnScroll>
         </div>
       </section>
