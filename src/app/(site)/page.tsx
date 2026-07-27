@@ -49,8 +49,8 @@ const sports = [
   {
     name: "Soccer",
     detail: "Boys · Aug–Oct",
-    img: null,
-    alt: "",
+    img: "/img/img-3362.jpg",
+    alt: "Elmwood Eagles boys soccer team",
   },
 ];
 
