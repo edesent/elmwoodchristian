@@ -162,6 +162,27 @@ export default function DressCodePage() {
         </div>
       </section>
 
+      {/* Not Permitted */}
+      <section className="bg-stone py-24 md:py-28 border-y border-line">
+        <div className="max-w-7xl mx-auto px-6">
+          <AnimateOnScroll className="max-w-3xl">
+            <p className="eyebrow text-crimson">K-4 through 12th Grade</p>
+            <span className="rule mt-4" />
+            <h2 className="mt-6 font-serif text-4xl md:text-5xl text-ink leading-tight">
+              Not permitted
+            </h2>
+            <ul className="mt-8 space-y-5">
+              {notPermitted.map((item, i) => (
+                <li key={i} className="flex gap-4 text-lg leading-relaxed text-text-body">
+                  <span className="mt-2 h-2 w-2 shrink-0 rotate-45 bg-crimson" />
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+          </AnimateOnScroll>
+        </div>
+      </section>
+
       {/* Preschool */}
       <section className="bg-stone py-24 md:py-28 border-y border-line">
         <div className="max-w-7xl mx-auto px-6">
