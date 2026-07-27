@@ -19,13 +19,12 @@ const boys = [
 ];
 
 const girls = [
-  "Skirts: a modest, loose-fitting skirt (no culottes) to mid-calf; no denim or jean skirts; loose-fitting jumpers are an acceptable alternative.",
-  "Shirts: collared, loose-fitting polo shirts in solid colors (2–4 buttons; Elmwood logo only); buttoned except the top button; nothing that reveals or shows the outline of an undergarment; no form-fitting or see-through shirts.",
-  "Shoes: solid black, brown, or navy dress shoes or boots for the classroom; no sandals or open-toed shoes; Kindergarten and Advanced Kindergarten may wear athletic or casual shoes; non-marking athletic shoes for P.E.",
-  "Makeup: none under age 14; ages 14+ may apply lightly in natural tones—no bright colors.",
-  "Hair: natural colors, styled in a way becoming to a Christian young lady; not hanging over the face or eyes; no streaking or unnatural colors.",
-  "Jewelry: one earring per ear on the lobe; no dangling earrings or unconventional placements.",
-  "General: no hats indoors; same backpack and lunch-box restrictions as above.",
+  "Skirts, dresses & jumpers: a modest, loose-fitting skirt or jumper to at least mid-calf (no culottes, no denim); slits may not rise above the back of the knee; solid-color leggings worn underneath must be full-length or fully concealed.",
+  "Shirts: loose-fitting, collared polo (2–4 buttons) in a solid color—small brand logos or Elmwood logos permitted—or a solid button-up dress shirt; buttoned except the top button; sleeves must reach within four inches of the shoulder for grades 7–12; no t-shirts, form-fitting or sheer fabric, or anything that reveals or outlines an undergarment; no visible undergarments except solid turtlenecks or long sleeves underneath.",
+  "Outerwear: neat, conservative sweaters, quarter-zips, vests, or cardigans may be worn over a uniform shirt that stays visible at the collar; hoodies, crewneck or oversized sweatshirts, and fleece or flannel jackets are not permitted during the school day unless approved for a special event; outdoor coats and jackets should come off upon entering the building.",
+  "Shoes: conservative, solid-color dress shoes or boots that can be cleaned and polished; no athletic, canvas, or skate shoes, Crocs, slippers, sandals, open-toed shoes, or other casual footwear (athletic shoes allowed for P.E., practices, and recess); shoes must stay clean and in good repair.",
+  "Makeup & jewelry: light, natural-toned makeup permitted from age 14, nothing bright or excessive; one conservative earring per earlobe—no large or dangling styles, and none worn outside the earlobe.",
+  "Hair: clean, neatly groomed, and styled in a natural, conservative manner; not falling over the eyebrows or eyes; no extreme or trend-driven styles and no unnatural or distracting dye or coloring; the Administration determines final compliance.",
 ];
 
 const notPermitted = [
