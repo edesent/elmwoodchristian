@@ -32,7 +32,7 @@ const procedures = [
 const forms = [
   "2025–2026 Re-Enrollment Forms",
   "Supply Lists for All Grades",
-  "Elmwood Family Handbook",
+  "Elmwood Academy Handbook",
 ];
 
 export default function ParentsPage() {
