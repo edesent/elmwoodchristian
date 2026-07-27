@@ -264,7 +264,7 @@ export default function AdmissionsPage() {
             </h2>
           </AnimateOnScroll>
 
-          <div className="mt-14 grid md:grid-cols-3 gap-8">
+          <div className="mt-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {downloads.map((d, i) => (
               <AnimateOnScroll key={d.href} delay={i * 80}>
                 <a
