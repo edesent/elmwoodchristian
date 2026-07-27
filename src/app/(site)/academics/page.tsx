@@ -85,7 +85,7 @@ export default function AcademicsPage() {
             <div className="mt-8 border-l-2 border-crimson/70 pl-6 py-1">
               <p className="font-serif italic text-xl md:text-2xl text-ink leading-relaxed">
                 Elmwood students have consistently scored well above the national
-                norms on the Stanford Achievement Testing program.
+                norms on the IOWA Standardized Assessments program.
               </p>
             </div>
           </AnimateOnScroll>
