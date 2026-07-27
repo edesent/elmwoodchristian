@@ -11,11 +11,11 @@ export const metadata: Metadata = {
 };
 
 const boys = [
-  "Pants: navy blue, black, dark grey, or khaki dress pants in good condition, with a solid black or brown belt (Kindergarten and Advanced Kindergarten exempt from the belt). Buckles require office approval.",
-  "Shirts: collared, loose-fitting polo shirts in solid colors (2–4 buttons); only Elmwood logos permitted; kept buttoned except the top button; no visible undergarments except turtlenecks or long sleeves.",
-  "Shoes: solid black, brown, or navy dress shoes or boots for the classroom (no athletic or casual shoes); Kindergarten and Advanced Kindergarten may wear athletic or casual shoes; non-marking athletic shoes for P.E.",
-  "Hair: cut and neatly groomed; not touching the ears or collar, not covering the eyebrows; tapered cuts only—no trendy cuts such as bowl cuts or mohawks; no facial hair or sideburns.",
-  "General: no jewelry, sunglasses, hats, or hooded jackets indoors; backpacks and lunch boxes may not display movies, music groups, actors, or teen/adult icons.",
+  "Pants: navy, black, dark grey, or khaki dress pants, clean and properly fitted, free of rips, tears, or excessive wear; a solid black or brown belt is required, with modest buckles subject to office approval.",
+  "Shirts: loose-fitting, collared polo (2–4 buttons) in a solid color—small brand logos or Elmwood logos permitted—or a solid button-up dress shirt with a tie; kept tucked and buttoned except the top button; sleeves must reach within four inches of the shoulder; no visible undergarments except solid turtlenecks or long sleeves underneath.",
+  "Outerwear: neat, conservative sweaters, quarter-zips, vests, or cardigans may be worn over a uniform shirt that stays visible at the collar; hoodies, crewneck or oversized sweatshirts, and fleece or flannel jackets are not permitted during the school day unless approved for a special event; outdoor coats and jackets should come off upon entering the building.",
+  "Shoes: conservative, solid-color dress shoes or boots that can be cleaned and polished; no athletic, canvas, or skate shoes, Crocs, slippers, sandals, or other casual footwear (athletic shoes allowed for P.E., practices, and recess); no feminine styles or fashion heels; shoes must stay clean and in good repair.",
+  "Hair: clean, neatly groomed, and tapered—not touching the ears or collar, not covering the eyebrows, and no more than about 1½ inches in height; no extreme or trend-driven styles (mohawks, mullets, bowl cuts, shaved designs, and the like) and no dyeing or coloring; the Administration determines final compliance.",
 ];
 
 const girls = [
