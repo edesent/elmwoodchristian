@@ -17,7 +17,7 @@ const levels = [
     body: "A preschool environment filled with safety, comfort, and creativity. We emphasize social-emotional development and problem-solving through colors, shapes, beginning literacy, math and science concepts, imaginative play, art, music, games, and field trips—with the ABeka curriculum introducing letters and numbers and a foundation in the Bible.",
   },
   {
-    grades: "PreK (Kindergarten)",
+    grades: "Age 4",
     name: "Kindergarten",
     body: "A four-year-old classroom built on adventure, friendships, and fun—matching or exceeding traditional full-day kindergarten. Students learn to write numbers and letters, begin phonics-based reading (reading simple words by mid-February), and study the Bible from creation through the resurrection of Jesus Christ.",
   },
