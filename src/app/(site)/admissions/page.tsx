@@ -49,6 +49,11 @@ const downloads = [
     desc: "Current tuition rates, fees, and available payment plans.",
     href: "/forms/tuition-information.pdf",
   },
+  {
+    title: "Elmwood Academy Handbook",
+    desc: "Policies, procedures, and expectations for Elmwood families.",
+    href: "/forms/elmwood-academy-handbook.pdf",
+  },
 ];
 
 export default function AdmissionsPage() {
