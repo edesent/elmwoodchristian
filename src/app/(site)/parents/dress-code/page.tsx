@@ -124,7 +124,7 @@ export default function DressCodePage() {
       <section className="bg-paper py-24 md:py-28">
         <div className="max-w-7xl mx-auto px-6">
           <AnimateOnScroll className="max-w-3xl">
-            <p className="eyebrow text-crimson">K-4 through 12th Grade</p>
+            <p className="eyebrow text-crimson">Kindergarten through 12th Grade</p>
             <span className="rule mt-4" />
             <h2 className="mt-6 font-serif text-4xl md:text-5xl text-ink leading-tight">
               Boys
@@ -145,7 +145,7 @@ export default function DressCodePage() {
       <section className="bg-stone py-24 md:py-28 border-y border-line">
         <div className="max-w-7xl mx-auto px-6">
           <AnimateOnScroll className="max-w-3xl">
-            <p className="eyebrow text-crimson">K-4 through 12th Grade</p>
+            <p className="eyebrow text-crimson">Kindergarten through 12th Grade</p>
             <span className="rule mt-4" />
             <h2 className="mt-6 font-serif text-4xl md:text-5xl text-ink leading-tight">
               Girls
@@ -166,7 +166,7 @@ export default function DressCodePage() {
       <section className="bg-paper py-24 md:py-28">
         <div className="max-w-7xl mx-auto px-6">
           <AnimateOnScroll className="max-w-3xl">
-            <p className="eyebrow text-crimson">K-4 through 12th Grade</p>
+            <p className="eyebrow text-crimson">Kindergarten through 12th Grade</p>
             <span className="rule mt-4" />
             <h2 className="mt-6 font-serif text-4xl md:text-5xl text-ink leading-tight">
               Not permitted
