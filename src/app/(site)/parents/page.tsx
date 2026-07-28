@@ -30,9 +30,9 @@ const procedures = [
 ];
 
 const forms = [
-  "2025–2026 Re-Enrollment Forms",
-  "Supply Lists for All Grades",
-  "Elmwood Academy Handbook",
+  { label: "Enrollment Forms — 1st–12th Grade", href: "/forms/enrollment-1st-12th.pdf" },
+  { label: "Enrollment Forms — PreK & Kindergarten", href: "/forms/enrollment-prek-k.pdf" },
+  { label: "Tuition Information", href: "/forms/tuition-information.pdf" },
 ];
 
 export default function ParentsPage() {
@@ -43,6 +43,36 @@ export default function ParentsPage() {
         title="Parent resources"
         subtitle="Everything you need for the school day."
       />
+
+      {/* School calendar */}
+      <section className="bg-stone py-24 md:py-28 border-b border-line">
+        <div className="max-w-7xl mx-auto px-6">
+          <AnimateOnScroll className="max-w-3xl">
+            <p className="eyebrow text-crimson">School Calendar</p>
+            <span className="rule mt-4" />
+            <h2 className="mt-6 font-serif text-4xl md:text-5xl text-ink leading-tight">
+              Key dates &amp; upcoming events
+            </h2>
+            <p className="mt-6 text-lg leading-relaxed text-text-body">
+              Stay up to date with the school calendar below&mdash;holidays,
+              early-release days, and events for the year.
+            </p>
+          </AnimateOnScroll>
+
+          <AnimateOnScroll delay={120} className="mt-12">
+            <div className="overflow-hidden rounded-sm border border-line bg-paper shadow-sm">
+              <iframe
+                src="https://calendar.google.com/calendar/embed?src=elmwoodbaptist.org_m17aao8ael2gc6l60pfpso9mmc%40group.calendar.google.com&ctz=America%2FDenver"
+                title="Elmwood Christian Academy school calendar"
+                className="w-full h-[600px]"
+                style={{ border: 0 }}
+                frameBorder={0}
+                scrolling="no"
+              />
+            </div>
+          </AnimateOnScroll>
+        </div>
+      </section>
 
       {/* Welcome */}
       <section className="bg-paper py-24 md:py-28">
@@ -113,13 +143,28 @@ export default function ParentsPage() {
               Forms &amp; handbooks
             </h2>
             <p className="mt-6 text-lg leading-relaxed text-text-body">
-              The following are available from the school office:
+              Download the forms you need below, or request a copy from the
+              school office:
             </p>
-            <ul className="mt-8 space-y-5">
+            <ul className="mt-8 space-y-4">
               {forms.map((f) => (
-                <li key={f} className="flex gap-4 text-lg leading-relaxed text-text-body">
-                  <span className="mt-2 h-2 w-2 shrink-0 rotate-45 bg-crimson" />
-                  <span>{f}</span>
+                <li key={f.href}>
+                  <a
+                    href={f.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group flex items-center gap-4 bg-paper border border-line rounded-sm px-6 py-5 hover:border-crimson/40 hover:shadow-[0_14px_44px_rgba(32,29,27,0.08)] transition-all"
+                  >
+                    <span className="grid place-items-center h-10 w-10 shrink-0 rounded-sm bg-crimson/10 text-crimson font-semibold text-sm">
+                      PDF
+                    </span>
+                    <span className="flex-1 text-lg text-ink leading-snug">
+                      {f.label}
+                    </span>
+                    <span className="text-crimson text-xl transition-transform group-hover:translate-x-1">
+                      ↓
+                    </span>
+                  </a>
                 </li>
               ))}
             </ul>
