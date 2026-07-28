@@ -30,9 +30,9 @@ const procedures = [
 ];
 
 const forms = [
-  { label: "Enrollment Forms — 1st–12th Grade", href: "/forms/enrollment-1st-12th.pdf" },
-  { label: "Enrollment Forms — PreK & Kindergarten", href: "/forms/enrollment-prek-k.pdf" },
-  { label: "Tuition Information", href: "/forms/tuition-information.pdf" },
+  "2025–2026 Re-Enrollment Forms",
+  "Supply Lists for All Grades",
+  "Elmwood Academy Handbook",
 ];
 
 export default function ParentsPage() {
@@ -143,28 +143,13 @@ export default function ParentsPage() {
               Forms &amp; handbooks
             </h2>
             <p className="mt-6 text-lg leading-relaxed text-text-body">
-              Download the forms you need below, or request a copy from the
-              school office:
+              The following are available from the school office:
             </p>
-            <ul className="mt-8 space-y-4">
+            <ul className="mt-8 space-y-5">
               {forms.map((f) => (
-                <li key={f.href}>
-                  <a
-                    href={f.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="group flex items-center gap-4 bg-paper border border-line rounded-sm px-6 py-5 hover:border-crimson/40 hover:shadow-[0_14px_44px_rgba(32,29,27,0.08)] transition-all"
-                  >
-                    <span className="grid place-items-center h-10 w-10 shrink-0 rounded-sm bg-crimson/10 text-crimson font-semibold text-sm">
-                      PDF
-                    </span>
-                    <span className="flex-1 text-lg text-ink leading-snug">
-                      {f.label}
-                    </span>
-                    <span className="text-crimson text-xl transition-transform group-hover:translate-x-1">
-                      ↓
-                    </span>
-                  </a>
+                <li key={f} className="flex gap-4 text-lg leading-relaxed text-text-body">
+                  <span className="mt-2 h-2 w-2 shrink-0 rotate-45 bg-crimson" />
+                  <span>{f}</span>
                 </li>
               ))}
             </ul>
