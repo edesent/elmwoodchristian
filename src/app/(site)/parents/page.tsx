@@ -43,7 +43,10 @@ const forms = [
     label: "Supply List — Learning Center Classes",
     href: "/forms/supply-lists-for-learning-center-classes-2026.jpg",
   },
-  { label: "Elmwood Academy Handbook" },
+  {
+    label: "Elmwood Academy Handbook",
+    href: "/forms/ECA-Handbook%2026-27_072926.pdf",
+  },
 ];
 
 export default function ParentsPage() {
