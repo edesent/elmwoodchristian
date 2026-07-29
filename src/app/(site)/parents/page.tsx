@@ -158,9 +158,20 @@ export default function ParentsPage() {
             </p>
             <ul className="mt-8 space-y-5">
               {forms.map((f) => (
-                <li key={f} className="flex gap-4 text-lg leading-relaxed text-text-body">
+                <li key={f.label} className="flex gap-4 text-lg leading-relaxed text-text-body">
                   <span className="mt-2 h-2 w-2 shrink-0 rotate-45 bg-crimson" />
-                  <span>{f}</span>
+                  {f.href ? (
+                    <a
+                      href={f.href}
+                      target="_blank"
+                      rel="noopener"
+                      className="text-crimson font-semibold hover:text-crimson-dark transition-colors underline underline-offset-4 decoration-crimson/30"
+                    >
+                      {f.label}
+                    </a>
+                  ) : (
+                    <span>{f.label}</span>
+                  )}
                 </li>
               ))}
             </ul>
