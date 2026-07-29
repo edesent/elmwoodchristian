@@ -30,9 +30,20 @@ const procedures = [
 ];
 
 const forms = [
-  "2025–2026 Re-Enrollment Forms",
-  "Supply Lists for All Grades",
-  "Elmwood Academy Handbook",
+  { label: "2025–2026 Re-Enrollment Forms" },
+  {
+    label: "Supply List — Kindergarten Classes",
+    href: "/forms/supply-lists-for-kindergarten-classes-2026.jpg",
+  },
+  {
+    label: "Supply List — Elementary Classes",
+    href: "/forms/supply-lists-for-elementary-classes-2026.jpg",
+  },
+  {
+    label: "Supply List — Learning Center Classes",
+    href: "/forms/supply-lists-for-learning-center-classes-2026.jpg",
+  },
+  { label: "Elmwood Academy Handbook" },
 ];
 
 export default function ParentsPage() {
