@@ -306,7 +306,7 @@ export default function AdmissionsPage() {
             </p>
             <div className="mt-9 flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="/forms/tuition-information.pdf"
+                href="/forms/Financial%20Page%202026-Web.pdf"
                 target="_blank"
                 rel="noopener"
                 className="inline-flex items-center justify-center bg-white text-crimson font-semibold px-8 py-4 rounded-sm uppercase tracking-[0.1em] text-sm hover:bg-white/90 transition-colors"
