@@ -207,6 +207,58 @@ export default function ParentsPage() {
         </div>
       </section>
 
+      {/* Lunch program */}
+      <section className="bg-paper py-24 md:py-28 border-t border-line">
+        <div className="max-w-7xl mx-auto px-6">
+          <AnimateOnScroll className="max-w-3xl">
+            <p className="eyebrow text-crimson">Lunch</p>
+            <span className="rule mt-4" />
+            <h2 className="mt-6 font-serif text-4xl md:text-5xl text-ink leading-tight">
+              Lunch &amp; Little Chef&rsquo;s Kitchen Lunch Program
+            </h2>
+            <p className="mt-6 text-lg leading-relaxed text-text-body">
+              Because Elmwood Christian Academy does not have a commercial
+              kitchen, we are unable to prepare or serve meals on campus. We
+              encourage parents to send a healthy lunch with their child each
+              day.
+            </p>
+            <p className="mt-6 text-lg leading-relaxed text-text-body">
+              We are also pleased to offer The Little Chef&rsquo;s Kitchen Lunch
+              Program. Managed by Chef Gabriel Park, this optional program
+              provides fresh, nutritious meals at an affordable price. Meals are
+              prepared off site and delivered to the school warm each day.
+              Families who wish to participate may place orders directly
+              through{" "}
+              <a
+                href="https://www.thelittlechefskitchen.com"
+                target="_blank"
+                rel="noopener"
+                className="text-crimson font-semibold underline underline-offset-4 decoration-crimson/30 hover:text-crimson-dark transition-colors"
+              >
+                www.thelittlechefskitchen.com
+              </a>
+              .
+            </p>
+            <a
+              href="/forms/little-chefs-kitchen-brochure.pdf"
+              target="_blank"
+              rel="noopener"
+              className="mt-2 inline-flex items-center gap-2 text-crimson font-semibold uppercase tracking-[0.12em] text-sm hover:text-crimson-dark transition-colors"
+            >
+              Click Here for PDF Info
+              <span>&rarr;</span>
+            </a>
+            <p className="mt-6 text-lg leading-relaxed text-text-body">
+              For those occasional mornings when time gets away from you or your
+              child forgets to bring a lunch, the school also keeps a limited
+              selection of microwaveable meal items available for purchase.
+              This service is intended as a convenient backup option to ensure
+              that no student goes without lunch.
+            </p>
+          </AnimateOnScroll>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="bg-paper py-24 md:py-28">
         <div className="max-w-7xl mx-auto px-6 text-center">
