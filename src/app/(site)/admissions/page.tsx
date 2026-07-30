@@ -47,7 +47,7 @@ const downloads = [
   {
     title: "Tuition & Fees Information",
     desc: "Current tuition rates, fees, and available payment plans.",
-    href: "/forms/tuition-information.pdf",
+    href: "/forms/Financial%20Page%202026-Web.pdf",
   },
   {
     title: "Elmwood Academy Handbook",
