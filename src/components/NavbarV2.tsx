@@ -162,17 +162,31 @@ export default function NavbarV2() {
         }`}
       >
         <ul className="px-6 py-4 flex flex-col gap-1">
-          {navLinks.map((link) => (
-            <li key={link.href}>
-              <Link
-                href={link.href}
-                onClick={() => setMenuOpen(false)}
-                className="block px-2 py-3 text-base font-medium text-charcoal border-b border-line/60 hover:text-crimson transition-colors"
-              >
-                {link.label}
-              </Link>
-            </li>
-          ))}
+          {navLinks.map((link) =>
+            link.external ? (
+              <li key={link.href}>
+                <a
+                  href={link.href}
+                  target="_blank"
+                  rel="noopener"
+                  onClick={() => setMenuOpen(false)}
+                  className="block px-2 py-3 text-base font-medium text-charcoal border-b border-line/60 hover:text-crimson transition-colors"
+                >
+                  {link.label}
+                </a>
+              </li>
+            ) : (
+              <li key={link.href}>
+                <Link
+                  href={link.href}
+                  onClick={() => setMenuOpen(false)}
+                  className="block px-2 py-3 text-base font-medium text-charcoal border-b border-line/60 hover:text-crimson transition-colors"
+                >
+                  {link.label}
+                </Link>
+              </li>
+            )
+          )}
           <li className="mt-3 grid grid-cols-2 gap-3">
             <Link
               href="/schedule-a-tour"
