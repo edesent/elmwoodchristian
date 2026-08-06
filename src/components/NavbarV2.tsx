@@ -10,6 +10,11 @@ const navLinks = [
   { href: "/admissions", label: "Admissions" },
   { href: "/athletics", label: "Athletics" },
   { href: "/parents", label: "Parents" },
+  {
+    href: "https://tithe.ly/give_new/www/#/tithely/give-one-time/4263938",
+    label: "Pay Tuition",
+    external: true,
+  },
 ];
 
 export default function NavbarV2() {
