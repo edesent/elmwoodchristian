@@ -161,7 +161,7 @@ export default function ParentsPage() {
               Video, Forms &amp; Handbooks
             </h2>
             <p className="mt-6 text-lg leading-relaxed text-text-body">
-              Printed copies of all forms and handbook available in the
+              Printed copies of all forms and handbook are available in the
               school office.
             </p>
             <ul className="mt-8 space-y-5">
