@@ -162,7 +162,7 @@ export default function ParentsPage() {
 
             <div className="mt-10 relative aspect-video w-full overflow-hidden rounded-sm border border-line shadow-sm">
               <iframe
-                src="https://player.vimeo.com/video/991795297?h=7bfb3ca284&title=0&byline=0&portrait=0"
+                src="https://player.vimeo.com/video/991795297?title=0&byline=0&portrait=0"
                 title="Elmwood Christian Academy Parent Orientation Video"
                 className="absolute inset-0 h-full w-full"
                 frameBorder={0}
