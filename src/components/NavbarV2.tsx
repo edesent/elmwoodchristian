@@ -88,18 +88,33 @@ export default function NavbarV2() {
 
           <div className="hidden lg:flex items-center gap-5">
             <ul className="flex items-center gap-5">
-              {navLinks.map((link) => (
-                <li key={link.href}>
-                  <Link
-                    href={link.href}
-                    className={`text-[0.95rem] font-medium tracking-wide transition-colors ${
-                      solid ? "text-charcoal hover:text-crimson" : "text-white/90 hover:text-white"
-                    }`}
-                  >
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
+              {navLinks.map((link) =>
+                link.external ? (
+                  <li key={link.href}>
+                    <a
+                      href={link.href}
+                      target="_blank"
+                      rel="noopener"
+                      className={`text-[0.95rem] font-medium tracking-wide transition-colors ${
+                        solid ? "text-charcoal hover:text-crimson" : "text-white/90 hover:text-white"
+                      }`}
+                    >
+                      {link.label}
+                    </a>
+                  </li>
+                ) : (
+                  <li key={link.href}>
+                    <Link
+                      href={link.href}
+                      className={`text-[0.95rem] font-medium tracking-wide transition-colors ${
+                        solid ? "text-charcoal hover:text-crimson" : "text-white/90 hover:text-white"
+                      }`}
+                    >
+                      {link.label}
+                    </Link>
+                  </li>
+                )
+              )}
             </ul>
             <div className="flex items-center gap-3">
               <Link
