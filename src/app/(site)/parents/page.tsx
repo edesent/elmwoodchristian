@@ -158,7 +158,7 @@ export default function ParentsPage() {
             <p className="eyebrow text-crimson">School Forms</p>
             <span className="rule mt-4" />
             <h2 className="mt-6 font-serif text-4xl md:text-5xl text-ink leading-tight">
-              Forms &amp; handbooks
+              Video, Forms &amp; Handbooks
             </h2>
             <p className="mt-6 text-lg leading-relaxed text-text-body">
               The following are available from the school office:
