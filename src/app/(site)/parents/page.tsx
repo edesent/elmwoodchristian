@@ -30,10 +30,6 @@ const procedures = [
 ];
 
 const forms = [
-  {
-    label: "Parent Orientation Video",
-    href: "https://vimeo.com/991795297/7bfb3ca284?fl=pl&fe=sh",
-  },
   { label: "2025–2026 Re-Enrollment Forms" },
   {
     label: "Supply List — Kindergarten Classes",
