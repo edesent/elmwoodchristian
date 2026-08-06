@@ -163,19 +163,7 @@ export default function ParentsPage() {
             <p className="mt-6 text-lg leading-relaxed text-text-body">
               The following are available from the school office:
             </p>
-
-            <div className="mt-10 relative aspect-video w-full overflow-hidden rounded-sm border border-line shadow-sm">
-              <iframe
-                src="https://player.vimeo.com/video/991795297?title=0&byline=0&portrait=0"
-                title="Elmwood Christian Academy Parent Orientation Video"
-                className="absolute inset-0 h-full w-full"
-                frameBorder={0}
-                allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
-                allowFullScreen
-              />
-            </div>
-
-            <ul className="mt-10 space-y-5">
+            <ul className="mt-8 space-y-5">
               {forms.map((f) => (
                 <li key={f.label} className="flex gap-4 text-lg leading-relaxed text-text-body">
                   <span className="mt-2 h-2 w-2 shrink-0 rotate-45 bg-crimson" />
