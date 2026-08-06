@@ -161,7 +161,8 @@ export default function ParentsPage() {
               Video, Forms &amp; Handbooks
             </h2>
             <p className="mt-6 text-lg leading-relaxed text-text-body">
-              The following are available from the school office:
+              Printed copies of all forms and handbook available in the
+              school office.
             </p>
             <ul className="mt-8 space-y-5">
               {forms.map((f) => (
