@@ -189,24 +189,24 @@ export default function AcademicsPage() {
             </p>
             <div className="mt-8">
               <Link
-                href="https://strivingtogether.com/products/freedom-from-bondage-study-guide"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="/academics/bible-curriculum"
                 className="inline-flex items-center gap-2 text-crimson font-semibold uppercase tracking-[0.12em] text-sm"
               >
-                View the Curriculum Publisher &rarr;
+                Learn More &rarr;
               </Link>
             </div>
           </AnimateOnScroll>
 
           <AnimateOnScroll delay={120}>
-            <Image
-              src="/academics/freedom-from-bondage-instagramtitle.jpg"
-              alt="Freedom from Bondage Bible study guide, this year's Bible curriculum for Elmwood students"
-              width={800}
-              height={1000}
-              className="w-full max-w-md mx-auto h-auto rounded-sm shadow-md"
-            />
+            <Link href="/academics/bible-curriculum" className="block">
+              <Image
+                src="/academics/freedom-from-bondage-instagramtitle.jpg"
+                alt="Freedom from Bondage Bible study guide, this year's Bible curriculum for Elmwood students"
+                width={800}
+                height={1000}
+                className="w-full max-w-md mx-auto h-auto rounded-sm shadow-md"
+              />
+            </Link>
           </AnimateOnScroll>
         </div>
       </section>
