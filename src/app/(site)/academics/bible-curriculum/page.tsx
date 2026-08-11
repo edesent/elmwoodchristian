@@ -66,16 +66,6 @@ export default function BibleCurriculumPage() {
               habit of daily time in God&rsquo;s Word that extends well beyond
               the classroom.
             </p>
-            <div className="mt-8">
-              <Link
-                href="https://strivingtogether.com/products/freedom-from-bondage-study-guide"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-crimson font-semibold uppercase tracking-[0.12em] text-sm"
-              >
-                View the Publisher&rsquo;s Page &rarr;
-              </Link>
-            </div>
           </AnimateOnScroll>
 
           <AnimateOnScroll delay={120}>
