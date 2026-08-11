@@ -166,6 +166,51 @@ export default function AcademicsPage() {
         </div>
       </section>
 
+      {/* Bible Curriculum */}
+      <section className="bg-paper py-24 md:py-28 border-t border-line">
+        <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-[1fr_0.8fr] gap-10 md:gap-16 items-center">
+          <AnimateOnScroll>
+            <p className="eyebrow text-crimson">Bible Curriculum</p>
+            <span className="rule mt-4" />
+            <h2 className="mt-6 font-serif text-4xl md:text-5xl text-ink leading-tight">
+              Rooted in the Word of God
+            </h2>
+            <p className="mt-6 text-lg leading-relaxed text-text-body">
+              Every grade level at Elmwood receives daily Bible instruction as
+              part of the school day. This year, our students are studying{" "}
+              <em>Freedom from Bondage</em>, a ten-lesson study guide from
+              Striving Together Publications that walks through the book of
+              Exodus and God&rsquo;s faithfulness in delivering His people.
+            </p>
+            <p className="mt-6 text-lg leading-relaxed text-text-body">
+              The guide pairs personal devotions with thought-provoking
+              questions, giving students the chance to study Scripture and
+              reflect on how it applies to their own lives.
+            </p>
+            <div className="mt-8">
+              <Link
+                href="https://strivingtogether.com/products/freedom-from-bondage-study-guide"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-crimson font-semibold uppercase tracking-[0.12em] text-sm"
+              >
+                View the Curriculum Publisher &rarr;
+              </Link>
+            </div>
+          </AnimateOnScroll>
+
+          <AnimateOnScroll delay={120}>
+            <Image
+              src="/academics/freedom-from-bondage-instagramtitle.jpg"
+              alt="Freedom from Bondage Bible study guide, this year's Bible curriculum for Elmwood students"
+              width={800}
+              height={1000}
+              className="w-full max-w-md mx-auto h-auto rounded-sm shadow-md"
+            />
+          </AnimateOnScroll>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="bg-stone py-24 md:py-28 border-y border-line">
         <div className="max-w-7xl mx-auto px-6 text-center">
