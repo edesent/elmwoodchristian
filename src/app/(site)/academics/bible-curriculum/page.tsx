@@ -34,18 +34,37 @@ export default function BibleCurriculumPage() {
               working through <em>Freedom from Bondage</em>, a study guide by
               Paul Chappell, published by Striving Together Publications.
             </p>
+            <div className="mt-8 border-l-2 border-crimson/70 pl-6 py-1">
+              <p className="font-serif italic text-xl md:text-2xl text-ink leading-relaxed">
+                The Israelites stood trapped between Pharaoh&rsquo;s army and
+                the waters of the Red Sea&mdash;until God parted the sea,
+                carried His people across on dry ground, and delivered them
+                from their enemies.
+              </p>
+            </div>
             <p className="mt-6 text-lg leading-relaxed text-text-body">
-              Over ten lessons, the guide walks through the book of Exodus and
-              the story of Israel&rsquo;s deliverance from slavery&mdash;from
-              their escape through the Red Sea to God&rsquo;s provision in the
-              wilderness and their journey toward the Promised Land. Along the
-              way, students consider how the same God who delivered Israel is
-              present and faithful in their own circumstances today.
+              Over ten lessons, the guide walks students through the book of
+              Exodus and the larger story it tells: how God brought Israel out
+              of slavery, sustained them through the wilderness, and led them,
+              step by step, toward the Promised Land. It is a story about a
+              God who keeps His word&mdash;who sees His people trapped, and
+              acts.
+            </p>
+            <p className="mt-6 text-lg leading-relaxed text-text-body">
+              Students are invited to see themselves in that story. Everyone,
+              at some point, feels trapped by a difficulty, a struggle, or a
+              sin they can&rsquo;t seem to escape. This study encourages
+              students to bring that honestly before God, trusting that the
+              same Lord who parted the Red Sea still goes before His people
+              and walks with them through whatever lies ahead&mdash;turning
+              obstacles into opportunities to see His power at work.
             </p>
             <p className="mt-6 text-lg leading-relaxed text-text-body">
               Each week&rsquo;s lesson includes five short personal devotions,
-              along with questions and space for students to reflect on and
-              apply what they&rsquo;ve read.
+              along with thought-provoking questions and space for students to
+              journal their own reflection and application&mdash;building a
+              habit of daily time in God&rsquo;s Word that extends well beyond
+              the classroom.
             </p>
             <div className="mt-8">
               <Link
