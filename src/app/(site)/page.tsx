@@ -103,7 +103,9 @@ export default function Home() {
               For more than fifty years, Elmwood has helped Christian families in
               the Brighton area raise children who think clearly, work diligently,
               and walk in godly wisdom—ready for college, career, and a lifetime
-              of faith.
+              of faith. We exist to partner with Christian parents, churches, and
+              like-minded families in providing a Christ-centered education
+              grounded in the historic Christian faith.
             </p>
           </AnimateOnScroll>
         </div>
