@@ -105,7 +105,7 @@ export default function Home() {
               and walk in godly wisdom—ready for college, career, and a lifetime
               of faith. We exist to partner with Christian parents, churches, and
               like-minded families in providing a Christ-centered education
-              grounded in the biblical Christian faith.
+              grounded in biblical Christian faith.
             </p>
           </AnimateOnScroll>
         </div>
