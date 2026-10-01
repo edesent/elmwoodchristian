@@ -222,7 +222,11 @@ export default function ParentsPage() {
             <p className="eyebrow text-crimson">Lunch</p>
             <span className="rule mt-4" />
             <h2 className="mt-6 font-serif text-4xl md:text-5xl text-ink leading-tight">
-              Lunch &amp; Little Chef&rsquo;s Kitchen Lunch Program
+              {SHOW_LITTLE_CHEFS ? (
+                <>Lunch &amp; Little Chef&rsquo;s Kitchen Lunch Program</>
+              ) : (
+                <>Lunch information</>
+              )}
             </h2>
             <p className="mt-6 text-lg leading-relaxed text-text-body">
               Because Elmwood Christian Academy does not have a commercial
@@ -230,6 +234,8 @@ export default function ParentsPage() {
               encourage parents to send a healthy lunch with their child each
               day.
             </p>
+            {SHOW_LITTLE_CHEFS && (
+            <>
             <p className="mt-6 text-lg leading-relaxed text-text-body">
               We are also pleased to offer The Little Chef&rsquo;s Kitchen Lunch
               Program. Managed by Chef Gabriel Park, this optional program
