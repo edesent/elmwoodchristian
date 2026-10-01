@@ -10,6 +10,9 @@ export const metadata: Metadata = {
     "Parent resources for Elmwood Christian Academy in Brighton, Colorado: daily pick-up and carpool procedures, authorized pick-up, school forms, and our dress code.",
 };
 
+// Set to true to show the Little Chef's Kitchen lunch program again.
+const SHOW_LITTLE_CHEFS = false;
+
 const procedures = [
   {
     title: "Afternoon pick-up",
