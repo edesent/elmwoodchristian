@@ -262,6 +262,8 @@ export default function ParentsPage() {
               Click Here for PDF Info
               <span>&rarr;</span>
             </a>
+            </>
+            )}
             <p className="mt-6 text-lg leading-relaxed text-text-body">
               For those occasional mornings when time gets away from you or your
               child forgets to bring a lunch, the school also keeps a limited
