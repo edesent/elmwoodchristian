@@ -137,6 +137,11 @@ export default function RootLayout({
       <body className="bg-paper">
         {children}
         <ChatWidget />
+        {/* Vercel Web Analytics: counts page views by page and by day. */}
+        <Script id="vercel-analytics-queue" strategy="afterInteractive">
+          {`window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };`}
+        </Script>
+        <Script src="/_vercel/insights/script.js" strategy="afterInteractive" />
       </body>
     </html>
   );
