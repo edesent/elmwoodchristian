@@ -137,7 +137,7 @@ export default function TaxCreditPage() {
               on tuition, fees, and the gifts of God&rsquo;s people. A new
               federal tax credit now gives every taxpayer a simple way to help.
               Instead of sending the full amount of your federal income tax to
-              Washington, you may send up to $1,700 of it to a scholarship
+              Washington, you may send up to $1,700 per person, or up to $3,400 per joint filing, to a scholarship
               organization that helps families afford a Christ centered
               education.
             </p>
