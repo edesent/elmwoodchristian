@@ -185,7 +185,7 @@ export default function TaxCreditPage() {
                   Help a family choose Elmwood
                 </h3>
                 <div className="mt-4 h-px w-10 bg-crimson/40" />
-                <p className="mt-5 leading-relaxed text-text-body">
+                <p className="mt-5 text-lg leading-relaxed text-text-body">
                   You do not need a child at Elmwood to take part. Parents,
                   grandparents, church members, alumni, and friends may all
                   give, and each gift comes back to you as a credit on your
@@ -207,7 +207,7 @@ export default function TaxCreditPage() {
                   Could a scholarship help your family?
                 </h3>
                 <div className="mt-4 h-px w-10 bg-crimson/40" />
-                <p className="mt-5 leading-relaxed text-text-body">
+                <p className="mt-5 text-lg leading-relaxed text-text-body">
                   Scholarships may be used toward tuition and other approved
                   costs for students in kindergarten through 12th grade. The
                   income limit is generous, and current Elmwood families may
