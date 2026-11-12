@@ -168,7 +168,7 @@ export default function TaxCreditPage() {
               go toward a scholarship instead. It costs you nothing extra.
             </p>
             <span className="rule mt-8 bg-white/70" />
-            <div className="mt-8 flex flex-col sm:flex-row gap-4">
+            <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href="#how-it-works"
                 className="inline-flex items-center justify-center bg-white text-crimson-deep font-semibold px-8 py-4 rounded-sm uppercase tracking-[0.1em] text-sm hover:bg-stone transition-colors"
