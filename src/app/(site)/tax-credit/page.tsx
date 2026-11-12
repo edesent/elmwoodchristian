@@ -132,7 +132,7 @@ export default function TaxCreditPage() {
             <h2 className="mt-6 font-serif text-4xl md:text-5xl text-ink leading-tight">
               A gift that costs you nothing extra
             </h2>
-            <p className="mt-6 text-lg leading-relaxed text-text-body">
+            <p className="mt-6 text-xl leading-relaxed text-text-body">
               For more than fifty years, Elmwood Christian Academy has operated
               on tuition, fees, and the gifts of God&rsquo;s people. A new
               federal tax credit now gives every taxpayer a simple way to help.
@@ -141,7 +141,7 @@ export default function TaxCreditPage() {
               organization that helps families afford a Christ centered
               education.
             </p>
-            <p className="mt-5 text-lg leading-relaxed text-text-body">
+            <p className="mt-5 text-xl leading-relaxed text-text-body">
               Colorado has elected to take part for 2027, which means Colorado
               students, including students at Elmwood, may receive these
               scholarships.
@@ -234,7 +234,7 @@ export default function TaxCreditPage() {
             <h2 className="mt-6 font-serif text-4xl md:text-5xl text-ink leading-tight">
               How it works
             </h2>
-            <p className="mt-6 text-lg leading-relaxed text-text-body">
+            <p className="mt-6 text-xl leading-relaxed text-text-body">
               Say you owe $5,000 in federal income tax for 2027. You give
               $1,700 to a scholarship organization during the year. When you
               file, you owe $3,300. Your total is the same, but $1,700 of it
@@ -299,7 +299,7 @@ export default function TaxCreditPage() {
             <h2 className="mt-6 font-serif text-4xl md:text-5xl text-ink leading-tight">
               Who qualifies for a scholarship
             </h2>
-            <p className="mt-6 text-lg leading-relaxed text-text-body">
+            <p className="mt-6 text-xl leading-relaxed text-text-body">
               Families apply to the scholarship organization, which reviews
               each application and makes the awards. Details on award amounts
               and application dates are still being finalized, and we will
@@ -317,7 +317,7 @@ export default function TaxCreditPage() {
               ].map((line) => (
                 <li
                   key={line}
-                  className="border-b border-line py-5 flex gap-4 text-lg leading-relaxed text-text-body"
+                  className="border-b border-line py-5 flex gap-4 text-xl leading-relaxed text-text-body"
                 >
                   <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-crimson" aria-hidden />
                   <span>{line}</span>
@@ -367,7 +367,7 @@ export default function TaxCreditPage() {
             <h2 className="mt-6 font-serif text-4xl md:text-5xl text-ink leading-tight">
               Let us know you are interested
             </h2>
-            <p className="mt-6 text-lg leading-relaxed text-text-body max-w-2xl mx-auto">
+            <p className="mt-6 text-xl leading-relaxed text-text-body max-w-2xl mx-auto">
               Giving and application links will be posted here when they open.
               Until then, call the school office and we will keep you informed,
               whether you hope to give or hope to apply.
