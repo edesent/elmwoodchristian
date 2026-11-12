@@ -40,10 +40,18 @@ const fundingTotal = funding.reduce((sum, f) => sum + f.amount, 0);
 function formatMoney(n: number) {
   if (n >= 1_000_000) {
     const m = n / 1_000_000;
-    return `${Number.isInteger(m) ? m : m.toFixed(1)} million`;
+    return "$" + (Number.isInteger(m) ? m : m.toFixed(1)) + " million";
   }
-  return `${n.toLocaleString("en-US")}`;
+  return "$" + n.toLocaleString("en-US");
 }
+
+// Simple line drawings for the four "How it works" steps, in order.
+const stepIcons = [
+  "M12 20.5s-7.5-4.7-9-9.6C2 7.6 4.2 5 7 5c2 0 3.6 1.1 5 3 1.4-1.9 3-3 5-3 2.8 0 5 2.6 4 5.9-1.5 4.9-9 9.6-9 9.6z",
+  "M6 3h12v18l-3-2-3 2-3-2-3 2V3z M9 8h6 M9 12h6",
+  "M7 3h7l4 4v14H7V3z M14 3v4h4 M9.5 14.5l2 2 3.5-4",
+  "M2 9l10-5 10 5-10 5-10-5z M6 11.5V16c0 1.5 3 3 6 3s6-1.5 6-3v-4.5 M22 9v6",
+];
 
 const steps = [
   {
