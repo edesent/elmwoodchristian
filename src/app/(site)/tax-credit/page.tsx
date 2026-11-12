@@ -156,7 +156,7 @@ export default function TaxCreditPage() {
                     {f.figure}
                   </p>
                   <div className="mt-4 h-px w-10 bg-crimson/40 mx-auto" />
-                  <p className="mt-4 text-[0.95rem] leading-relaxed text-text-body">
+                  <p className="mt-4 text-lg leading-relaxed text-text-body">
                     {f.label}
                   </p>
                 </div>
@@ -253,7 +253,7 @@ export default function TaxCreditPage() {
                     {s.title}
                   </h3>
                   <div className="mt-3 h-px w-10 bg-crimson/40" />
-                  <p className="mt-4 text-[0.95rem] leading-relaxed text-text-body">
+                  <p className="mt-4 text-lg leading-relaxed text-text-body">
                     {s.body}
                   </p>
                 </div>
