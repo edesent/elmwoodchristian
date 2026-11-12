@@ -191,7 +191,7 @@ export default function TaxCreditPage() {
                 alt="A boy and a girl in school polo shirts, smiling and holding their books at the school entrance"
                 fill
                 priority
-                sizes="(min-width: 1024px) 448px, 90vw"
+                sizes="(min-width: 1024px) 976px, 95vw"
                 className="object-cover"
               />
             ) : (
