@@ -34,11 +34,11 @@ const facts = [
 // Change the amounts (whole dollars) or labels below. You can add or remove
 // rows. The total in the heading and the length of every bar are worked out
 // automatically. These are SAMPLE numbers until the real ones are supplied.
-const fundingAreSampleNumbers = true;
+const fundingAreSampleNumbers = false;
 const funding = [
-  { label: "from tuition and fees", amount: 600000, color: "bg-crimson-deep" },
-  { label: "from church support and gifts", amount: 250000, color: "bg-crimson" },
-  { label: "from fundraising", amount: 50000, color: "bg-brass" },
+  { label: "from tuition", amount: 220000, color: "bg-crimson-deep" },
+  { label: "from the church", amount: 280000, color: "bg-crimson" },
+  { label: "from fundraising", amount: 0, color: "bg-brass" },
 ];
 const fundingTotal = funding.reduce((sum, f) => sum + f.amount, 0);
 
