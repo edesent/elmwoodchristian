@@ -154,7 +154,7 @@ export default function TaxCreditPage() {
           className="object-cover object-right pointer-events-none select-none"
         />
         <div className="absolute inset-0 bg-crimson-deep/60" />
-        <div className="relative max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
+        <div className="relative max-w-5xl mx-auto px-6 flex flex-col-reverse gap-10 text-center">
           <div>
             <p className="eyebrow text-white/60 mb-5">
               Education Freedom Tax Credit
