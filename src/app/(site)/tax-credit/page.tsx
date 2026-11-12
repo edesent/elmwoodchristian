@@ -142,11 +142,70 @@ const familyFaqs: Faq[] = [
 export default function TaxCreditPage() {
   return (
     <>
-      <SubpageHero
-        eyebrow="Education Freedom Tax Credit"
-        title="Turn your taxes into a scholarship"
-        subtitle="Beginning in 2027, up to $1,700 of the federal income tax you already owe can help a child attend Elmwood."
-      />
+      {/* Top: headline and photo */}
+      <header className="relative bg-crimson-deep overflow-hidden pt-[150px] md:pt-[170px] pb-20">
+        <Image
+          src="/brand/header-crest.jpg"
+          alt=""
+          fill
+          priority
+          sizes="100vw"
+          aria-hidden
+          className="object-cover object-right pointer-events-none select-none"
+        />
+        <div className="absolute inset-0 bg-crimson-deep/60" />
+        <div className="relative max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <p className="eyebrow text-white/60 mb-5">
+              Education Freedom Tax Credit
+            </p>
+            <h1 className="font-serif text-4xl md:text-6xl font-semibold text-white leading-[1.08]">
+              Sponsor a child&rsquo;s Christian education with tax dollars you
+              already owe.
+            </h1>
+            <p className="font-serif italic text-xl md:text-2xl text-white/80 mt-6 leading-relaxed">
+              Beginning in 2027, up to $1,700 of your federal income tax can
+              go toward a scholarship instead. It costs you nothing extra.
+            </p>
+            <span className="rule mt-8 bg-white/70" />
+            <div className="mt-8 flex flex-col sm:flex-row gap-4">
+              <a
+                href="#how-it-works"
+                className="inline-flex items-center justify-center bg-white text-crimson-deep font-semibold px-8 py-4 rounded-sm uppercase tracking-[0.1em] text-sm hover:bg-stone transition-colors"
+              >
+                See How It Works
+              </a>
+              <a
+                href="#families"
+                className="inline-flex items-center justify-center border border-white/70 text-white font-semibold px-8 py-4 rounded-sm uppercase tracking-[0.1em] text-sm hover:bg-white hover:text-crimson-deep transition-colors"
+              >
+                See Who Qualifies
+              </a>
+            </div>
+          </div>
+
+          <div className="relative aspect-[4/5] w-full max-w-md mx-auto lg:ml-auto lg:mr-0 rounded-sm overflow-hidden border border-white/25 shadow-2xl">
+            {heroPhoto ? (
+              <Image
+                src={heroPhoto}
+                alt="Two Elmwood Christian Academy students in school dress, holding their books"
+                fill
+                priority
+                sizes="(min-width: 1024px) 448px, 90vw"
+                className="object-cover"
+              />
+            ) : (
+              <div className="absolute inset-0 bg-stone-2 flex items-center justify-center p-8 text-center">
+                <p className="text-xl text-text-body">
+                  <strong className="text-ink">Photo goes here.</strong>
+                  <br />
+                  Two Elmwood students in polo shirts, holding books.
+                </p>
+              </div>
+            )}
+          </div>
+        </div>
+      </header>
 
       {/* Draft notice: remove at launch */}
       <div className="bg-stone-2 border-b border-line">
