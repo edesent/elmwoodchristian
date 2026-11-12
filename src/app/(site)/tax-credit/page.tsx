@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import SubpageHero from "@/components/SubpageHero";
+import Image from "next/image";
 import AnimateOnScroll from "@/components/AnimateOnScroll";
 import FaqAccordion from "@/components/FaqAccordion";
 import type { Faq } from "@/components/faqData";
