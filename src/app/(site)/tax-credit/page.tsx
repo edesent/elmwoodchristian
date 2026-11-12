@@ -59,7 +59,7 @@ const supporterFaqs: Faq[] = [
   },
   {
     q: "Can my spouse and I both give?",
-    a: "The limit is $1,700 per taxpayer. Scholarship organizations are advising that a married couple filing jointly may claim up to $3,400 when each spouse makes a gift. Final IRS rules are still being written, so please confirm with your tax advisor.",
+    a: "Yes. The credit is up to $1,700 per person and up to $3,400 per joint filing. Each spouse makes a gift of up to $1,700. Please confirm the details of your own return with your tax advisor.",
   },
   {
     q: "What if I do not owe $1,700 in federal income tax?",
