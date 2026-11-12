@@ -310,6 +310,54 @@ export default function TaxCreditPage() {
         </div>
       </section>
 
+      {/* Funding chart */}
+      <section className="bg-paper py-24 md:py-28">
+        <div className="max-w-4xl mx-auto px-6">
+          <AnimateOnScroll>
+            <p className="eyebrow text-crimson">The Need Behind the Numbers</p>
+            <span className="rule mt-4" />
+            <h2 className="mt-6 font-serif text-4xl md:text-5xl text-ink leading-tight">
+              <span className="text-crimson">{formatMoney(fundingTotal)}</span>{" "}
+              annual operating cost funded by
+            </h2>
+
+            <div className="mt-12 space-y-10">
+              {funding.map((f) => (
+                <div key={f.label}>
+                  <p className="text-xl md:text-2xl text-text-body">
+                    <span className="font-semibold text-ink">
+                      {formatMoney(f.amount)}
+                    </span>{" "}
+                    {f.label}
+                  </p>
+                  <div
+                    className="mt-4 h-5 w-full bg-stone-2 rounded-sm overflow-hidden"
+                    role="img"
+                    aria-label={`${formatMoney(f.amount)} of ${formatMoney(fundingTotal)}`}
+                  >
+                    <div
+                      className={`h-full ${f.color}`}
+                      style={{ width: `${(f.amount / fundingTotal) * 100}%` }}
+                    />
+                  </div>
+                  <p className="mt-2 text-right text-base text-text-muted">
+                    of {formatMoney(fundingTotal)}
+                  </p>
+                </div>
+              ))}
+            </div>
+
+            {fundingAreSampleNumbers && (
+              <p className="mt-10 text-base text-text-muted">
+                <strong className="text-ink">Sample numbers.</strong> These
+                figures are placeholders and will be replaced with
+                Elmwood&rsquo;s actual numbers.
+              </p>
+            )}
+          </AnimateOnScroll>
+        </div>
+      </section>
+
       {/* Families */}
       <section id="families" className="bg-stone py-24 md:py-28 border-b border-line">
         <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-14">
