@@ -18,6 +18,11 @@ export const metadata: Metadata = {
   robots: { index: false, follow: false },
 };
 
+// TOP PHOTO
+// Leave empty ("") to show a "photo goes here" panel. Once the photo is
+// uploaded, put its path here, for example "/img/tax-credit-students.jpg".
+const heroPhoto: string = "";
+
 const facts = [
   { figure: "$1,700", label: "Up to $1,700 per person, each year" },
   { figure: "$3,400", label: "Up to $3,400 per joint filing, each year" },
