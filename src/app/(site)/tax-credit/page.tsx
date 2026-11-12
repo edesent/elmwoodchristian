@@ -256,31 +256,123 @@ export default function TaxCreditPage() {
       {/* How it works */}
       <section id="how-it-works" className="bg-paper py-24 md:py-28">
         <div className="max-w-7xl mx-auto px-6">
-          <AnimateOnScroll className="max-w-3xl">
-            <p className="eyebrow text-crimson">For Supporters</p>
-            <span className="rule mt-4" />
-            <h2 className="mt-6 font-serif text-4xl md:text-5xl text-ink leading-tight">
-              How it works
-            </h2>
-            <p className="mt-6 text-xl leading-relaxed text-text-body">
-              Say you owe $5,000 in federal income tax for 2027. You give
-              $1,700 to a scholarship organization during the year. When you
-              file, you owe $3,300. Your total is the same, but $1,700 of it
-              went to help a child.
-            </p>
-          </AnimateOnScroll>
+          <div className="grid lg:grid-cols-2 gap-14 items-center">
+            <AnimateOnScroll>
+              <p className="eyebrow text-crimson">For Supporters</p>
+              <span className="rule mt-4" />
+              <h2 className="mt-6 font-serif text-4xl md:text-5xl text-ink leading-tight">
+                How it works
+              </h2>
+              <p className="mt-6 text-xl leading-relaxed text-text-body">
+                Say you owe $5,000 in federal income tax for 2027. You give
+                $1,700 to a scholarship organization during the year. When you
+                file, you owe $3,300. Your total is the same, but $1,700 of it
+                went to help a child.
+              </p>
+              <p className="mt-5 text-xl leading-relaxed text-text-body">
+                A credit is not a deduction. It comes straight off the tax you
+                owe, dollar for dollar.
+              </p>
+            </AnimateOnScroll>
 
-          <div className="mt-16 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {/* Infographic: where your tax dollars go */}
+            <AnimateOnScroll delay={90}>
+              <div className="border border-line rounded-sm bg-stone p-7 md:p-10">
+                <p className="eyebrow text-crimson">An Example</p>
+                <p className="mt-3 font-serif text-3xl text-ink leading-tight">
+                  You owe $5,000 in federal income tax
+                </p>
+
+                <p className="mt-8 text-lg font-semibold text-ink">
+                  Without the credit
+                </p>
+                <div className="mt-3 flex h-16 rounded-sm overflow-hidden text-white text-lg font-semibold">
+                  <div className="w-full bg-charcoal-soft flex items-center justify-center">
+                    $5,000 to the IRS
+                  </div>
+                </div>
+
+                <p className="mt-8 text-lg font-semibold text-ink">
+                  With the credit
+                </p>
+                <div className="mt-3 flex h-16 rounded-sm overflow-hidden text-white text-lg font-semibold">
+                  <div
+                    className="bg-charcoal-soft flex items-center justify-center"
+                    style={{ width: "66%" }}
+                  >
+                    $3,300 to the IRS
+                  </div>
+                  <div
+                    className="bg-crimson flex items-center justify-center"
+                    style={{ width: "34%" }}
+                  >
+                    $1,700
+                  </div>
+                </div>
+                <div className="mt-2 flex text-base font-semibold text-crimson">
+                  <span style={{ width: "66%" }} />
+                  <span className="text-center" style={{ width: "34%" }}>
+                    to a scholarship
+                  </span>
+                </div>
+
+                <div className="mt-8 border-t border-line pt-6 flex items-center gap-5">
+                  <span className="shrink-0 h-14 w-14 rounded-full bg-crimson text-white flex items-center justify-center">
+                    <svg
+                      viewBox="0 0 24 24"
+                      className="h-7 w-7"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="1.6"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      aria-hidden
+                    >
+                      <path d={stepIcons[3]} />
+                    </svg>
+                  </span>
+                  <p className="font-serif text-2xl text-ink leading-snug">
+                    The same $5,000 leaves your pocket. A child receives a
+                    scholarship.
+                  </p>
+                </div>
+              </div>
+            </AnimateOnScroll>
+          </div>
+
+          {/* Four steps, connected */}
+          <div className="mt-20 grid sm:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-12">
             {steps.map((s, i) => (
               <AnimateOnScroll key={s.title} delay={i * 90}>
-                <div className="h-full border border-line rounded-sm p-7 bg-stone">
-                  <p className="font-serif text-5xl text-crimson/70 leading-none">
-                    {i + 1}
-                  </p>
-                  <h3 className="mt-5 font-serif text-2xl text-ink">
+                <div className="relative text-center">
+                  {i < steps.length - 1 && (
+                    <span
+                      className="hidden lg:block absolute top-10 h-px bg-crimson/40"
+                      style={{ left: "calc(50% + 3rem)", right: "calc(-50% + 1.5rem)" }}
+                      aria-hidden
+                    />
+                  )}
+                  <span className="relative mx-auto h-20 w-20 rounded-full bg-crimson text-white flex items-center justify-center">
+                    <svg
+                      viewBox="0 0 24 24"
+                      className="h-9 w-9"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="1.6"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      aria-hidden
+                    >
+                      <path d={stepIcons[i]} />
+                    </svg>
+                    <span className="absolute -top-1 -right-1 h-8 w-8 rounded-full bg-paper border border-crimson text-crimson font-semibold flex items-center justify-center">
+                      {i + 1}
+                    </span>
+                  </span>
+                  <h3 className="mt-6 font-serif text-2xl text-ink">
                     {s.title}
                   </h3>
-                  <div className="mt-3 h-px w-10 bg-crimson/40" />
+                  <div className="mt-3 h-px w-10 bg-crimson/40 mx-auto" />
                   <p className="mt-4 text-lg leading-relaxed text-text-body">
                     {s.body}
                   </p>
