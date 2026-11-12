@@ -184,7 +184,7 @@ export default function TaxCreditPage() {
             </div>
           </div>
 
-          <div className="relative aspect-[4/5] w-full max-w-md mx-auto lg:ml-auto lg:mr-0 rounded-sm overflow-hidden border border-white/25 shadow-2xl">
+          <div className="relative aspect-[2/1] md:aspect-[3/1] w-full rounded-sm overflow-hidden border border-white/25 shadow-2xl">
             {heroPhoto ? (
               <Image
                 src={heroPhoto}
