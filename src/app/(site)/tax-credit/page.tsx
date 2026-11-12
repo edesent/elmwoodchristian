@@ -350,7 +350,7 @@ export default function TaxCreditPage() {
             </AnimateOnScroll>
           </div>
 
-          <p className="mt-14 max-w-3xl text-sm leading-relaxed text-text-muted">
+          <p className="mt-14 max-w-3xl text-base leading-relaxed text-text-muted">
             This page is general information and is not tax advice. Federal
             rules for this credit are still being finalized. Please consult
             your tax advisor about your own situation.
