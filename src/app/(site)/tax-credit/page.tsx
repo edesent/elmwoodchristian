@@ -188,7 +188,7 @@ export default function TaxCreditPage() {
             {heroPhoto ? (
               <Image
                 src={heroPhoto}
-                alt="Two Elmwood Christian Academy students in school dress, holding their books"
+                alt="A boy and a girl in school polo shirts, smiling and holding their books at the school entrance"
                 fill
                 priority
                 sizes="(min-width: 1024px) 448px, 90vw"
