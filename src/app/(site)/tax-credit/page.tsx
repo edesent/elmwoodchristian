@@ -275,15 +275,15 @@ export default function TaxCreditPage() {
             <div className="mt-12 grid sm:grid-cols-3 gap-8">
               <div>
                 <p className="font-serif text-4xl md:text-5xl text-white">$17,000</p>
-                <p className="mt-3 text-white/70">from 10 gifts of $1,700</p>
+                <p className="mt-3 text-lg text-white/70">from 10 gifts of $1,700</p>
               </div>
               <div>
                 <p className="font-serif text-4xl md:text-5xl text-white">$85,000</p>
-                <p className="mt-3 text-white/70">from 50 gifts of $1,700</p>
+                <p className="mt-3 text-lg text-white/70">from 50 gifts of $1,700</p>
               </div>
               <div>
                 <p className="font-serif text-4xl md:text-5xl text-white">$170,000</p>
-                <p className="mt-3 text-white/70">from 100 gifts of $1,700</p>
+                <p className="mt-3 text-lg text-white/70">from 100 gifts of $1,700</p>
               </div>
             </div>
           </AnimateOnScroll>
