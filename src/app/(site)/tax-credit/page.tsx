@@ -339,7 +339,7 @@ export default function TaxCreditPage() {
             </h2>
           </AnimateOnScroll>
 
-          <div className="mt-14 grid lg:grid-cols-2 gap-14">
+          <div className="mt-14 grid lg:grid-cols-2 gap-14 [&_p]:text-lg">
             <AnimateOnScroll>
               <h3 className="eyebrow text-crimson mb-6">For Supporters</h3>
               <FaqAccordion items={supporterFaqs} />
