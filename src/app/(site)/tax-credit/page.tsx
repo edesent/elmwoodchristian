@@ -19,8 +19,8 @@ export const metadata: Metadata = {
 };
 
 const facts = [
-  { figure: "$1,700", label: "Maximum credit per taxpayer, each year" },
-  { figure: "100%", label: "Dollar for dollar credit on your federal income tax" },
+  { figure: "$1,700", label: "Up to $1,700 per person, each year" },
+  { figure: "$3,400", label: "Up to $3,400 per joint filing, each year" },
   { figure: "Jan. 1, 2027", label: "First day a gift can qualify" },
   { figure: "5 years", label: "To carry forward any credit you cannot use" },
 ];
